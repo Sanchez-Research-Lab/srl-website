@@ -2,11 +2,14 @@
 <html dir="ltr" lang="zxx">
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="description" content="Labotrex - Laboratory & Science Research HTML5 Template" />
-    <meta name="keywords" content="bio research, biology, chemical, chemistry, experiment, lab, laboratory, medical, medical research, pharmacy, science, science research, scientific research" />
-    <meta name="author" content="BoomDevs" />
+
+    <meta name="description" content="Sanchez Research Lab at the University of Illinois Chicago." />
+
+    <meta name="keywords" content="Sanchez Research Lab, bioimpedance, biomedical engineering, wearable health technology, signal processing, UIC, medical devices, physiology monitoring, research lab" />
+
+    <meta name="author" content="Sanchez Research Lab" />
 
     <title>Sanchez Research Lab</title>
 
@@ -131,36 +134,64 @@
         <!-- Header Nav Menu End -->
     </header>
     <!-- Header End !-->
-    <!-- Menu Sidebar Section Start -->
-    <div class="menu-sidebar-area">
-        <div class="menu-sidebar-wrapper">
-            <div class="menu-sidebar-close">
-                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
-                    <i class="fal fa-times"></i>
-                </button>
-            </div>
-            <div class="menu-sidebar-content">
+<!-- Menu Sidebar Section Start -->
+<div class="menu-sidebar-area">
+    <div class="menu-sidebar-wrapper">
 
-    <div class="menu-sidebar-logo">
-        <a href="index.html">
-            <img src="images/logo/SRL.png" alt="SRL Logo">
-        </a>
-    </div>
-
-    <div class="mobile-nav-menu"></div>
-
-    <div class="menu-sidebar-single-widget lab-title">
-        <div class="header-contact-info">
-            <span>Sanchez Research Lab</span>
-            <span class="uni">University of Illinois Chicago</span>
+        <div class="menu-sidebar-close">
+            <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                <i class="fal fa-times"></i>
+            </button>
         </div>
-    </div>
+
+        <div class="menu-sidebar-content">
+
+            <div class="menu-sidebar-logo">
+                <a href="index.html">
+                    <img src="images/logo/SRL.png" alt="SRL Logo">
+                </a>
+            </div>
+
+            <ul class="mobile-nav-menu">
+
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <!-- Research dropdown -->
+  <li class="has-dropdown">
+    <a href="#">Research</a>
+    <ul class="submenu">
+      <li>  <a href="research.html" >Research</a></li>
+      <li><a href="publications.html" >Publications</a></li>
+    </ul>
+  </li>
+
+  <!-- Lab Members dropdown -->
+  <li class="has-dropdown">
+    <a href="#">Lab Members</a>
+    <ul class="submenu">
+      <li><a href="lab-director.html" >Lab Director</a></li>
+      <li><a href="team-member.html" >Lab Team</a></li>
+      <li><a href="alumni.html" >Alumni</a></li>
+    </ul>
+  </li>
+
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+            <div class="menu-sidebar-single-widget lab-title">
+                <div class="header-contact-info">
+                    <span>Sanchez Research Lab</span>
+                    <span class="uni">University of Illinois Chicago</span>
+                </div>
+            </div>
 
             <div class="menu-sidebar-single-widget">
                 <h5 class="menu-sidebar-title">Contact Info</h5>
 
                 <div class="header-contact-info">
-
                     <span>
                         <i class="fa-regular fa-location-dot"></i>
                         851 S Morgan St<br>
@@ -178,7 +209,6 @@
                         <i class="fa-regular fa-user"></i>
                         Benjamin Sanchez Terrones
                     </span>
-
                 </div>
 
                 <div class="social-profile">
@@ -190,10 +220,10 @@
             </div>
 
         </div>
-        </div>
     </div>
-    <!-- Menu Sidebar Section Start -->
-    <div class="body-overlay"></div>
+</div>
+<!-- Menu Sidebar Section Start -->
+<div class="body-overlay"></div>
 
     <!-- Page Header Start !-->
     <div class="page-breadcrumb-area style-1">
@@ -1077,6 +1107,17 @@ favicon.href = "images/logo/SRL.png";
 // when page fully loads → switch back
 window.addEventListener("load", () => {
     favicon.href = "images/logo/favicon-32x32.png";
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.mobile-nav-menu .has-dropdown > a').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    });
+  });
 });
 </script>
 
