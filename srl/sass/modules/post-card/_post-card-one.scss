@@ -1,0 +1,235 @@
+.post-card {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include xl{
+    gap: 30px;
+  }
+  @include md{
+    gap: 30px;
+  }
+  @include xs{
+    gap: 30px;
+  }
+
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.03);
+        @include transition;
+      }
+
+      &:before {
+        visibility: visible;
+        opacity: 1;
+        @include transition;
+      }
+
+      .circle-btn-wrapper {
+        background-color: rgba(0, 0, 0, 0.50);
+        @include transition;
+      }
+
+      .circle-btn {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        visibility: visible;
+        opacity: 1;
+        @include transition;
+      }
+    }
+  }
+
+  .image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    height: 268px;
+
+    @include xl{
+      height: 250px;
+    }
+    @include md{
+      height: 220px;
+    }
+    @include xs{
+      height: 220px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(1.001);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition;
+    }
+
+    .circle-btn-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include transition;
+    }
+
+    .circle-btn {
+      width: 72px;
+      height: 72px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color;
+      color: $black;
+      font-size: 24px;
+      text-decoration: none;
+      position: absolute;
+      top: 70%;
+      left: 20%;
+      transform: translate(-50%, -50%) scale(0.3);
+      opacity: 0;
+      visibility: hidden;
+      @include transition;
+      z-index: 2;
+
+      @include md {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+      }
+
+      @include sm {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+
+      i {
+        transform: rotate(-45deg);
+        @include transition;
+      }
+
+      &:hover {
+        background-color: $white;
+        @include transition;
+
+        i {
+          transform: rotate(0deg);
+          @include transition
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include xs{
+      gap: 12px;
+    }
+
+    .tag-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .single-tag {
+        padding: 8px 24px;
+        border-radius: 50px;
+        font-family: $heading-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: -0.21px;
+        color: $black;
+        background-color: $tertiary-200;
+        text-transform: uppercase;
+      }
+    }
+
+    .title {
+      font-family: $heading-font;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: -0.42px;
+      margin-bottom: 0;
+
+      @include xl{
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.32;
+      }
+      @include md{
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.32;
+      }
+      @include sm{
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: -0.42px;
+      }
+      @include xs{
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: -0.32;
+      }
+
+      // a {
+      //   &:hover {
+      //     color: unset;
+      //     @include transition;
+      //   }
+      // }
+    }
+
+    .desc {
+      font-family: $body-font;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: $black-200;
+      margin-bottom: 0;
+    }
+  }
+
+  .post-meta {
+    display: inline-flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 8px;
+
+    @include sm {
+      gap: 8px;
+    }
+
+    .single-post-meta {
+      color: $black-200;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 400;
+      font-family: $body-font;
+    }
+
+    .dots {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $border-color;
+      }
+    }
+  }
+}

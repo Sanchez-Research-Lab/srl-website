@@ -1,0 +1,98 @@
+.post-card {
+  &.style-2 {
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+      .btn-wrapper{
+        transform: translate(-8px, 8px);
+        @include transition;
+      }
+      .shape{
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(60px, -60px);
+        @include transition;
+      }
+    }
+
+    .content{
+      background-color: $tertiary-300;
+      padding: 42px 48px 46px;
+      border-radius: 30px;
+      @include sm{
+        padding: 28px;
+      }
+      .post-meta{
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .title {
+        @media only screen and (min-width: 1400px) and (max-width: 1599px) {
+          font-size: 22px;
+        }
+        @include lg {
+          font-size: 24px;
+        }
+      }
+
+      .btn-wrapper{
+        margin-top: 64px;
+        display: flex;
+        justify-content: end;
+        position: relative;
+
+        .text-btn{
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          font-family: $heading-font;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 34px;
+          color: $black;
+          @include transition;
+
+          &:hover {
+            gap: 12px;
+            @include transition;
+
+
+            i {
+              transform: rotate(0deg);
+              @include transition;
+
+            }
+          }
+
+          i{
+            transform: rotate(-45deg);
+            @include transition;
+
+          }
+        }
+      }
+    }
+
+    .btn-wrapper{
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      right: 0;
+      @include transition;
+
+      .circle-arrow-btn{
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    .shape{
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include transition;
+    }
+  }
+}

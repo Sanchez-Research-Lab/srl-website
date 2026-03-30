@@ -1,0 +1,130 @@
+.info-card {
+    &:hover{
+        .icon{
+            img{
+                animation: icon-bounce 0.8s 1;
+            }
+        }
+    }
+
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 36.4px;
+        letter-spacing: -0.42px;
+        color: $black;
+        margin-top: 18px;
+
+        @include md{
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: -0.34;
+        }
+        @include xs{
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.24;
+        }
+    }
+    .desc {
+        margin-top: 16px;
+        margin-bottom: 0;
+        @include sm{
+            font-size: 15px;
+            line-height: 28px;
+        }
+
+        @include xs{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+
+    &.style-1 {
+        background-color: $tertiary-300;
+        border-radius: 30px;
+        padding: 42px 48px;
+        width: 528px;
+        margin: 0 12px;
+
+        @include xl{
+            width: unset;
+        }
+        @include lg{
+            width: unset;
+            padding: 35px 35px 25px;
+        }
+        @include md{
+            width: unset;
+            padding: 20px;
+        }
+        @include sm{
+            width: unset;
+        }
+        @include xs{
+            width: unset;
+            padding: 25px 25px 16px;
+        }
+
+        .content-wrapper {
+            .icon {
+                flex-shrink: 0;
+            }
+            .title {
+                margin-top: 24px;
+            }
+            .desc {
+                margin-top: 15px;
+            }
+            .view-more {
+                margin-top: 32px;
+
+                @include xs{
+                    margin-top: 24px;
+                }
+                a {
+                    font-family: $body-font;
+                    font-size: 20px;
+                    line-height: 34px;
+                    font-weight: 600;
+                    color: $black;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 2px;
+                    @include transition;
+
+                    @include md{
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    @include xs{
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+
+                    &:hover {
+                        color: $tertiary;
+                        i {
+                            color: $tertiary;
+                            transform: rotate(0deg);
+                            margin-left: 5px;
+                        }
+                    }
+                    i {
+                        font-size: 22px;
+                        transform: rotate(-45deg);
+                        @include transition;
+                        
+                        @include md{
+                            font-size: 20px;
+                        }
+                        @include xs{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

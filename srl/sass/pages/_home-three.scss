@@ -1,0 +1,172 @@
+
+
+
+// Project Area
+.project-area{
+    &.style-3{
+        padding-top: 60px;
+        padding-bottom: 140px;
+
+        .subscribe-form-area{
+            display: flex;
+            align-items: end;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            position: relative;
+            @include lg{
+                padding: 30px;
+            }
+            @include xs{
+                padding: 30px;
+            }
+            .subscribe-form-widget{
+                .mc4wp-form-fields{
+                    @include xl{
+                        flex-direction: column;
+                    }
+                    @include rmaxwd (991){
+                        align-items: start;
+                    }
+                }
+                .submit-btn{
+                    flex-shrink: 0;
+                    
+                    &:hover{
+                        background-color: $black;
+                        color: $white;
+                        @include transition;
+                    }
+                }
+            }
+
+            .image{
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 35px;
+
+                .overlay{
+                    background-color: $black;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 35px;
+                    opacity: 0.4;
+                }
+            }
+
+            .content{
+                position: relative;
+                z-index: 5;
+                width: 100%;
+            }
+
+            .short-btn{
+                padding: 8px 20px;
+                border-radius: 50px;
+                font-family: $heading-font;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 19px;
+                letter-spacing: -0.21px;
+                color: $black;
+                background-color: $white;
+                text-transform: uppercase;
+                @include transition;
+
+                &:hover{
+                    background-color: $black;
+                    color: $white;
+                    @include transition;
+                }
+            }
+            .title{
+                font-family: $heading-font;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 58px;
+                letter-spacing: -0.72px;
+                color: $white;
+                margin: 16px 0 32px;
+                @include xs{
+                    font-size: 42px;
+                }
+                br{
+                    @include sm{
+                        display: none;
+                    }
+                }
+            }
+
+            .single-field{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Feature Area
+.feature-area{
+    &.style-3{
+        .section-title{
+            .title{
+                @include xl{
+                    font-size: 45px;
+                }
+            }
+            .desc{
+                margin: 24px 0 40px;
+            }
+        }
+
+        .info-card{
+            width: 100%;
+            padding: 42px 42px 32px;
+            margin: 0;
+            @include xl{
+                padding: 32px 22px;
+            }
+            @include sm{
+                padding: 24px;
+            }
+
+            .desc{
+                @include xl{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// Latest Posts Area
+.latest-posts-area{
+    &.style-3{
+        .post_card_slider{
+            .slick-arrow{
+                display: none !important;
+            }
+            .slick-list{
+                margin: 0 -12px;
+            }
+        }
+    }
+}
+
+//production area
+.production-area {
+    padding-top: 140px;
+    padding-bottom: 130px;
+    
+    .section-title {
+        margin-bottom: 47px;
+    }
+}

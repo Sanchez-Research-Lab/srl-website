@@ -1,0 +1,100 @@
+
+
+// Feature Area
+.feature-area{
+  &.style-1{
+    @include lg{
+      padding: 120px 0;
+    }
+    @include md{
+      padding: 100px 0;
+    }
+    @include sm{
+      padding: 80px 0;
+    }
+
+    .info-card-slider{
+      .slick-arrow{
+        display: none !important;
+      }
+      .slick-list{
+        margin: 0 -999px 0 -12px;
+
+        @include xl{
+          margin: 0 -12px;
+        }
+        @include lg{
+          margin: 0 -12px;
+        }
+        @include md{
+          margin: 0 -12px;
+        }
+        @include sm{
+          margin: 0 -12px;
+        }
+      }
+    }
+  }
+}
+.about-us-area{
+  &.style-1{
+    .info-card{
+      &.style-2{
+        padding-right: 8px;
+      }
+    }
+  }
+}
+// project-area
+.project-area{
+  &.style-1{
+    padding: 140px 0 180px;
+    overflow: hidden;
+
+    @include xl{
+      padding: 140px 0;
+    }
+    @include lg{
+      padding: 120px 0;
+    }
+    @include md{
+      padding: 100px 0;
+    }
+    @include sm{
+      padding: 80px 0;
+    }
+  }
+}
+
+// Team Area
+.team-area{
+  &.style-1{
+    @include lg{
+      padding: 120px 0;
+    }
+    @include md{
+      padding: 100px 0;
+    }
+    @include sm{
+      padding: 80px 0;
+    }
+  }
+}
+
+//latest post area
+
+.latest-posts-area {
+  &.style-1 {
+    @include sm {
+      padding: 80px 0;
+    }
+    @include md {
+      padding: 100px 0;
+    }
+    .section-title {
+      @include sm {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

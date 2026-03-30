@@ -1,0 +1,251 @@
+.team-member-card {
+  position: relative;
+  top: 0;
+  @include transition;
+  &:hover {
+    top: -5px;
+    @include transition;
+   .image {
+     &:before {
+       height: 250%;
+       transition: all 900ms linear;
+       background-color: transparent;
+     }
+     img {
+       transform: scale(1.1);
+       @include transition;
+     }
+
+     .social-profile{
+      a{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        @include transition;
+      }
+     }
+   }
+  }
+
+  &.style-1 {
+    overflow: hidden;
+
+    &:hover{
+      .image-card-wrapper {
+        .icon-shape{
+          transform: translate(-8px, 8px);
+          @include transition;
+        }
+        .sticky-corner {
+            transform: translate(60px, -60px);
+            visibility: hidden;
+            opacity: 0;
+            @include transition;
+        }
+      }
+    }
+
+    .image-card-wrapper {
+      position: relative;
+
+      .icon-shape {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        @include transition;
+
+        a {
+          width: 64px;
+          height: 64px;
+          background-color: $primary-color;
+          border-radius: 50%;
+          color: $black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          @include transition;
+
+          &:hover{
+            background-color: $black;
+            color: $white;
+            @include transition;
+          }
+
+          i {
+            transform: rotate(-45deg);
+          }
+        }
+        .sticky-corner {
+          position: absolute;
+          z-index: -1;
+          width: auto;
+          height: auto;
+          top: 0;
+          right: 0;
+          @include transition;
+        }
+
+      }
+    }
+  }
+
+  .image {
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+
+    &:before {
+      position: absolute;
+      width: 200%;
+      height: 0%;
+      left: 50%;
+      top: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%) rotate(-45deg);
+      content: "";
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+      @include transition;
+    }
+
+    .social-profile{
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transform: translateY(-50%);
+
+      :nth-child(1){
+        transform: translateX(-35px);
+        i{
+          transform: translateX(0);
+        }
+      }
+      :nth-child(2){
+        transform: translateX(-60px);
+        i{
+          transform: translateX(0);
+        }
+      }
+      :nth-child(3){
+        transform: translateX(-35px);
+        i{
+          transform: translateX(0);
+        }
+      }
+      :nth-child(4){
+        transform: translateX(-60px);
+        i{
+          transform: translateX(0);
+        }
+      }
+
+      a{
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        color: $black;
+        background-color: $white;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
+
+        &:hover{
+          background-color: $primary-color;
+          @include transition;
+        }
+      }
+    }
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 24px;
+    z-index: 2;
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 1;
+      gap: 8px;
+
+      .title {
+        font-size: 28px;
+        line-height: 36.4px;
+        font-weight: 600;
+        letter-spacing: -0.42px;
+        color: $black;
+        margin: 0;
+
+        @include lg {
+          font-size: 24px;
+        }
+        @include rmaxwd(991){
+          font-size: 22px;
+        }
+      }
+      .desc {
+        font-size: 16px;
+        line-height: 22.4px;
+        font-weight: 600;
+        color: $black;
+        letter-spacing: -0.24px;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        margin: 0;
+        @include rmaxwd(991){
+          font-size: 14px;
+        }
+      }
+    }
+    .social {
+      background: $primary-color;
+      padding: 18px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 22px;
+      width: 94%;
+      margin-top: -60px;
+      z-index: -1;
+      transition: all 0.5s ease-out;
+      a {
+        &:hover {
+          color: $primary-color;
+          @include transition
+          ;
+        }
+      }
+      i {
+        color: $white;
+      }
+    }
+  }
+  &:hover {
+    .content-wrapper {
+      .content {
+        z-index: 1;
+      }
+      .social {
+        margin-top: 0;
+        z-index: 0;
+      }
+    }
+  }
+}

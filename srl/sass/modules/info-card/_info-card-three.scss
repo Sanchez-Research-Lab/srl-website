@@ -1,0 +1,72 @@
+.info-card {
+    &.style-3 {
+        height: 100%;
+        padding: 40px;
+        border-radius: 30px;
+        background-color: $tertiary-200;
+        position: relative;
+        overflow: hidden;
+
+        @include xl{
+            padding: 30px;
+        }
+        @include xs{
+            padding: 30px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: -20%;
+            right: -27%;
+            overflow: hidden;
+            mix-blend-mode: soft-light;
+            opacity: 0.8;
+        }
+        .info-card-inner {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 118px;
+            position: relative;
+            z-index: 5;
+
+            @include xl{
+                justify-content: space-between;
+            }
+            @include rmaxwd(991){
+                gap: 100px
+            }
+
+            .title {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 46.8px;
+                letter-spacing: -0.54px;                
+                margin: 0;
+
+                @include xl{
+                    font-size: 34px;
+                }
+                @include xs{
+                    font-size: 30px;
+                }
+            }
+            .desc {
+                margin-top: 8px;
+              
+            }
+            .theme-btn {
+                text-transform: capitalize;
+                background-color: $white;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                    @include transition;
+                }
+            }
+        }
+
+    }
+}

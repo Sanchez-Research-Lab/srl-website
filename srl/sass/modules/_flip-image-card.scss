@@ -1,0 +1,150 @@
+.flip-image-card {
+    position: relative;
+
+    &:hover{
+        .flip-box{
+            .flip-front {
+                transform: rotateY(-180deg);
+                transform-style: preserve-3d;
+            }
+            .flip-back {
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+            }
+        }
+    }
+
+    .flip-box {
+        transform-style: preserve-3d;
+        perspective: 1000px;
+
+        @include xs{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .image {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
+        backface-visibility: hidden;
+        text-align: center;
+        width: 390px;
+        height: 390px;
+        border-radius: 50%;
+
+        @include xl {
+            width: 258px;
+            height: 258px;
+        }
+
+        @include lg {
+            width: 455px;
+            height: 455px;
+        }
+
+        @include md {
+            width: 333px;
+            height: 333px;
+        }
+
+        @include sm {
+            width: 243px;
+            height: 243px;
+        }
+
+        @include xs {
+            width: 300px;
+            height: 300px;
+        }
+
+        &.flip-front {
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+        }
+    
+        &.flip-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: rotateY(180deg);
+            transform-style: preserve-3d;
+    
+            @include xs{
+                width: 300px;
+                left: unset;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+            background-color: $black;
+            border-radius: 50%;
+        }
+        .inner{
+            position: relative;
+            z-index: 5;
+            left: 0;
+            width: 100%;
+            padding: 60px;
+            outline: 1px solid transparent;
+            perspective: inherit;
+            z-index: 2;
+            transform: translateY(-50%) translateZ(60px) scale(.94);
+            top: 50%;
+
+            .number{
+                font-family: $heading-font;
+                font-size: 95px;
+                font-weight: 600;
+                line-height: 104px;
+                letter-spacing: -1.425px;
+                color: $white;
+    
+                @include xl{
+                    font-size: 72px;
+                    line-height: 86px;
+                    letter-spacing: -0.92px;
+                }
+                @include sm{
+                    font-size: 72px;
+                    line-height: 86px;
+                    letter-spacing: -0.92px;
+                }
+            }
+        }
+    }
+
+    .box-item-content{
+        margin-top: 24px;
+        text-align: center;
+
+        .name {
+            font-family: $heading-font;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: -0.42px;
+            color: $black;
+            margin-bottom: 8px;
+        }
+
+        .sub-title {
+            margin: 0;
+            font-family: $heading-font;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.24px;
+            text-transform: uppercase;
+            color: $black;
+        }
+    }
+}

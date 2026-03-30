@@ -1,0 +1,133 @@
+
+.header-area {
+  &.style-2 {
+
+    .search-btn-with-btn {
+      .cta-btn {
+        @include lg {
+          display: none;
+        }
+        @include xl {
+          display: none;
+        }
+      }
+    }
+    .header-menu-area {
+      top: 19px;
+      padding: 0 30px;
+
+      .border-radius-shape {
+        position: absolute;
+        bottom: -35px;
+        right: 20px;
+
+        @include rmaxwd(1199) {
+          display: none;
+        }
+      }
+
+      .mobile-menu-bar a i {
+        @include rmaxwd(991) {
+          color: $white;
+        }
+      }
+      &.sticky_menu {
+        top: 0;
+
+        .border-radius-shape,
+        .border-radius-top-shape {
+          visibility: hidden;
+          opacity: 0;
+        }
+        .mobile-menu-bar a i {
+          @include rmaxwd(991) {
+            color: $black;
+          }
+        }
+
+        .main-menu {
+          ul {
+            li {
+              a {
+                @include rmaxwd(1199) {
+                  color: $black;
+                }
+              }
+              ul {
+                li {
+                  a {
+                    @include rmaxwd(1199) {
+                      color: $black;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .main-menu-wrapper {
+      background-color: $white;
+      position: relative;
+
+      @include rmaxwd(1199) {
+        background-color: transparent;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        margin-left: -10px;
+        top: 0;
+        background-color: #fff;
+
+        @include rmaxwd(1199) {
+          display: none;
+        }
+      }
+
+      .border-radius-top-shape,
+      .border-radius-bottom-shape
+      {
+        position: absolute;
+      }
+      .border-radius-top-shape {
+        top: 0px;
+        left: -92px;
+
+        @include rmaxwd(1199) {
+          display: none;
+        }
+      }
+    }
+
+
+    .main-menu {
+      ul {
+        li {
+          a {
+            @include rmaxwd(1199) {
+              color: $white;
+            }
+          }
+          ul {
+            li {
+              a {
+                @include rmaxwd(1199) {
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

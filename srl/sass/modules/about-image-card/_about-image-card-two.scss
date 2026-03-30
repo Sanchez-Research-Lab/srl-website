@@ -1,0 +1,164 @@
+.about-image-card {
+ &.style-2 {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+
+    .bg-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+    }
+
+    .bottom-image-wrapper {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-left: 24px;
+      padding-top: 24px;
+      border-radius: 30px 0 30px 0;
+      background-color: $white;
+      z-index: 1;
+
+      .sticky-corner {
+        position: absolute;
+        transform: rotate(90deg);
+
+        &.top-right-corner {
+          top: -35px;
+          right: 0;
+        }
+        &.bottom-corner {
+          bottom: 0;
+          left: -35px;
+        }
+      }
+      .bottom-image-inner {
+          border-radius: 25px;
+          background-color: $primary-color;
+          padding: 24px;
+
+        .card-text {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 24px;
+
+          @include sm {
+            gap: 20px;
+          }
+
+          .title {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 36.4px;
+            letter-spacing: -0.42px;
+
+            @include lg {
+              font-size: 24px;
+            }
+            @include sm {
+              font-size: 20px;
+            }
+          }
+          .btn-wrapper {
+            .circle-arrow-btn {
+              width: 48px;
+              height: 48px;
+              background-color: $white;
+              @include transition;
+
+              &:hover {
+                color: $black;
+                  
+                i {
+                  transform: rotate(0deg);
+                  @include transition;
+                }
+              }
+
+
+              @include lg {
+                width: 40px;
+                height: 40px;
+
+                i {
+                  font-size: 18px;
+                }
+              }
+
+              @include sm {
+                width: 40px;
+                height: 40px;
+
+                i {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+        .bottom-image {
+          position: relative;
+          width: 318px;
+          height: 168px;
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 25px;
+          display: flex;
+
+          @include lg {
+            width: 250px;
+            height: 140px;
+          }
+          @include sm {
+            width: 100%;
+            height: 130px;
+          }
+
+          .video-card-wrapper {
+              margin: auto;
+
+            .video-icon,
+            .video-card-wrapper {
+              width: 66px;
+              height: 66px;
+              border-radius: 50%;
+              background-color: $primary-color;
+              flex-shrink: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              @include lg {
+                width: 55px;
+                height: 55px;
+              }
+              @include sm {
+                width: 55px;
+                height: 55px;
+              }
+            }
+          }
+        }
+      }
+
+    }
+ }
+}
+

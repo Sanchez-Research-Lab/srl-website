@@ -1,0 +1,126 @@
+.team-details-area {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    padding-left: 210px;
+    padding-right: 210px;
+
+    @include xl{
+        padding: 140px 100px;
+    }
+    @include lg {
+        padding: 120px 80px;
+    }
+    @include md {
+        padding: 80px 40px;
+    }
+    @include sm {
+        padding: 80px 40px;
+    }
+    @include xs {
+        padding: 80px 20px;
+    }
+
+    .image-wrapper{
+        position: relative;
+        padding-right: 60px;
+        img{
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+    .team-details-wrapper{
+        p{
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
+        .main-title{
+            margin-bottom: 10px;
+            font-weight: 700;
+            line-height: 60px;
+            text-transform: capitalize;
+        }
+        .sub-title{
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; 
+            margin-bottom: 20px;
+        }
+        .content{
+            color: $text-color;
+            margin-bottom: 30px;
+        }
+        .sort-title{
+            margin-bottom: 20px;
+        }
+        .skill-wrapper{
+            margin-bottom: 40px;
+        }
+        .skill-progress-card{
+            display: block;
+            .skill-progressbar{
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+    .social-share{
+        display: flex;
+        gap: 25px;
+        margin-top: 28px;
+        a{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $tertiary-200;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+        }
+    }
+}
+
+// Our Team Members
+.our-team-area{
+    &.style-3{
+        .section-title{
+            margin-bottom: 60px;
+            @include xl{
+                margin-bottom: 40px;
+            }
+            @include rmaxwd(1199){
+                margin-bottom: 30px;
+            }
+            .title{
+                br{
+                    @include lg{
+                    display: none;
+                    }
+                }
+            }
+        }
+        .section-img{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                @include transition;
+
+                &:hover{
+                    transform: scale(1.05);
+                    @include transition;
+                }
+            }
+        }
+    }
+}

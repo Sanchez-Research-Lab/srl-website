@@ -1,0 +1,183 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       Labotrex - Laboratory & Science Research HTML5 Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+// 1.Preloader
+// 2.Scrollup
+// 3.Nav Menu
+// 4.Slider Section
+// 5.Info Card
+// 6.Icon Card
+// 7.About Image Card
+// 8.About Info Card
+// 9.Counter Card
+// 10.Brand Marquee
+// 11.Testimonial Card
+// 12.Accordion Card
+// 13.Client Logo Card
+// 14.Post Card
+// 15.Skill Progress Card
+// 16.Call To Action Card
+// 17.Title Card
+// 18.Breadcrumb
+// 19.Pagination's
+// 20.Project Details Page
+// 21.Sidebar
+// 22.Comment List
+// 23. Image Card
+// 24.Comment Form
+// 25.Team Member
+// 26.Portfolio
+// 27.Video Popup Modal Card
+// 28.Portfolio Slider
+// 29.Flip Image Card
+// About Page
+// Contact Page
+// Service Page
+// Team Page
+// Footer
+
+
+===========================*/
+/* Theme Default CSS */
+@import "variables";
+@import "mixin";
+@import "partials/theme-default";
+@import "partials/default-spacing";
+@import "unittest";
+@import "keyframes";
+
+// 1.Preloader
+@import "modules/preeloader";
+
+// 2.Scrollup
+@import "partials/scrollup";
+
+// 3.Nav Menu
+@import "partials/header";
+@import "partials/header-two";
+@import "partials/header-three";
+@import "modules/meanmenu";
+@import "partials/menu-sidebar";
+@import "partials/title-section";
+
+
+// 4.Slider Section
+@import "modules/slider/slider-style-one";
+@import "modules/slider/slider-style-two";
+@import "modules/slider/slider-style-three";
+
+// 5.Info Card
+@import "modules/info-card/info-card";
+@import "modules/info-card/info-card-two";
+@import "modules/info-card/info-card-three";
+
+// 6.Icon Card
+@import "modules/icon-card/icon-card";
+
+// 7.About Image Card
+@import "modules/about-image-card/about-image-card-two";
+@import "modules/about-image-card/about-image-card-one";
+@import "modules/about-image-card/about-image-card-four";
+
+// 8.About Info Card
+@import "modules/about-info-card/about-info-card";
+
+// 9.Counter Card
+@import "modules/counter/counter-card";
+@import "modules/counter/counter-card-two";
+
+// 10.Brand Marquee
+@import "modules/brand-marquee/brand-marquee";
+
+// 11.Testimonial Card
+@import "modules/testimonial-card/testimonial-card";
+@import "modules/testimonial-card/testimonial-slider-card";
+
+// 12.Accordion Card
+@import "modules/accordion/accordion";
+
+// 13.Client Logo Card
+@import "modules/client-logo/client-logo";
+
+// 14.Post Card
+@import "modules/post-card/post-card";
+@import "modules/post-card/post-card-one";
+@import "modules/post-card/post-card-two";
+@import "modules/post-card/post-card-three";
+@import "modules/post-card/post-details";
+
+// 15.Skill Progress Card
+@import "modules/skill-progress";
+
+// 16.Call To Action Card
+@import "modules/call-to-action-card";
+
+// 17.Title Card
+@import "partials/title-section";
+
+// 18.Breadcrumb
+@import "modules/breadcrumb/breadcrumb";
+
+// 19.Pagination's
+@import "modules/paginations";
+
+// 20.Project Details Page
+@import "pages/project-details";
+@import "modules/list-item";
+
+// 21.Sidebar
+@import "partials/sidebar";
+@import "partials/sidebar-two";
+
+// 22.Comment List
+@import "modules/comment-list";
+
+// 23. Image Card
+@import "modules/image-card/image-card";
+
+// 24.Comment Form
+@import "modules/comment-form";
+
+// 25.Team Member
+@import "modules/team/team-member";
+
+// 26.Portfolio
+@import "modules/portfolio/portfolio";
+
+// 27.Video Popup Modal Card
+@import "modules/video-popup-card/video-popup-card";
+@import "modules/video-popup-card/video-popup-card-three";
+
+// 28.Portfolio Slider
+@import "modules/project-card/project-card";
+@import "modules/project-card/project-card-two";
+
+// 29.Flip Image Card
+@import "modules/flip-image-card";
+
+// Pages
+@import "pages/pages";
+
+// About Page
+@import "pages/about-page";
+
+// Contact Page
+@import "pages/contact-page";
+
+// Service Page
+@import "pages/service-page";
+
+// Team Page
+@import "pages/team-member";
+
+// Footer
+@import "partials/footer";
+@import "partials/footer-two";
+@import "partials/footer-three";
+

@@ -1,0 +1,59 @@
+.about-image-card {
+    &.style-4 {
+        position: relative;
+        margin-left: 40px;
+
+       .main-img-wrapper{
+        .main-img-inner{
+            img{
+                border-radius: 30px;
+                overflow: hidden;
+            }
+        }
+       }
+       .trusted-user-card{
+        &.style-2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 24px 24px 0 0;
+            background-color: #fff;
+            border-radius: 0 25px 0 0;
+            @include xs{
+                position: relative;
+                padding-right: 0;
+            }
+            .sticky-corner{
+                position: absolute;
+                transform: rotate(180deg);
+                @include xs{
+                    display: none;
+                }
+                &.left-corner{
+                    top: -35px;
+                    left: 0;
+                }
+               &.right-corner{
+                bottom: 0;
+                right: -35px;
+               } 
+            }
+            .trusted-user-card-wrapper {
+
+                .trusted-user-card-inner {
+                    gap: 16px;
+                    padding: 32px;
+                }
+
+                .user-review .title {
+                    font-size: 64px;
+                    line-height: 76.8px;
+                    letter-spacing: -0.96px;
+                }
+            } 
+            
+           
+        }
+       }
+    }
+}

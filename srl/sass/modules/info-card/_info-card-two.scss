@@ -1,0 +1,14 @@
+.info-card-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    @include xs {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .title {
+        margin-top: 22px;
+    }
+}

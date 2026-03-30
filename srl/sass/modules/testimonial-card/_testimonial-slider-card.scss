@@ -1,0 +1,126 @@
+.slider-area-wrapper {
+  // padding-right: 48px; 
+  &.style-1 {
+    margin-right: -9999px;
+    @include lg {
+      margin-right: unset;
+    }
+    @include md {
+      margin-right: unset;
+    }
+    @include sm {
+      margin-right: unset;
+    }
+  }
+}
+
+// Testimonial Slider Style-1
+.testimonial-slider-wrapper{
+  position: relative;
+  .slick-arrow{
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: 1px solid #C0C0C0;
+    font-size: 24px;
+    color: #292929;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: -209px;
+    right: 0;
+    &.prev-btn{
+      right: 90px;
+    }
+  }
+
+  &.style-1{
+    padding-left: 10px;
+
+    .slick-list{
+      margin: 0 -12px;
+    }
+    .slick-dots {
+      position: absolute;
+      z-index: 5;
+      right: -13px;
+      bottom: -80px;
+      margin: 0;
+      padding: 0;
+      transform: translateY(24px);
+      @include rmaxwd(991){
+        bottom: 0;
+      }
+      @include lg {
+        bottom: -50px;
+      }
+      @include sm{
+        transform: translate(0, 75px);
+        right: 0;
+      }
+      
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.style-2{
+    .slick-list{
+      margin: 0 -999px 0 -12px;
+      @include rmaxwd(1399){
+        margin: 0 -12px;
+      }
+    }
+  }
+}
+
+
+// Slick dots style
+.slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 100px;
+  gap: 5px;
+
+  @include sm{
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 50%;
+    @include transition;
+
+    &.slick-active {
+      border: 1px solid $tertiary;
+      @include transition;
+    }
+
+    button {
+      position: relative;
+      width: 11px;
+      height: 11px;
+      font-size: 0;
+      line-height: 0;
+      padding: 0;
+      margin: 0;
+      white-space: 0;
+      letter-spacing: 0;
+      border-radius: 50%;
+      background-color: $tertiary;
+      @include transition;
+    }
+  }
+}

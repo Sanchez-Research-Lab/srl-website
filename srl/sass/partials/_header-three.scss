@@ -1,0 +1,17 @@
+.header-area {
+  &.style-3 {
+    .header-menu-area {
+      top: 0;
+    }
+    .search-btn-with-btn {
+      .cta-btn-wrapper {
+        @include lg {
+          display: none;
+        }
+        @include xl {
+          display: none;
+        }
+      }
+    }
+  }
+}

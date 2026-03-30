@@ -1,0 +1,474 @@
+// Contact Form Area
+.contact-form-area {
+  position: relative;
+
+  .shape-overlay-wrapper{
+    position: relative;
+    
+    .shape-overlay{
+      background-color: $tertiary-300;
+      width: 100%;
+      height: 758px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 35px;
+
+      @include xl{
+        height: 715px;
+      }
+      @include lg{
+        height: 690px;
+      }
+      @include md{
+        height: 1412px;
+      }
+      @include sm{
+        height: 1235px;
+        border-radius: 25px;
+      }
+      @include xs{
+        height: 1050px;
+      }
+
+      .shape-one{
+        background-color: $white;
+        border-radius: 0 30px 0 0;
+        width: 753px;
+        height: 213px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @media only screen and (min-width: 1401px) and (max-width:1700px){
+          width: 46%;
+          height: 150px;
+        }
+        @include xl{
+          width: 520px;
+          height: 105px;
+        }
+        @include lg{
+          width: 470px;
+          height: 85px;
+          border-radius: 0 20px 0 0;
+        }
+        @include md{
+          display: none;
+        }
+        @include sm{
+          display: none;
+        }
+
+        .sticky-left{
+          transform: rotate(180deg);
+          width: 35px;
+          height: 35px;
+          position: absolute;
+          left: 0;
+          top: -35px;
+        }
+        .sticky-right{
+          transform: rotate(180deg);
+          width: 35px;
+          height: 35px;
+          position: absolute;
+          right: -34px;
+          bottom: 0;
+        }
+      }
+      .sticky-left{
+        transform: rotate(180deg);
+        position: absolute;
+        left: 0;
+        top: -35px;
+      }
+      .sticky-right{
+        transform: rotate(180deg);
+        position: absolute;
+        right: -35px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .image{
+    width: 75%;
+    height: 776px;
+    position: relative;
+    z-index: 5;
+    margin: 72px 0 0 72px;
+
+    @include xl{
+      width: 83%;
+      height: 670px;
+      margin: 40px 0 0 40px;
+    }
+    @include lg{
+      width: 90%;
+      height: 660px;
+      margin: 30px 0 0 30px;
+    }
+    @include md{
+      width: 80%;
+      height: 650px;
+      margin: 60px auto;
+    }
+    @include sm{
+      width: 80%;
+      height: 550px;
+      margin: 60px auto;
+    }
+    @include xs{
+      width: 90%;
+      height: 400px;
+      margin: 40px auto;
+    }
+
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      border-radius: 35px;
+
+      @include sm{
+        border-radius: 25px;
+      }
+    }
+  }
+
+  .shape-1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .shape-2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .contact-info-area {
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+    padding: 46px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include sm{
+      padding: 40px 20px;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+    @include md{
+      padding: 40px 30px;
+      flex-direction: column;
+      align-items: start;
+      gap: 30px;
+    }
+    @include lg{
+      padding: 40px 20px;
+    }
+    .divider{
+      width: 1px;
+      height: 28px;
+      background-color: $tertiary-200;
+      @include rmaxwd(991){
+        width: 100%;
+        height: 1px;
+      }
+    }
+    .contact-card{
+      display: flex;
+      gap: 20px;
+      .icon{
+        margin-top: 8px;
+        i{
+          font-size: 24px;
+          color: $primary-color;
+          @include sm{
+            font-size: 18px;
+          }
+          @include lg{
+            font-size: 18px;
+          }
+        }
+      }
+      .desc{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $text-color;
+        font-family: $body-font;
+      }
+      .info-title{
+        @include sm{
+          font-size: 24px;
+        }
+        @include lg{
+          font-size: 24px;
+        }
+      }
+    }
+    
+  } 
+  .comment-respond {
+    position: relative;
+    margin: 140px 72px 0 0;
+    background-color: transparent;
+
+    @include xl{
+      margin: 80px 40px 0 0;
+      padding-right: 0;
+    }
+    @include lg{
+      margin: 75px 30px 0 20px;
+      padding: 0;
+    }
+    @include md{
+      width: 80%;
+      margin: 0 auto 60px;
+      padding: 0;
+    }
+    @include sm{
+      width: 80%;
+      margin: 0 auto 60px;
+      padding: 0;
+    }
+    @include xs{
+      width: 90%;
+      margin: 0 auto 40px;
+    }
+
+    .post-comments-title{
+      h2{
+        @include lg{
+          font-size: 40px;
+        }
+      }
+    }
+  
+    .contacts-email,
+    .contacts-name,
+    .single-input-field,
+    .contacts-message {
+      margin-bottom: 16px;
+      position: relative;
+      border-radius: 12px;
+  
+      label {
+        font-size: 18px;
+        color: $black;
+        margin-bottom: 8px;
+      }
+    }
+  
+    .checkbox-field-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      padding: 15px 0;
+  
+      p {
+        margin: 0;
+      }
+  
+      .single-checkbox-field {
+        margin-bottom: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $body-font;
+  
+      }
+    }
+    .comment-form-cookies-consent {
+      display: none;
+    }
+    input[type="number"] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield;
+    }
+    input,
+    select {
+      border-radius: 12px;
+      padding: 0 20px;
+      height: 60px;
+      width: 100%;
+      color: $black-200;
+      opacity: 1;
+      border: none;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      background-color: $white;
+      font-family: $body-font !important;
+    }
+    input[type="submit"] {
+      height: 70px;
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $white;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    *::-webkit-input-placeholder {
+      color: $black-200;
+    }
+    *:-moz-placeholder {
+      color: $black-200;
+      opacity: 1;
+    }
+    *::-moz-placeholder {
+      color: $black-200;
+      opacity: 1;
+    }
+    *:-ms-input-placeholder {
+      color: $black-200;
+    }
+    *::-ms-input-placeholder {
+      color: $black-200;
+    }
+    *::placeholder {
+      color: $black-200;
+    }
+  
+    .contacts-message{
+      height: 152px;
+      margin-bottom: 32px;
+
+      @include lg{
+        height: 125px;
+        margin-bottom: 24px;
+      }
+      @include sm{
+        margin-bottom: 16px;
+      }
+    }
+    textarea {
+      border-radius: 12px;
+      resize: vertical;
+      padding: 20px;
+      width: 100%;
+      color: $black-200;
+      border: none;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      background-color: $white;
+      font-family: $body-font !important;
+      height: 100%;
+      margin-bottom: 0;
+    }
+    input:focus,
+    textarea:focus,
+    .form-select:focus{
+      outline: none !important;
+      box-shadow: none;
+      border-color: $primary-color !important;
+      transition: all 0.4s ease 0s;
+    }
+
+    .theme-btn {
+      padding: 20px 44px;
+      font-family: $heading-font;
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 600;
+      background-color: $primary-color;
+      color: $black;
+      border-radius: 50px;
+      margin-top: 24px;
+
+      @include lg{
+        padding: 14px 30px;
+      }
+      @include sm{
+        padding: 14px 30px;
+      }
+
+      &:hover{
+        background-color: $black;
+        color: $white;
+        @include transition;
+      }
+    }
+  }
+  
+  .image-wrapper{
+    text-align: right;
+    height: 100%;
+    @include lg{
+    }
+    img{
+      height: 100%;
+      @include lg{
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+  .map-widget{
+    padding-left: 20px;
+    height: 100%;
+    @include rmaxwd(991){
+      padding-left: 0;
+    }
+    @include lg{
+      padding-left: 0;  
+    }
+    iframe{
+      height: 100%;
+    }
+  }
+  &.style-2{
+   .shape-overlay{
+    @include sm{
+      height: 1150px;
+    }
+    @include md{
+      height: 1492px;
+    }
+    @include lg{
+      height: 750px;
+    }
+    @include xl{
+      height: 650px;
+    }
+   }
+  }
+}
+.contact-info-area{
+  .icon-card{
+    &.style-1{
+      text-align: center;
+      @include lg{
+        padding: 32px;
+      }
+      @include rmaxwd(991){
+        padding: 32px 30px;
+      }
+      h3{
+        @include lg{
+          font-size: 28px;
+          line-height: normal;
+        }
+      }
+      .desc{
+        br{
+          @include rmaxwd(1199){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

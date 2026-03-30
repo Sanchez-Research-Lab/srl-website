@@ -1,0 +1,58 @@
+.faq-area{
+
+    .image {
+        position: relative;
+        height: 100%;
+        margin-right: 52px;
+
+        @include rwd(1200){
+            min-height: 492px;
+        }
+        @include rmaxwd(1399){
+            margin-right: 0;
+        }
+
+        @include md{
+            height: 400px;
+        }
+        @include sm{
+            height: 300px;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 35px;
+        }
+        @include xl{
+            height: 100%;
+        }
+        @include lg{
+            height: 100%;
+        }
+    }
+  
+    .search-form{
+        border: 1px solid $tertiary-200;
+        margin-top: 30px;
+        input{
+            height: 50px;
+        }
+        button{
+            background-color: transparent;
+            i{
+                color: $tertiary-200;
+            }
+        }
+    }
+    .accordion-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        height: auto !important;
+    }
+}

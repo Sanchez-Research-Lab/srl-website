@@ -1,0 +1,32 @@
+// Brand Marquee Area
+.brand-marquee-area {
+  padding: 28px 0;
+  background-color: $tertiary-200;
+  overflow: hidden;
+  @include rmaxwd(1199){
+    overflow: hidden;
+  }
+  .brand-marquee-slider {
+    .swiper-wrapper{
+      transition-timing-function: linear;
+    }
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-shrink: 0;
+
+    .brand-marquee-title {
+      font-family: $heading-font;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 46.8px;
+      color: $black;
+      letter-spacing: -0.52px;
+      white-space: nowrap;
+    }
+  }
+}

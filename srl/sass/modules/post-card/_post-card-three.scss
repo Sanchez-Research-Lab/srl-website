@@ -1,0 +1,80 @@
+.post-card {
+  &.style-3 {
+    flex-direction: row;
+    background-color: $tertiary-300;
+    border-radius: 30px;
+    gap: unset;
+    position: relative;
+    margin: 0 12px;
+
+    &:hover{
+      .btn-wrapper{
+        transform: translate(-8px, 8px);
+        @include transition;
+      }
+      .shape{
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(60px, -60px);
+        @include transition;
+      }
+    }
+
+    @include rmaxwd(1399){
+      flex-direction: column;
+    }
+    @include md{
+      flex-direction: row;
+    }
+
+    .image{
+      width: 330px;
+      height: unset;
+      flex-shrink: 0;
+
+      @include rmaxwd(1399){
+        width: auto;
+        height: 250px;
+      }
+      @include md{
+        width: 330px;
+        height: unset;
+      }
+    }
+
+    .content{
+      padding: 42px 46px 48px;
+      @include rmaxwd(1399){
+        padding: 42px;
+      }
+      @include sm{
+        padding: 24px;
+      }
+      .post-content{
+        p{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .btn-wrapper{
+      position: absolute;
+      z-index: 5;
+      top: 0;
+      right: 0;
+      @include transition;
+
+      .circle-arrow-btn{
+        width: 64px;
+        height: 64px;
+      }
+    }
+
+    .shape{
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include transition;
+    }
+  }
+}

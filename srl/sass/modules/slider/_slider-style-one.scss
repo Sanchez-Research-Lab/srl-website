@@ -1,0 +1,81 @@
+.slider-area{
+  &.style-1{
+    padding-top: 203px;
+
+    @include sm {
+      padding-top: 130px;
+    }
+
+    .section-title{
+      margin-bottom: 0;
+        .title{
+          font-size: 95px;
+          line-height: 104px;
+          letter-spacing: -1.425px;
+
+          @include xl{
+            font-size: 64px;
+            line-height: 76px;
+            letter-spacing: -0.96px;
+          }
+          @include lg{
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: -0.72px;
+          }
+          @include md{
+            font-size: 64px;
+            line-height: 76px;
+            letter-spacing: -0.96px;
+          }
+          @include sm{
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: -0.72px;
+          }
+          @include xs{
+            font-size: 32px;
+            line-height: 48px;
+            letter-spacing: -0.34px;
+          }
+        }
+        .sec-desc{
+          margin-top: 22px;
+
+          @include xl{
+            margin-left: 30px;
+          }
+          @include lg{
+            margin-top: 15px;
+          }
+          @include md{
+            margin-top: 40px;
+          }
+          @include sm{
+            margin-top: 20px;
+          }
+          
+          .desc{
+            margin-bottom: 32px;
+
+            @include lg{
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 20px;
+            }
+            @include md{
+              max-width: 570px;
+              margin-bottom: 24px;
+            }
+            @include sm{
+              margin-bottom: 24px;
+            }
+            @include xs{
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+    }
+  }
+}

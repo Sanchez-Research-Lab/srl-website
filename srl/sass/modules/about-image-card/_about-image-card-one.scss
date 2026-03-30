@@ -1,0 +1,223 @@
+.about-image-card {
+    &.style-1 {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+
+      @media only screen and (min-width: 1400px) and (max-width: 1699px) {
+        margin-left: -70px;
+      }
+
+      @include xl{
+        gap: 12px;
+      }
+      @include md{
+        gap: 12px;
+      }
+      @include sm{
+        flex-direction: column;
+      }
+
+       .main-img-wrapper {
+        @include sm{
+          width: 100%;
+        }
+
+        .main-img-inner {
+          width: 414px;
+          height: 600px;
+          position: relative;
+
+          @media only screen and (min-width: 1400px) and (max-width: 1699px) {
+            width: 360px;
+          }
+
+          @include xl{
+            width: 300px;
+            height: 575px;
+          }
+          @include md{
+            width: 380px;
+            height: 500px;
+          }
+          @include sm{
+            width: 100%;
+            height: 500px;
+            max-width: 400px;
+          }
+          @include xs{
+            width: 100%;
+            height: 450px;
+          }
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+          }
+        }
+      }
+
+    }
+    .trusted-user-card {
+      position: relative;
+      display: flex;
+      align-self: end;
+
+      @include sm{
+        align-self: flex-start;
+      }
+
+      .trusted-user-card-wrapper {
+        position: relative;
+        max-width: 366px;
+        z-index: 1;
+        @include xl{
+          max-width: 240px;
+        }
+
+        @include md{
+          max-width: unset;
+        }
+
+        .rectangle-shape {
+          content: '';
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 126px;
+          height: 108px;
+          background-color: $white;
+          border-radius: 0 30px 0 30px;
+          z-index: 1;
+
+          @include xl{
+            width: 70px;
+            height: 80px;
+          }
+
+          .sticky-corner {
+            position: absolute;
+            z-index: 2;
+  
+            &.left-corner {
+              left: -35px;
+              top: 0;
+
+            }
+            &.right-corner {
+              bottom: -35px;
+              right: 0;
+             
+            }
+
+          }
+        }
+        .trusted-user-card-inner {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 167px;
+          background-color: $orange-color;
+          padding: 30px 39px 40px;
+          border-radius: 30px;
+
+          @include xl{
+            gap: 100px;
+            padding: 20px;
+          }
+          @include md{
+            gap: 120px;
+            padding: 20px;
+          }
+          @include xs{
+            gap: 120px;
+            padding: 20px;
+          }
+
+          .user-img-wrapper {
+            display: flex;
+            align-items: flex-start;
+
+            .image {
+              width: 60px;
+              height: 60px;
+              border: 2px solid $white;
+              border-radius: 100%;
+              margin-left: -10px;
+              position: relative;
+
+              @include xl{
+                width: 45px;
+                height: 45px;
+              }
+              @include md{
+                width: 50px;
+                height: 50px;
+              }
+
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+
+        .user-review{
+          .title{
+            font-size: 48px;
+            font-family: $heading-font;
+            font-weight: 600;
+            line-height: 57.6px;
+            letter-spacing: -0.72px;
+            color: $black;
+
+            @include xl{
+              font-size: 34px;
+              line-height: 42px;
+              letter-spacing: -0.42px;
+            }
+            @include md{
+              font-size: 38px;
+              line-height: 48px;
+              letter-spacing: -0.42px;
+            }
+            @include xs{
+              font-size: 42px;
+              line-height: 56px;
+              letter-spacing: -0.42px;
+            }
+          }
+          .desc{
+            font-family: $body-font;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32.4px;
+            color: $black-200;
+            margin: 8px 0 0;
+
+            @include md{
+              font-size: 16px;
+            }
+            @include xs{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+   
+    }
+   }
+   
+   

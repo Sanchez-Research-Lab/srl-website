@@ -1,0 +1,87 @@
+.slider-area {
+  &.style-3 {
+    padding-top: 120px;
+    background-color: transparent;
+    .section-title{
+      margin-bottom: 0;
+      .title{
+        color: $black;
+        font-family: $heading-font;
+        font-size: 95px;
+        font-weight: 600;
+        line-height: 105px;
+        letter-spacing: -1.425px;
+        @include transition;
+        @include xl{
+          font-size: 70px;
+          line-height: 86px;
+          letter-spacing: -0.92px;
+        }
+        @include lg{
+          font-size: 58px;
+          line-height: normal;
+        }
+        @include rmaxwd(991){
+          font-size: 58px;
+          line-height: normal;
+        }
+        @include xs{
+          font-size: 42px;
+        }
+
+        .counter{
+          color: $black;
+          margin-right: 10px;
+        }
+      }
+      .desc{
+        max-width: 665px;
+      }
+      .btn-wrapper{
+        margin-top: 32px;
+      }
+      .title,
+      .desc,
+      .btn-wrapper {
+              -webkit-animation-name: MovefadeUp;
+              animation-name: MovefadeUp;
+              -webkit-animation-fill-mode: both;
+          }
+
+          .title {
+              animation-delay: 0.7s;
+              animation-duration: 0.7s;
+              @include transition
+          }
+
+          .desc {
+              animation-delay: 0.9s;
+              animation-duration: 0.9s;
+              @include transition
+          }
+
+          .btn-wrapper {
+              animation-delay: 1.0s;
+              animation-duration: 1.0s;
+              @include transition
+          }
+    }
+    .image-wrapper{
+      position: relative;
+      .image{
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      .achieve-area{
+        background-color: $secondary-color;
+        border-radius: 25px;
+        padding: 32px;
+        width: 366px;
+        height: 289px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

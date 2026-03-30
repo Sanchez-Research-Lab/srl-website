@@ -1,0 +1,174 @@
+
+.portfolio-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 1px solid $border-color;
+  cursor: default;
+  position: relative;
+
+  @include sm {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 24px 0;
+  }
+  @include md {
+    gap: 30px;
+  }
+  @include lg {
+    gap: 16px;
+  }
+  &:first-child {
+    border-top: 1px solid $border-color;
+  }
+
+  &:hover {
+    .btn-wrapper {
+      .arrow-btn {
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        @include transition;
+      }
+    }
+    .image {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-30%) skewY(0) scaleZ(1) rotate(9deg);
+      @include transition;
+
+      @include sm {
+        transform: translateY(0) skewY(0) scaleZ(1.1) rotate(0);
+
+        
+        img {
+          transform: scale(1.1);
+          @include transition;
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    letter-spacing: -0.72px;
+    color: $black;
+    margin-bottom: 0;
+
+    @include sm {
+      font-size: 38px;
+    }
+  }
+  .image {
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    right: 22%;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    @include transition;
+
+    @include sm {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      right: unset;
+      width: 100%;
+      height: 350px;
+    }
+
+    img {
+      @include transition;
+
+      @include sm {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+ 
+  }
+  .content {
+    padding-right: 36px;
+    flex-grow: 1;
+    position: relative;
+
+    .short-title {
+      font-size: 16px;
+      font-weight: 400;
+      display: block;
+
+      @include sm {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      @include md {
+        font-size: 18px;
+      }
+      @include lg {
+        font-size: 18px;
+      }
+    }
+  }
+  .btn-wrapper {
+    .arrow-btn {
+        width: 64px;
+        height: 64px;
+        border: 1px solid $black;
+        color: $black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        font-size: 20px;
+        @include transition;
+    }
+  }
+}
+
+// Portfolio Full Screen Image
+.portfolio-fullscreen-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+ 
+
+  @include md {
+    min-height: 400px;
+    margin: 0;
+  }
+  @include sm {
+    min-height: 350px;
+    margin: 0;
+  }
+
+  .tabimg {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 645px;
+    width: 100%;
+    height: 100%;
+
+    @include md {
+      max-width: 100%;
+    }
+
+    &.active {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+}

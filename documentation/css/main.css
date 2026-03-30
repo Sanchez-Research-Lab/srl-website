@@ -1,0 +1,181 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       Documentation
+ * 
+ */
+/*------------------*/
+/*Theme default CSS
+/*------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+html,
+body {
+height: 100%;
+font-size: 16px;
+color: #282828;
+font-family: 'Open Sans', sans-serif;
+vertical-align: baseline;
+line-height: 26px;
+}
+a:focus {
+  outline: 0px solid;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin: 0 0 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0 0 20px;
+font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+color: #282828;
+}
+
+h1 {
+font-size: 32px;
+}
+h2 {
+font-size: 18px;
+}
+h3 {
+font-size: 16px;
+}
+
+a {
+  transition: all 0.5s ease-out;
+  text-decoration: none;color:#7ECAEB
+}
+a:active,
+a:hover {
+  outline: 0 none;
+  color: #7ECAEB;text-decoration:none
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.sub-section ol {
+	padding-left: 20px;
+}
+::-moz-selection {
+  background: #CFF480;
+  text-shadow: none;color:#fff
+}
+::selection {
+  background: #CFF480;
+  text-shadow: none;color:#fff
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.images-overlay {
+   background-color: rgba(0, 0, 0, 0.70);
+  height: 100%;
+  position: absolute;  width: 100%;
+  top: 0;
+
+}
+.pt-100{padding-top:100px}
+.pb-100{padding-bottom:100px}
+.pb-70{padding-bottom:70px}
+.bg-color{background:#fbfbfb}
+.no-padding-left{padding-left:0px}
+.no-padding-right{padding-right:0px}
+/*
+2.Scrollup
+==============*/
+#scrollUp {
+	background: #CFF480 none repeat scroll 0 0;
+	border-radius: 100%;
+	bottom: 5px;
+	color: #222;
+	font-size: 36px;
+	height: 40px;
+	right: 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 40px;
+	font-weight: bold;
+	line-height: 44px;
+}
+#scrollUp:hover {
+  opacity: 1;
+  color: #fff!important;background:#c9c00;
+}
+#scrollUp i {
+display: block;
+font-weight: bold;
+padding-top: 11px;
+}
+.sec-title {
+	font-size: 36px;
+	text-transform: capitalize;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	line-height: 64px;
+}
+.intem-introduce li {
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+}
+.rating-text {
+	color: #7ECAEB;
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+}
+
+.menu-area {
+	position: fixed;
+	width: 30%;
+	float: right;
+	right: 0;
+	height: 100%;
+	background: #000000;
+}
+
+.menu-tab-list {
+  margin-bottom: 40px;
+}
+.menu-tab-list li {
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+	width: 100%;
+}
+.menu-tab-list li a:hover{background: #CFF480 none repeat scroll 0 0; transition: all 0.4s ease 0s;color:#222;}
+.menu-tab-list li.active a{background:#CFF480;color: #222;}
+.menu-tab-list li.active a:hover{color:#222}
+.menu-tab-list li a {
+	color: #fff;
+	font-weight: bold;
+	width: 100%;
+	display: inline-block;
+	padding: 15px 30px;
+	text-align: left;
+	text-transform: capitalize;
+	border-bottom: 1px solid #092033;
+}
+.sub-section img {
+	margin: 20px 0;width:100%
+}
+.bg-info.text-info.p-text-bg {
+	padding: 10px;
+	border-radius: 10px;
+}
+.border-2pxl {
+	border: 2px solid #ddd;
+}

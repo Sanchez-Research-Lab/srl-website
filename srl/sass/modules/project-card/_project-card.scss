@@ -1,0 +1,238 @@
+.project-card {
+    position: relative;
+    height: 496px;
+    border-radius: 35px;
+    overflow: hidden;
+    @include transition;
+
+    @include xl {
+        height: 400px;
+    }
+    @include sm {
+        height: 400px;
+    }
+
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.03);
+                @include transition;
+            }
+
+            .sticky-corner {
+                z-index: 1;
+            }
+        }
+
+        .main-content {
+            .main-content-wrapper {
+                transform: translateY(0%);
+                visibility: visible;
+                opacity: 1;
+                @include transition;
+            }
+
+            .btn-wrapper {
+                transform: translate(0px, 0px);
+                @include transition;
+
+                .circle-arrow-btn {
+                    background-color: $primary-color;
+
+                    &:hover{
+                        background-color: $black;
+                    }
+                }
+            }
+
+            .shape {
+                svg{
+                    opacity: 1;
+                    transform: translate(0, 0);
+                    @include transition;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        .main-content-wrapper {
+            transform: translateY(70%);
+            visibility: hidden;
+            opacity: 0;
+            @include transition;
+        }
+    }
+
+    .image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 35px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 35px;
+            object-fit: cover;
+            transform: scale(1.001);
+            @include transition;
+        }
+    }
+
+    .main-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+
+        .btn-wrapper {
+            position: absolute;
+            z-index: 5;
+            top: 0;
+            right: 0;
+            transform: translate(-8px, 8px);
+            @include transition;
+
+            .circle-arrow-btn {
+                width: 64px;
+                height: 64px;
+                background-color: $white;
+            }
+        }
+
+        .shape {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            border-radius: 0 30px 0 0;
+
+            svg {
+                opacity: 0;
+                transform: translate(60px, -60px);
+                @include transition;
+            }
+        }
+
+        .main-content-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px;
+
+            @include xl {
+                padding: 4px;
+            }
+            @include sm {
+                padding: 4px;
+            }
+            @include xs {
+                padding: 16px 24px;
+            }
+
+            .content {
+                position: relative;
+                padding: 24px;
+
+                @include xl{
+                    padding: 12px;
+                }
+                @include sm{
+                    padding: 12px;
+                }
+
+                .overlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 25px;
+                    background-color: $primary-color;
+                    opacity: 0.9;
+                    z-index: 5;
+                }
+
+                .content-inner {
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+
+            .short-text {
+                background-color: $white;
+                color: $black;
+                padding: 8px 20px;
+                border-radius: 50px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $heading-font;
+                font-weight: 600;
+                line-height: 20px;
+                @include transition;
+
+                @include xl{
+                    padding: 6px 16px;
+                }
+                @include sm{
+                    padding: 6px 16px;
+                }
+            }
+
+            .title {
+                width: 100%;
+                font-family: $heading-font;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 36px;
+                letter-spacing: -0.42px;
+                color: $black;
+                display: inline-block;
+                margin-top: 10px;
+
+                @media only screen and (min-width: 1401px) and (max-width: 1450px){
+                    font-size: 22px;
+                    line-height: 30px;
+                    letter-spacing: -0.32px;
+                }
+                @media only screen and (min-width: 1451px) and (max-width: 1550px){
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                @media only screen and (min-width: 1551px) and (max-width: 1650px){
+                    font-size: 26px;
+                }
+                @include xl {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                @include md {
+                    font-size: 24px;
+                }
+                @include sm {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                @include xs {
+                    font-size: 22px;
+                }
+
+                a{
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

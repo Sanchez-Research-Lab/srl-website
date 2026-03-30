@@ -1,0 +1,56 @@
+.project-card {
+  &.style-2{
+    overflow: visible;
+
+    .main-content {
+      .main-content-wrapper {
+        max-width: 440px;
+        left: unset;
+        right: 0;
+        margin-bottom: -56px;
+
+        &.only-one {
+          max-width: 470px;
+          right: 25px;
+
+          @include sm {
+            right: 0;
+          }
+        }
+        
+        @include xl{
+          margin-bottom: -40px;
+          max-width: 250px;
+          right: 4px;
+        }
+        @include lg{
+          right: 6px;
+        }
+        @include md{
+          max-width: 335px;
+        }
+        @include sm{
+          margin-bottom: -40px;
+          max-width: 250px;
+        }
+        @include xs{
+          max-width: unset;
+        }
+
+        .content{
+          padding: 24px 24px 35px;
+
+          @include xl{
+            padding: 12px;
+          }
+          @include sm{
+            padding: 12px;
+          }
+          @include xs{
+            padding: 16px;
+          }
+        }
+      }
+    }
+  }
+}
