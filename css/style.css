@@ -15860,3 +15860,23 @@ text-decoration: underline;
 }
 
 }
+
+/* desktop dropdown fix */
+.main-menu .dropdown {
+  position: relative;
+}
+
+.main-menu .dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  z-index: 9999;
+}
+
+/* SHOW ON HOVER */
+.main-menu .dropdown:hover .submenu {
+  display: block;
+}
