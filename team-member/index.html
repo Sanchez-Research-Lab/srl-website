@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zxx">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Sanchez Research Lab at the University of Illinois Chicago." />
+
+    <meta name="keywords" content="Sanchez Research Lab, bioimpedance, biomedical engineering, wearable health technology, signal processing, UIC, medical devices, physiology monitoring, research lab" />
+
+    <meta name="author" content="Sanchez Research Lab" />
+  
+  <title>Sanchez Research Lab</title>
+
+  <link id="favicon" rel="icon" type="image/png" sizes="32x32" href="../images/logo/favicon-32x32.png">
+
+  <link rel="apple-touch-icon" href="../images/logo/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/logo/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/logo/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/logo/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/logo/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/logo/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/logo/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/logo/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/logo/apple-touch-icon-180x180.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Questrial:wght@400;500;600;700&display=swap"
+          rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
+  <link rel="stylesheet" href="../css/slick.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="css/meanmenu.min.css" /> -->
+  <link rel="stylesheet" href="../css/nice-select.min.css" />
+  <link rel="stylesheet" href="../css/animate.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- Preloader Start !-->
+  <div id="preloader">
+    <div id="preloader-status" style="background-image: url('images/icon/preeloader.gif')"></div>
+  </div>
+  <!-- Preloader End !-->
+  <!-- Header Start !-->
+  <header class="header-area style-4">
+    <!-- Header Nav Menu Start -->
+    <div class="header-menu-area sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-6 d-flex align-items-center">
+            <div class="logo">
+                <a href="../" class="standard-logo">
+                    <img src="../images/logo/SR.png" alt="SRL Logo" />
+                </a>
+
+                <a href="../" class="sticky-logo">
+                    <img src="../images/logo/SR.png" alt="SRL Logo" />
+                </a>
+
+                <a href="../" class="retina-logo">
+                    <img src="../images/logo/SRL.png" alt="SRL Logo" />
+                </a>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 col-md-6 col-6 d-flex align-items-center justify-content-end">
+            <div class="menu d-inline-block">
+              <nav id="main-menu" class="main-menu">
+                <ul>
+                  <li class="active">
+                    <a href="../">Home</a>
+                  </li>
+                  <li><a href="../about/">About</a></li>
+                  <li class="dropdown">
+                    <a href="../research/">Research</a>
+                    <ul class="submenu">
+                      <li><a href="../research/">Research</a></li>
+                      <li>
+                        <a href="../publications/">Publications</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="../team-member/">Lab Members</a>
+                      <ul class="submenu">
+                          <!-- <li><a href="project.html">Project Page</a></li> -->
+                          <!-- <li><a href="project-details.html">Project Details Page</a></li> -->
+                          <li><a href="../lab-director/">Lab Director</a></li>
+                          <li><a href="../team-member/">Lab Team</a></li>
+                          <li><a href="../alumni/">Alumni</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="../blog/">Blog</a>
+                    <!-- <ul> -->
+                      <!-- <li><a href="blog.html">Blog Page</a></li> -->
+                      <!-- <li> -->
+                        <!-- <a href="blog-details.html">Blog Details Page</a> -->
+                      <!-- </li> -->
+                    <!-- </ul> -->
+                  </li>
+                  <li><a href="../contact/">Contact</a></li>
+                  <li><a href="../donate/">Donate</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="search-btn-with-btn">
+              <!-- <a href="tel:0123456789" class="cta-btn">
+                <div class="icon"><i class="fa-regular fa-headset"></i></div>
+                <div class="btn-content">
+                  <span class="phone-number">012-345-6789</span>
+                </div> -->
+              </a>
+              <div class="search-btn-wrapper">
+                <a href="#" class="search-btn" id="offcanvas_btn">
+                  <i class="fa-regular fa-bars"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Mobile Menu Toggle Button Start !-->
+            <div class="mobile-menu-bar d-lg-none text-end">
+              <a href="#" class="mobile-menu-toggle-btn"><i class="fal fa-bars"></i></a>
+            </div>
+            <!-- Mobile Menu Toggle Button End !-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Nav Menu End -->
+  </header>
+  <!-- Header End !-->
+<!-- Menu Sidebar Section Start -->
+<div class="menu-sidebar-area">
+    <div class="menu-sidebar-wrapper">
+
+        <div class="menu-sidebar-close">
+            <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                <i class="fal fa-times"></i>
+            </button>
+        </div>
+
+        <div class="menu-sidebar-content">
+
+            <div class="menu-sidebar-logo">
+                <a href="../">
+                    <img src="../images/logo/SRL.png" alt="SRL Logo">
+                </a>
+            </div>
+
+            <ul class="mobile-nav-menu">
+
+  <li><a href="../">Home</a></li>
+  <li><a href="../about/">About</a></li>
+
+  <!-- Research dropdown -->
+  <li class="has-dropdown">
+    <a href="../research/">Research</a>
+    <ul class="submenu">
+      <li><a href="../research/">Research Overview</a></li>
+      <li><a href="../publications/">Publications</a></li>
+    </ul>
+  </li>
+
+  <!-- Lab Members dropdown -->
+  <li class="has-dropdown">
+    <a href="../team-member/">Lab Members</a>
+    <ul class="submenu">
+      <li><a href="../lab-director/">Lab Director</a></li>
+      <li><a href="../team-member/">Lab Team</a></li>
+      <li><a href="../alumni/">Alumni</a></li>
+    </ul>
+  </li>
+
+  <li><a href="../blog/">Blog</a></li>
+  <li><a href="../contact/">Contact</a></li>
+  <li><a href="../donate/">Donate</a></li>
+
+</ul>
+
+            <div class="menu-sidebar-single-widget lab-title">
+                <div class="header-contact-info">
+                    <span>Sanchez Research Lab</span>
+                    <span class="uni">University of Illinois Chicago</span>
+                </div>
+            </div>
+
+            <div class="menu-sidebar-single-widget">
+                <h5 class="menu-sidebar-title">Contact Info</h5>
+
+                <div class="header-contact-info">
+                    <span>
+                        <i class="fa-regular fa-location-dot"></i>
+                        851 S Morgan St<br>
+                        SEO Building Office 1104<br>
+                        Chicago, IL 60607
+                    </span>
+
+                    <span>
+                        <a href="contact.html#contact-form">
+                            <i class="fa-regular fa-envelope"></i> Contact via form
+                        </a>
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-user"></i>
+                        Benjamin Sanchez Terrones
+                    </span>
+                </div>
+
+                <div class="social-profile">
+                    <a href="https://www.linkedin.com/in/benjamin-sanchez-terrones-90279814/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+  <div class="body-overlay"></div>
+
+  <!-- Page Header Start !-->
+  <div class="page-breadcrumb-area style-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="breadcrumb-wrapper">
+            <div class="page-heading">
+              <h3 class="page-title">Lab Members</h3>
+            </div>
+            <div class="breadcrumb-list">
+              <ul>
+                <li><a href="../">Home</a></li>
+                <li class="active"><a href="../team-member/">Lab Members</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Header End !-->
+
+  <!-- team area start -->
+  <div class="team-area style-2 py-140">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <div class="short-title-wrapper">
+              <span class="short-title only-divider">OUR team</span>
+            </div>
+            <div class="main-content">
+              <div class="sec-content">
+                <h2 class="title">
+                  Lets meet our professional <br>
+                  lab members
+                </h2>
+              </div>
+              <div class="sec-desc">
+                <div class="btn-wrapper">
+                  <!-- <a href="team-member.html" class="theme-btn">View All</a> -->
+                  <!-- <a href="team-member.html" class="circle-arrow-btn"><i class="fa-regular fa-arrow-right"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gy-5">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/1.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/zhuyun-xie-620300281/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Zhuyun Xie</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">I completed B.S. in Biomedical Engineering and Electrical Engineering from the University of Utah. I am interested in developing biomedical electronic devices that improve human health and well-being.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/8.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/jhmccoy9/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Jake McCoy</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">I completed B.S. in Computer Engineering at Brigham Young University. I am inspired to pursue a career in medical technology after miraculously surviving a bilateral lung collapse.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/10.JPG" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/albert-fabregas-62ab4b20b/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Albert Fabregas Ribo</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">
+                  I completed B.S. in Telecommunications Engineering from the Universitat Politècnica de Catalunya. My work focuses on applying Physics-Informed Neural Networks to model the electrical potential in the human wrisе.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/6.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/lucas-takanori-sanchez-shiromizu/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Lucas Takanori Sanchez Shiromizu</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering.</p>
+                <p class="desc1">
+                  I completed my B.S. in Telecommunication Systems and M.S. in Advanced Telecommunication Technologies from the Universitat Politècnica de Catalunya. I specialize in signal processing and automatic speech recognition.                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/9.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/gbgbha/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Gia-Bao Ha</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">
+                  I graduated from RWTH Aachen (Germany) with a master's degree in electrical engineering. My research involves finite element electromagnetic simulations and computational inverse problems, and time-series machine learning for blood pressure estimation.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/2.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/elaine-wong-78a354130/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Elaine Wong</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">
+                  I am interested in improving diagnostic technology for patients and clinicians. My research focuses on machine learning models for URSKIN, a non-invasive bioimpedance device for skin cancer diagnosis.             
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/7.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/nate-hansen-s2023/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Nathan J. Hansen</a>
+                </h3>
+                <p class="desc">PhD in Electrical and Computer Engineering</p>
+                <p class="desc1">
+                  My research focuses on deep learning for bioelectrical data and wearable health technology. I study tongue neuropathy, bioimpedance sensors, and their effects on people with cardiac implants.                 </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/3.png" alt="team-member">
+                <div class="social-profile">
+                  <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                  <a href="https://www.linkedin.com/in/ysemikina/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <!-- <div class="icon-shape">
+                <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                <div class="sticky-corner">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                      fill="white"></path>
+                  </svg>
+                </div>
+              </div> -->
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title">
+                  <a href="#">Yelizaveta Semikina</a>
+                </h3>
+                <p class="desc">M.S. in Biomedical Engineering</p>
+                <p class="desc1">
+                  I received my B.S. in Data Science from the University of Illinois Chicago. I am interested in applying machine learning methods to biomedical signals, digital health, and clinical research.</p>              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-5 justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-member-card style-1">
+            <div class="image-card-wrapper">
+              <div class="image">
+                <img src="../images/team-member/v-1/4.png" alt="team-member">
+                <div class="social-profile">
+                  <a href="https://www.linkedin.com/in/dannynguyen05/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="content-wrapper">
+              <div class="content">
+                <h3 class="title"><a href="#">Danny Nguyen</a></h3>
+                <p class="desc">B.S. in Computer Science</p>
+                <p class="desc1">
+                  I am interested in artificial intelligence and its use in real-world applications. My current focus is software design and development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team-member-card style-1">
+              <div class="image-card-wrapper">
+                <div class="image">
+                  <img src="../images/team-member/v-1/5.png" alt="team-member">
+                  <div class="social-profile">
+                    <!-- <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/fernando-lopez-dev"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+                <!-- <div class="icon-shape">
+                  <a href="team-details.html"><i class="fa-regular fa-arrow-right"></i></a>
+                  <div class="sticky-corner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 0C19.33 0 35 15.67 35 35V41C35 60.33 50.67 76 70 76H76C95.33 76 111 91.67 111 111V0H0Z"
+                        fill="white"></path>
+                    </svg>
+                  </div>
+                </div> -->
+              </div>
+              <div class="content-wrapper">
+                <div class="content">
+                  <h3 class="title">
+                    <a href="#">Fernando Lopez</a>
+                  </h3>
+                  <p class="desc">B.S. in Computer Science</p>
+                  <p class="desc1">
+                    My research revolves around data handling and system architecture for the software in the lab. I am passionate about developing robust and impactful healthcare software solutions.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- team area end -->
+
+
+<!-- Brand Slider Area Start -->
+<div class="brand-slider-area style-1">
+<div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+        <div class="client-logo-slider-wrapper">
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/NSF.jpeg" alt="NSF">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/NHLBI_squared.jpg" alt="NHLBI">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/BHF_squared.jpg" alt="BHF">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/Guardian-squared.jpg" alt="Guardian">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/skyNews-squared.jpg" alt="Sky News">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/Fox-squared.jpg" alt="Fox">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/Telegraph-squared.jpg" alt="Telegraph">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/TheSun_squared.jpg" alt="The Sun">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/Yahoo-squared.jpg" alt="Yahoo">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/abc4-squared-2.jpg" alt="ABC4">
+            </div>
+            </div>
+        </div>
+        <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/CBSNews-150x150-1.png" alt="CBS News">
+            </div>
+            </div>
+        </div>
+        <!-- <div class="slick-item">
+            <div class="client-logo-wrapper">
+            <div class="client-logo">
+                <img src="../images/brand-logo/client-6.png" alt="logo" />
+            </div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Brand Slider Area End -->
+
+  <!-- Header Search Bar Modal Start -->
+  <div class="search-form-wrapper">
+    <div class="search-form-inner">
+      <div class="search-content-filed">
+        <form role="search" method="get" class="search-form" action="#">
+          <input type="hidden" name="post_type" value="post" />
+          <div class="search-form-input">
+            <div class="search-icon">
+              <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+            <input type="search" placeholder="Search" />
+            <button class="theme-btn" type="submit" title="Search" aria-label="Search">
+              Search
+            </button>
+          </div>
+        </form>
+        <span class="search-close">
+          <i class="fa-light fa-xmark"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Header Search Bar Modal End -->
+
+  <!-- Scroll Up Section Start -->
+  <div id="scrollTop" class="scrollup-wrapper">
+    <div class="scrollup-btn">
+      <i class="fa-regular fa-arrow-up"></i>
+    </div>
+  </div>
+  <!-- Scroll Up Section End -->
+
+ <!--- Start Footer !-->
+<footer class="footer style-1">
+    <div class="footer-wrapper background-black">
+        <div class="footer-sec">
+            <div class="footer-top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="subscribe-footer-widget">
+                                <div class="subscribe-widget">
+                                    <div class="subscribe-form-title">
+                                        <h3 class="title">Monitoring and measuring health</h3>
+                                    </div>
+                                    <div class="subscribe-form-widget">
+                                            <!-- <p class="description">Excepteur sint occaecat cupidatat non proident sunt culpa qui offi cia deserunt mollit anim id est laborum. sed spiciatis unde.</p> -->
+                                        <!-- <form>
+                                            <div class="mc4wp-form-fields">
+                                                <div class="single-field">
+                                                    <input type="email" placeholder="Your Email">
+                                                </div>
+                                                <button class="submit-btn" type="submit">Submit now</button>
+                                            </div>
+                                        </form> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-widget-info"> -->
+                                <!-- <div class="footer-logo">
+                                    <a href="index.html"><img src="images/logo/footer-logo.png" alt="Footer Logo" /></a>
+                                </div> -->
+                                <!-- <p>Liber iriure vix cu, fugit dicat no qui, posse detra xit has cu. Ex sint impedit vim,autem justo opo rtere no vel. Cu esse.</p> -->
+                            <!-- </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="row widget-menu-wrapper">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="footer-widget">
+                                    <h2 class="footer-widget-title">Address</h2>
+                                    <div class="footer-widget-info">
+                                        <div class="footer-widget-contact">
+                                            <div class="footer-contact">
+                                                <ul>
+                                                    <li>
+                                                        <div class="contact-icon">
+                                                            <i class="fa-solid fa-location-dot"></i>
+                                                        </div>
+                                                        <div class="contact-text">
+                                                            <span>
+                                                            851 S Morgan St<br>
+                                                            SEO Building Office 1104<br>
+                                                            Chicago, IL 60607
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="contact-icon">
+                                                            <i class="fa-solid fa-phone"></i>
+                                                        </div>
+                                                        <span>
+                                                        <a href="contact.html#contact-form">Contact us</a>
+                                                        </span>
+                                                    </li>
+                                                   <li>
+                                                        <div class="contact-icon">
+                                                            <i class="fa-solid fa-envelope"></i>
+                                                        </div>
+                                                        <div class="contact-text">
+                                                            <a href="contact.html#contact-form">Contact us</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="footer-widget widget_nav_menu">
+                                    <h2 class="footer-widget-title">Quick links</h2>
+                                    <ul>
+                                        <li><a href="../">Home</a></li>
+                                        <li><a href="../about/">Research</a></li>
+                                        <li><a href="../team-member/">Team</a></li>
+                                        <li><a href="../blog/">News</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="footer-widget widget_nav_menu">
+                            <h2 class="footer-widget-title">Socials</h2>
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/benjamin-sanchez-terrones-90279814/" target="_blank">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-wrapper">
+                            <div class="footer-bottom-menu-wrapper">
+                                <div class="copyright-text">
+                                    <p>© 2026 All Rights Reserved | SRL</p>
+                                </div>
+                                <!-- <div class="footer-bottom-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--- End Footer !-->
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jquery.nice-select.min.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/jquery.counterup.min.js"></script>
+  <script src="../js/waypoints.js"></script>
+  <!-- <script src="js/jquery.meanmenu.min.js"></script> -->
+  <script src="../js/jquery.magnific-popup.min.js"></script>
+  <script src="../js/inview.min.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/tilt.jquery.min.js"></script>
+  <script src="../js/custom.js"></script>
+</body>
+
+<script>
+const favicon = document.getElementById("favicon");
+
+// show loading icon immediately when page starts
+favicon.href = "../images/logo/SRL.png";
+
+// when page fully loads → switch back
+window.addEventListener("load", () => {
+    favicon.href = "../images/logo/favicon-32x32.png";
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.mobile-nav-menu .has-dropdown > a').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    });
+  });
+});
+</script>
+
+</html>
