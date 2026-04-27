@@ -16242,14 +16242,13 @@ text-decoration: underline;
 }
 .grid-img {
   width: 100%;
-  height: 560px;          /* all same height */
-  object-fit: cover;      /* keeps proportions nice */
-  border-radius: 20px;    /* rounded corners */
+  height: 460px;  
+  object-fit: cover;     
+  border-radius: 20px;    
   display: block;
 }
-
-/* optional: smoother look */
 .grid-img:hover {
   transform: scale(1.02);
   transition: 0.3s ease;
 }
+
