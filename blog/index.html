@@ -347,7 +347,7 @@
 
         <!-- POST 2 -->
         <article class="single-post-item format-image">
-          <div class="post-gallery">
+          <div class="post-thumbnail">
             <img src="../images/blog/b3.gif" alt="Blog Image"/>
           </div>
 
@@ -602,6 +602,18 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       this.parentElement.classList.toggle('active');
     });
+  });
+});
+</script>
+
+<script>
+window.addEventListener("load", function () {
+  document.querySelectorAll("img").forEach(img => {
+    if (img.src.includes(".gif")) {
+      const src = img.src;
+      img.src = "";
+      img.src = src;
+    }
   });
 });
 </script>
