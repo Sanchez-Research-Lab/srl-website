@@ -16312,3 +16312,35 @@ text-decoration: underline;
   }
 
 }
+
+.team-area .main-content {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .team-area .main-content {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+
+  .team-area .sec-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* circle titles (Cardiology, Oncology...) */
+  .counter-card .number {
+    font-size: 50px !important;
+    line-height: 1.2;
+  }
+
+  /* description text */
+  .counter-card .title {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    padding: 0 15px;
+  }
+
+}
