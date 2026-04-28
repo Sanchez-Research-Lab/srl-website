@@ -16344,3 +16344,12 @@ text-decoration: underline;
   }
 
 }
+
+@media (min-width: 1024px) {
+
+  .circle-area .counter-card .number {
+    font-size: 55px !important;  
+    line-height: 1.2;
+  }
+
+}
