@@ -338,12 +338,10 @@
                     <h2>Get in touch with SRL</h2>
                 </div>
                 <form id="contactForm" class="comment-form">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="New message from SRL website">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="https://sanchezresearchlab.com/thank-you.html">
-                    <input type="hidden" name="_autoresponse" value="Thank you for contacting the Sanchez Research Lab. We will get back to you soon.">
-
+                    <input type="hidden" name="access_key" value="e4007bcd-be6e-4f32-a138-9794cc5301d1">
+                    <input type="hidden" name="subject" value="New message from SRL website">
+                    <input type="hidden" name="from_name" value="Sanchez Research Lab Website">
+                    <input type="checkbox" name="botcheck" style="display:none">
                     <div class="row gx-2">
                     <div class="col-xl-6">
                         <div class="contacts-name">
@@ -362,19 +360,24 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="contacts-email">
-                        <input name="subject" type="text" placeholder="Enter your subject">
+                        <input name="message_subject" type="text" placeholder="Enter your subject">
                         </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="contacts-message">
-                        <textarea name="message" cols="20" rows="3" placeholder="Message"></textarea>
+                        <textarea name="message" cols="20" rows="3" placeholder="Message" required></textarea>
                         </div>
                     </div>
                     <div class="col-12">
                         <button class="theme-btn" type="submit">Submit Now</button>
+                        <p id="contactFormStatus" class="mt-3" aria-live="polite"></p>
                     </div>
                     </div>
                 </form>
+                <div id="contactFormThanks" class="d-none" aria-live="polite">
+                    <h3>Thank you for submitting the form.</h3>
+                    <p>We received your message and will get back to you soon.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -670,6 +673,68 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const contactFormEndpoint = 'https://api.web3forms.com/submit';
+  const contactForm = document.getElementById('contactForm');
+  const contactFormStatus = document.getElementById('contactFormStatus');
+  const contactFormThanks = document.getElementById('contactFormThanks');
+
+  if (!contactForm) {
+    return;
+  }
+
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    const accessKey = contactForm.querySelector('input[name="access_key"]');
+
+    if (!accessKey || accessKey.value === 'PASTE_WEB3FORMS_ACCESS_KEY_HERE') {
+      if (contactFormStatus) {
+        contactFormStatus.textContent = 'The contact form needs a Web3Forms access key before messages can be sent.';
+      }
+      return;
+    }
+
+    if (contactFormStatus) {
+      contactFormStatus.textContent = 'Sending your message...';
+    }
+
+    try {
+      const response = await fetch(contactFormEndpoint, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error('Form submission failed.');
+      }
+
+      contactForm.reset();
+      contactForm.classList.add('d-none');
+
+      if (contactFormThanks) {
+        contactFormThanks.classList.remove('d-none');
+      }
+    } catch (error) {
+      if (contactFormStatus) {
+        contactFormStatus.textContent = 'Sorry, your message could not be sent. Please try again later.';
+      }
+    }
+  });
+});
+</script>
 
 
 </body>

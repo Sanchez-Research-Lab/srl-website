@@ -572,11 +572,12 @@
                             <h2>Interested in collaborating or joining the lab?</h2>
                         </div>
 
-                            <form action="https://formsubmit.co/bts@uic.edu" method="POST" class="comment-form">
- 
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_subject" value="New message from SRL website">
-                            <input type="hidden" name="_template" value="table">
+                            <form id="researchContactForm" class="comment-form">
+
+                            <input type="hidden" name="access_key" value="e4007bcd-be6e-4f32-a138-9794cc5301d1">
+                            <input type="hidden" name="subject" value="New research message from SRL website">
+                            <input type="hidden" name="from_name" value="Sanchez Research Lab Website">
+                            <input type="checkbox" name="botcheck" style="display:none">
 
                             <div class="row gx-2">
 
@@ -600,10 +601,15 @@
 
                                 <div class="col-12">
                                     <button class="theme-btn" type="submit">Contact the Lab</button>
+                                    <p id="researchContactFormStatus" class="mt-3" aria-live="polite"></p>
                                 </div>
 
                             </div>
                         </form>
+                        <div id="researchContactFormThanks" class="d-none" aria-live="polite">
+                            <h3>Thank you for submitting the form.</h3>
+                            <p>We received your message and will get back to you soon.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1090,6 +1096,58 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const researchContactFormEndpoint = 'https://api.web3forms.com/submit';
+  const researchContactForm = document.getElementById('researchContactForm');
+  const researchContactFormStatus = document.getElementById('researchContactFormStatus');
+  const researchContactFormThanks = document.getElementById('researchContactFormThanks');
+
+  if (!researchContactForm) {
+    return;
+  }
+
+  researchContactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!researchContactForm.checkValidity()) {
+      researchContactForm.reportValidity();
+      return;
+    }
+
+    if (researchContactFormStatus) {
+      researchContactFormStatus.textContent = 'Sending your message...';
+    }
+
+    try {
+      const response = await fetch(researchContactFormEndpoint, {
+        method: 'POST',
+        body: new FormData(researchContactForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error('Form submission failed.');
+      }
+
+      researchContactForm.reset();
+      researchContactForm.classList.add('d-none');
+
+      if (researchContactFormThanks) {
+        researchContactFormThanks.classList.remove('d-none');
+      }
+    } catch (error) {
+      if (researchContactFormStatus) {
+        researchContactFormStatus.textContent = 'Sorry, your message could not be sent. Please try again later.';
+      }
+    }
+  });
+});
+</script>
 </body>
 
 <script>

@@ -113,7 +113,7 @@
                                 </li>
                                 <li><a href="../donate/">Donate</a></li>
                                 <li><a href="../contact/">Contact</a></li>
-]                            </ul>
+                            </ul>
                         </nav>
                     </div>
                     <div class="search-btn-with-btn">
@@ -319,10 +319,11 @@
                 <div class="comment-respond">
                 <div class="post-comments-title">
                 </div>
-                <form action="https://formsubmit.co/bts@uic.edu" method="POST" class="comment-form">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New message from SRL website">
-                <input type="hidden" name="_template" value="table">
+                <form id="donateContactForm" class="comment-form">
+                <input type="hidden" name="access_key" value="e4007bcd-be6e-4f32-a138-9794cc5301d1">
+                <input type="hidden" name="subject" value="New donation message from SRL website">
+                <input type="hidden" name="from_name" value="Sanchez Research Lab Website">
+                <input type="checkbox" name="botcheck" style="display:none">
                     <div class="row gx-2">
                     <div class="col-6">
                         <div class="contacts-name">
@@ -341,19 +342,24 @@
                     </div>
                    <div class="col-6">
                         <div class="contacts-email">
-                        <input name="subject" type="text" placeholder="Enter your subject">
+                        <input name="message_subject" type="text" placeholder="Enter your subject">
                         </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="contacts-message">
-                        <textarea name="message" cols="20" rows="3" placeholder="Message"></textarea>
+                        <textarea name="message" cols="20" rows="3" placeholder="Message" required></textarea>
                         </div>
                     </div>
                     <div class="col-12">
                         <button class="theme-btn" type="submit">Submit Now</button>
+                        <p id="donateContactFormStatus" class="mt-3" aria-live="polite"></p>
                     </div>
                     </div>
                 </form>
+                <div id="donateContactFormThanks" class="d-none" aria-live="polite">
+                    <h3>Thank you for submitting the form.</h3>
+                    <p>We received your message and will get back to you soon.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -649,6 +655,58 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const donateContactFormEndpoint = 'https://api.web3forms.com/submit';
+  const donateContactForm = document.getElementById('donateContactForm');
+  const donateContactFormStatus = document.getElementById('donateContactFormStatus');
+  const donateContactFormThanks = document.getElementById('donateContactFormThanks');
+
+  if (!donateContactForm) {
+    return;
+  }
+
+  donateContactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!donateContactForm.checkValidity()) {
+      donateContactForm.reportValidity();
+      return;
+    }
+
+    if (donateContactFormStatus) {
+      donateContactFormStatus.textContent = 'Sending your message...';
+    }
+
+    try {
+      const response = await fetch(donateContactFormEndpoint, {
+        method: 'POST',
+        body: new FormData(donateContactForm),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error('Form submission failed.');
+      }
+
+      donateContactForm.reset();
+      donateContactForm.classList.add('d-none');
+
+      if (donateContactFormThanks) {
+        donateContactFormThanks.classList.remove('d-none');
+      }
+    } catch (error) {
+      if (donateContactFormStatus) {
+        donateContactFormStatus.textContent = 'Sorry, your message could not be sent. Please try again later.';
+      }
+    }
+  });
+});
+</script>
 </body>
 
 <script>
