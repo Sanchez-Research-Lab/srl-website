@@ -570,7 +570,7 @@
     // Brand Marquee Wrapper
     const swiper = new Swiper('.brand-marquee-slider', {
         loop: true,
-        speed: 2000,
+        speed: 8000,
         slidesPerView: 6,
         autoplay: {
             delay: 0,
