@@ -671,33 +671,6 @@
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
 
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  fetch("https://formsubmit.co/ajax/ysemik2@uic.edu", {
-    method: "POST",
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      name: this.name.value,
-      email: this.email.value,
-      phone: this.phone.value,
-      subject: this.subject.value,
-      message: this.message.value
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    alert("Message sent successfully!");
-    this.reset();
-  })
-  .catch(error => {
-    alert("Something went wrong. Try again.");
-  });
-});
-</script>
-
-</body>
 
 </body>
 
