@@ -337,10 +337,13 @@
                 <div class="post-comments-title">
                     <h2>Get in touch with SRL</h2>
                 </div>
-                <form action="https://formsubmit.co/bts@uic.edu" method="POST" class="comment-form">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New message from SRL website">
-                <input type="hidden" name="_template" value="table">
+                <form id="contactForm" class="comment-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New message from SRL website">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://sanchezresearchlab.com/thank-you.html">
+                    <input type="hidden" name="_autoresponse" value="Thank you for contacting the Sanchez Research Lab. We will get back to you soon.">
+
                     <div class="row gx-2">
                     <div class="col-xl-6">
                         <div class="contacts-name">
@@ -667,6 +670,35 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch("https://formsubmit.co/ajax/ysemik2@uic.edu", {
+    method: "POST",
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: this.name.value,
+      email: this.email.value,
+      phone: this.phone.value,
+      subject: this.subject.value,
+      message: this.message.value
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    alert("Message sent successfully!");
+    this.reset();
+  })
+  .catch(error => {
+    alert("Something went wrong. Try again.");
+  });
+});
+</script>
+
+</body>
+
 </body>
 
 <script>
