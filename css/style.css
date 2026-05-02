@@ -16391,8 +16391,10 @@ text-decoration: underline;
   overflow: visible;
 }
 
-.news-list .single-post-item:hover .post-thumbnail img {
-  transform: none;
+.news-list .single-post-item:hover .post-thumbnail img,
+.news-list .single-post-item:hover .post-video img,
+.news-list .single-post-item:hover .post-gallery img {
+  transform: none !important;
 }
 
 .news-list .post-thumbnail,
@@ -16420,6 +16422,7 @@ text-decoration: underline;
   border-radius: 0 !important;
   display: block;
   transform: none !important;
+  transition: none !important;
 }
 
 @media (max-width: 768px) {
