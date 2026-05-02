@@ -41,6 +41,59 @@
     <link rel="stylesheet" href="../css/nice-select.min.css" />
     <link rel="stylesheet" href="../css/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        .news-list .single-post-item,
+        .news-list .post-thumbnail,
+        .news-list .post-gallery {
+            overflow: visible !important;
+        }
+
+        .news-list .post-thumbnail,
+        .news-list .post-gallery {
+            border-radius: 0 !important;
+            display: flex !important;
+            justify-content: center !important;
+            margin-bottom: 36px !important;
+        }
+
+        .news-list .post-thumbnail a,
+        .news-list .post-gallery a {
+            width: auto !important;
+            display: flex !important;
+            justify-content: center !important;
+            cursor: default !important;
+            pointer-events: none !important;
+        }
+
+        .news-list .post-thumbnail img,
+        .news-list .post-gallery img,
+        .news-list .single-post-item:hover .post-thumbnail img,
+        .news-list .single-post-item:hover .post-gallery img {
+            width: auto !important;
+            max-width: min(100%, 560px) !important;
+            max-height: 470px !important;
+            height: auto !important;
+            object-fit: contain !important;
+            border-radius: 0 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+
+        .news-list .post-content-wrapper {
+            width: min(100%, 760px) !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-right: 0 !important;
+        }
+
+        @media (max-width: 768px) {
+            .news-list .post-thumbnail img,
+            .news-list .post-gallery img {
+                max-width: 100% !important;
+                max-height: 340px !important;
+            }
+        }
+    </style>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -264,9 +317,7 @@
         <!-- POST 1 -->
         <article class="single-post-item format-image">
           <div class="post-thumbnail">
-            <a href="../news/">
-              <img src="../images/news/AHNS26.gif" alt="Blog Image"/>
-            </a>
+            <img src="../images/news/AHNS26.gif" alt="Blog Image"/>
           </div>
 
           <div class="post-content-wrapper">
@@ -288,9 +339,7 @@
         <!-- POST 2 -->
         <article class="single-post-item format-image">
           <div class="post-thumbnail">
-            <a href="../news/">
-              <img src="../images/news/img-3.jpeg" alt="Blog Image"/>
-            </a>
+            <img src="../images/news/img-3.jpeg" alt="Blog Image"/>
           </div>
 
           <div class="post-content-wrapper">
@@ -313,9 +362,7 @@
 
         <article class="single-post-item format-image">
           <div class="post-thumbnail">
-            <a href="../news/">
-              <img src="../images/news/img1-1.png" alt="Blog Image"/>
-            </a>
+            <img src="../images/news/img1-1.png" alt="Blog Image"/>
           </div>
 
           <div class="post-content-wrapper">
@@ -337,9 +384,7 @@
 
         <article class="single-post-item format-image">
           <div class="post-thumbnail">
-            <a href="../news/">
-              <img src="../images/news/b4.gif" alt="Blog Image"/>
-            </a>
+            <img src="../images/news/b4.gif" alt="Blog Image"/>
           </div>
 
           <div class="post-content-wrapper">
@@ -393,9 +438,7 @@
         <!-- POST 3 -->
         <article class="single-post-item format-image">
           <div class="post-thumbnail">
-            <a href="blog-details.html">
-              <img src="../images/news/b5.jpeg" alt="Blog Image"/>
-            </a>
+            <img src="../images/news/b5.jpeg" alt="Blog Image"/>
           </div>
 
           <div class="post-content-wrapper">
