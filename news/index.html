@@ -86,6 +86,25 @@
             padding-right: 0 !important;
         }
 
+        .news-list .format-video .post-thumbnail {
+            width: min(100%, 800px) !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .news-list .format-video .post-thumbnail video {
+            display: block !important;
+            width: 100% !important;
+            max-width: none !important;
+            max-height: none !important;
+            aspect-ratio: 16 / 9 !important;
+            height: auto !important;
+            background: #000 !important;
+            border-radius: 0 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+
         @media (max-width: 768px) {
             .news-list .post-thumbnail img,
             .news-list .post-gallery img {
@@ -313,6 +332,38 @@
     <!-- CONTENT -->
     <div class="row justify-content-center">
       <div class="col-lg-10 col-md-10 col-12 blog-post">
+
+        <article class="single-post-item format-video">
+          <div class="post-thumbnail">
+            <video controls preload="metadata">
+              <source src="../images/news/CBSChicago.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <div class="post-content-wrapper">
+            <h3 class="post-title">
+              <a href="../images/news/CBSChicago.mp4" target="_blank">
+                SRL Lab on CBS News
+              </a>
+            </h3>
+
+            <p class="post-desc">
+                The Sanchez Research Lab was featured on CBS Chicago for its innovative work on wearable health technology. Led by Benjamin Sanchez, the research focuses on a smartwatch-based system designed to monitor blood pressure continuously without the need for a traditional inflatable cuff.            </p>
+
+            <p class="post-desc">
+              <a href="https://iqmediacorp.com/ExternalIframeMedia?AU=41019D7335B0908AEC1DA4EDFA2D344021D0F4F0CB310D780D6712ED39FD7AC1B67A80E341FABC3F375B9D0155530B105ABEDA13430F810C06F2EC3733CDEF0E6ABC46D850FD073743FB8013EE23166AFE2C2CD09E692DB9356E11A2AFA946A7664CAB47A90E731C5276B026382C35BF65AEF779F2988A55A8E4F646725497611B272FBC2BE3B6E47BAF64FA35F83B533AF2822A&mediaID=147273fe-ffa1-4c67-9f30-fc697f124410&RawMediaType=TV&startOffset=10&endOffset=118&SessionID=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhcGlAbWVsdHdhdGVyLmNvbSIsIlVzZXJDbGllbnQiOiI5YWJmZjA4Zi1mOGY2LTQwY2YtYTliOS1iMGQ5ZjNjZDQ0ZWEiLCJDdXN0b21lckdVSUQiOiIwMTExODE4Yy00Y2UwLTQyODMtOGEwNy1iOGFhZGI3MzUyM2EiLCJDdXN0b21lcktleSI6IjEwNTE0IiwiQ2xpZW50SUQiOiIxNTk1IiwiVXNlcktleSI6IjE4OTJjOWI4NzJhYjE0MDFlZGU0NTZhZjBjZTdjYjFkZGY0NDdlZjk3MzEzOTQyMzk0ZTg5OTg2MTJhMzZmMTkiLCJJUVJvbGVzIjpbInY0QVBJIiwidjRUViIsInY0RmVlZHMiLCJ2NFJhZGlvIiwidjRMaWJyYXJ5IiwidjRJUUFnZW50U2V0dXAiLCJ2NUxSIiwidjREYXNoYm9hcmQiLCJOaWVsc2VuRGF0YSIsIkNvbXBldGVEYXRhIiwidjVBZHMiLCJDQ1RleHRBY2Nlc3MiLCJBRERCRGF0YSIsIk1lZGlhQ29udGVudEFjY2VzcyIsIkV4dGVybmFsQ2xpcENyZWF0aW9uIiwiaXNBdWRpZW5jZU1lZGlhVmFsdWVWaXNpYmxlIiwiUG9kY2FzdCIsIkFEREJUcmFuc2NyaXB0cyJdLCJuYmYiOjE3ODA0OTI4MjksImV4cCI6MTc4MDY2NTYyOSwiaXNzIjoiSVFQbGF0Zm9ybUFQSSIsImF1ZCI6IklRUGxhdGZvcm1BUEkifQ.5ekpj2wXk6VHhTt7u_fojsv-EvuhBYPxZIljjNHoPNM&SearchQuery=%22uic%22%20OR%20%22Chicago%22&HighlightQuery=%22uic%22%20OR%20%22Chicago%22&QueryPreroll=15&EnableClipDownload=true&EnableClipArchive=true&UserID=5601c2fa276209ed2aa2fad5&CallbackUrl=https%3A%2F%2Fprovider-callback.meltwater.io%2Fv1%2Fkinetiq%3FmeltwaterContext%3DeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImQ0ZmI2ZmYwLTZlMGEtNGQ1Zi1hNGFlLWFhOWYwOTg1YTNjZCJ9.eyJkb2N1bWVudElkIjoiWW05QXh2cFp0NExheXVHTm1YeGRObHFkME00IiwidXNlcklkIjoiNjcyYmE0NTc5MGI0NjkwYjZlMTg0MzM4IiwiY29tcGFueUlkIjoiNTYwMWMyZmEyNzYyMDllZDJhYTJmYWQ1IiwicHJvZHVjdFR5cGUiOiJraW5ldGlxLWFyY2hpdmluZyIsImV4cCI6MTc4MTEwMDEwMywiaWF0IjoxNzgwNDk1MzAzfQ.HkWsjlZebuaHR8m4VKhw2yUsLET37Ugr37Qk5vvayZo1hx6dSq12ZkUD_PwVu_X7uZXJ3ATO96t8UaVo2pH3fhehbHniOTTjR0uq3a_Ab70N08TDOnERwttC0fQ68DWMIW135LuNrzbFB1Smg0CErkOWsTje6i3faL2d6EYdtxthKQ3C4VM8RkM7zSxYghZxMngwYCWvwGlFdd-3vl_Gt405afjp6jZL8Dwk5s2SvxajW4Fhf4glodpIwnX0voeXGrtQ5q9xegGVVKSTgAnfYZUxFQI2ojWjsIWuDyJ9gFUkrmTE5gJgiwUutE28-g2Auo62sridgBcaci9wT7OhzCibrkh11ANunpOAvgiEwgQUO64B_e9LhA35oXCbRVmeuOLD6qkbjorRZ3LHuLrmauNx_evIWOIiWTI77D7ujLeGWznyTdytjx_hHu-wXACzh1vrlA3NiE57y13r2Wmrhj3gY163xEtiKpDXKhdx9c-GummAE2gB9HwupHuEHVnuN0feTHE5sjQt5nAHf-cNFmyVwC_fzqBJVqY3o0pEaZTgpUBlAJtD_jmU0CS4ZET-2dv3Dqy4h1DyUQywATBv-CssLJq9N-3PihvVxwoh2hP2Yk5r3LqxRIH7Wv3s5WZve7FE3JjoDqTOYLq9J-G1hiruXmiEkKYrHVu-QnO8MvY" target="_blank">
+                Watch the video
+              </a>
+            </p>
+
+            <div class="post-meta">
+              <span>SRL</span>
+              <span class="icon"><i class="fa-solid fa-circle"></i></span>
+              <span>2026</span>
+            </div>
+          </div>
+        </article>
 
         <!-- POST NEW -->
 <article class="single-post-item format-image">
