@@ -15280,7 +15280,56 @@ text-decoration: underline;
   display: block;
 }
 
+.bioelectrical-media-row {
+  width: min(1400px, calc(100vw - 80px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.bioelectrical-media-item {
+  flex: 0 1 650px;
+  display: flex;
+  justify-content: center;
+}
+
+.bioelectrical-media {
+  width: 100%;
+  max-width: 650px;
+  aspect-ratio: 1010 / 876;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (min-width: 1400px) {
+  .bioelectrical-media-row {
+    transform: translateX(-58%);
+  }
+}
+
 @media (max-width: 768px) {
+
+  .bioelectrical-media-row {
+    width: auto;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .bioelectrical-media-item {
+    width: 100%;
+    flex-basis: auto;
+  }
 
   .header-menu-area .row {
     display: flex;
