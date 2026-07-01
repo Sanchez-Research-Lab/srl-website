@@ -351,6 +351,9 @@
                         </div>
                     </div>
                     <div class="col-12">
+                        <div class="h-captcha" data-captcha="true"></div>
+                    </div>
+                    <div class="col-12">
                         <button class="theme-btn" type="submit">Submit Now</button>
                         <p id="donateContactFormStatus" class="mt-3" aria-live="polite"></p>
                     </div>
@@ -655,6 +658,7 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const donateContactFormEndpoint = 'https://api.web3forms.com/submit';
@@ -671,6 +675,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!donateContactForm.checkValidity()) {
       donateContactForm.reportValidity();
+      return;
+    }
+
+    const captchaResponse = donateContactForm.querySelector('[name="h-captcha-response"]');
+
+    if (!captchaResponse || !captchaResponse.value) {
+      if (donateContactFormStatus) {
+        donateContactFormStatus.textContent = 'Please complete the human verification before submitting.';
+      }
       return;
     }
 

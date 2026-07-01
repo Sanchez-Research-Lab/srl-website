@@ -600,6 +600,10 @@
                                 </div>
 
                                 <div class="col-12">
+                                    <div class="h-captcha" data-captcha="true"></div>
+                                </div>
+
+                                <div class="col-12">
                                     <button class="theme-btn" type="submit">Contact the Lab</button>
                                     <p id="researchContactFormStatus" class="mt-3" aria-live="polite"></p>
                                 </div>
@@ -1096,6 +1100,7 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const researchContactFormEndpoint = 'https://api.web3forms.com/submit';
@@ -1112,6 +1117,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!researchContactForm.checkValidity()) {
       researchContactForm.reportValidity();
+      return;
+    }
+
+    const captchaResponse = researchContactForm.querySelector('[name="h-captcha-response"]');
+
+    if (!captchaResponse || !captchaResponse.value) {
+      if (researchContactFormStatus) {
+        researchContactFormStatus.textContent = 'Please complete the human verification before submitting.';
+      }
       return;
     }
 

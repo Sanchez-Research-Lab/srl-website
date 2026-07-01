@@ -369,6 +369,9 @@
                         </div>
                     </div>
                     <div class="col-12">
+                        <div class="h-captcha" data-captcha="true"></div>
+                    </div>
+                    <div class="col-12">
                         <button class="theme-btn" type="submit">Submit Now</button>
                         <p id="contactFormStatus" class="mt-3" aria-live="polite"></p>
                     </div>
@@ -673,6 +676,7 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -690,6 +694,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!contactForm.checkValidity()) {
       contactForm.reportValidity();
+      return;
+    }
+
+    const captchaResponse = contactForm.querySelector('[name="h-captcha-response"]');
+
+    if (!captchaResponse || !captchaResponse.value) {
+      if (contactFormStatus) {
+        contactFormStatus.textContent = 'Please complete the human verification before submitting.';
+      }
       return;
     }
 
