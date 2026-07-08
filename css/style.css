@@ -15268,6 +15268,11 @@ text-decoration: underline;
     border-radius: 50%;
 }
 
+.alumni-item img.alumni-photo-gia-bao,
+.alumni-item img.alumni-photo-raquel {
+    object-position: center 10%;
+}
+
 .alumni-item p {
     margin-top: 10px;
     text-align: center;
