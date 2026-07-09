@@ -280,7 +280,7 @@
                     <div class="content">
                         <h3>Email</h3>
                         <div class="desc">
-                        <p>Contact form temporarily unavailable</p>
+                        <p>Use the contact form below</p>
                         </div>
                     </div>
                 </div>
@@ -337,7 +337,12 @@
                 <div class="post-comments-title">
                     <h2>Get in touch with SRL</h2>
                 </div>
-                <form id="contactForm" class="comment-form" onsubmit="return false;" aria-disabled="true">
+                <form id="contactForm" class="comment-form" data-secure-contact-form data-endpoint="https://srl-contact-form.bst-bc8.workers.dev">
+                    <input type="hidden" name="form_type" value="contact">
+                    <input type="hidden" name="subject" value="New message from SRL website">
+                    <input type="hidden" name="from_name" value="Sanchez Research Lab Website">
+                    <input type="hidden" name="started_at" value="">
+                    <input class="form-honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div class="row gx-2">
                     <div class="col-xl-6">
                         <div class="contacts-name">
@@ -365,11 +370,18 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button class="theme-btn" type="button" disabled>Form Temporarily Disabled</button>
-                        <p id="contactFormStatus" class="mt-3" aria-live="polite">The contact form is temporarily unavailable. Please contact the lab directly.</p>
+                        <div class="h-captcha" data-sitekey="4f0ccc6e-07b6-4d5e-9808-af063f82bbe0"></div>
+                    </div>
+                    <div class="col-12">
+                        <button class="theme-btn" type="submit">Submit Now</button>
+                        <p id="contactFormStatus" class="mt-3" aria-live="polite"></p>
                     </div>
                     </div>
                 </form>
+                <div id="contactFormThanks" class="d-none" aria-live="polite">
+                    <h3>Thank you for submitting the form.</h3>
+                    <p>We received your message and will get back to you soon.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -665,6 +677,8 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<script src="../js/secure-contact-form.js"></script>
 
 
 </body>

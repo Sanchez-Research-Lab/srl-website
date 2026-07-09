@@ -1,0 +1,15 @@
+name = "srl-contact-form"
+main = "contact-form-worker.js"
+compatibility_date = "2026-07-01"
+
+routes = [
+  { pattern = "sanchezresearchlab.com/api/contact", zone_name = "sanchezresearchlab.com" },
+  { pattern = "www.sanchezresearchlab.com/api/contact", zone_name = "sanchezresearchlab.com" }
+]
+
+[vars]
+ALLOWED_ORIGINS = "https://sanchezresearchlab.com,https://www.sanchezresearchlab.com"
+
+# Set these as encrypted Cloudflare Worker secrets, not plain vars:
+# wrangler secret put HCAPTCHA_SECRET
+# wrangler secret put WEB3FORMS_ACCESS_KEY

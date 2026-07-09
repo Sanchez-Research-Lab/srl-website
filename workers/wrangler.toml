@@ -1,0 +1,11 @@
+name = "srl-contact-form"
+main = "contact-form-worker.js"
+compatibility_date = "2026-07-01"
+account_id = "bc88d3b7b0caf40289b12b62ab52db2a"
+
+[vars]
+ALLOWED_ORIGINS = "https://sanchezresearchlab.com,https://www.sanchezresearchlab.com"
+
+# Set these as encrypted Cloudflare Worker secrets, not plain vars:
+# wrangler secret put HCAPTCHA_SECRET
+# wrangler secret put WEB3FORMS_ACCESS_KEY
