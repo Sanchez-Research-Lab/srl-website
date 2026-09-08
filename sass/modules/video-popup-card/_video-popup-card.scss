@@ -121,7 +121,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 0 rgba(207, 244, 128, 1);
     animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  
+
       @include md {
           width: 70px;
           height: 70px;
@@ -135,8 +135,8 @@
           color: $white;
           font-size: 24px;
           margin-left: 6px;
-          color: $black; 
-          
+          color: $black;
+
       }
 
   }

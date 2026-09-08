@@ -1,50 +1,50 @@
 /**
- * Stylesheet:  style.css
- * Theme:       Labotrex - Laboratory & Science Research HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- * 
+ * stylesheet:  style.css
+ * sanchez research lab website
+ * version:     1.0
+ * author:     	boomdevs
+ *
  */
-/* Table of contents
+/* table of contents
 =========================
-// 1.Preloader
-// 2.Scrollup
-// 3.Nav Menu
-// 4.Slider Section
-// 5.Info Card
-// 6.Icon Card
-// 7.About Image Card
-// 8.About Info Card
-// 9.Counter Card
-// 10.Brand Marquee
-// 11.Testimonial Card
-// 12.Accordion Card
-// 13.Client Logo Card
-// 14.Post Card
-// 15.Skill Progress Card
-// 16.Call To Action Card
-// 17.Title Card
-// 18.Breadcrumb
-// 19.Pagination's
-// 20.Project Details Page
-// 21.Sidebar
-// 22.Comment List
-// 23. Image Card
-// 24.Comment Form
-// 25.Team Member
-// 26.Portfolio
-// 27.Video Popup Modal Card
-// 28.Portfolio Slider
-// 29.Flip Image Card
-// About Page
-// Contact Page
-// Service Page
-// Team Page
-// Footer
+// 1.preloader
+// 2.scrollup
+// 3.nav menu
+// 4.slider section
+// 5.info card
+// 6.icon card
+// 7.about image card
+// 8.about info card
+// 9.counter card
+// 10.brand marquee
+// 11.testimonial card
+// 12.accordion card
+// 13.client logo card
+// 14.post card
+// 15.skill progress card
+// 16.call to action card
+// 17.title card
+// 18.breadcrumb
+// 19.pagination's
+// 20.project details page
+// 21.sidebar
+// 22.comment list
+// 23. image card
+// 24.comment form
+// 25.team member
+// 26.portfolio
+// 27.video popup modal card
+// 28.portfolio slider
+// 29.flip image card
+// about page
+// contact page
+// service page
+// team page
+// footer
 
 
 ===========================*/
-/* Theme Default CSS */
+/* theme default css */
 * {
   margin: 0;
   border: 0;
@@ -570,8 +570,8 @@ input.theme-btn {
   }
 }
 
-/* Deafult Margin & Padding */
-/*-- Margin Top --*/
+/* deafult margin & padding */
+/*-- margin top --*/
 .mt-5 {
   margin-top: 5px;
 }
@@ -732,7 +732,7 @@ input.theme-btn {
   margin-top: 200px;
 }
 
-/*-- Margin Bottom --*/
+/*-- margin bottom --*/
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -917,7 +917,7 @@ input.theme-btn {
   margin-bottom: 250px;
 }
 
-/*-- Padding Top --*/
+/*-- padding top --*/
 .pt-5 {
   padding-top: 5px;
 }
@@ -1114,7 +1114,7 @@ input.theme-btn {
   padding-top: 250px;
 }
 
-/*-- Padding Bottom --*/
+/*-- padding bottom --*/
 .pb-5 {
   padding-bottom: 5px;
 }
@@ -1291,7 +1291,7 @@ input.theme-btn {
   padding-bottom: 200px;
 }
 
-/*-- Padding Left --*/
+/*-- padding left --*/
 .pl-0 {
   padding-left: 0px;
 }
@@ -1460,7 +1460,7 @@ input.theme-btn {
   padding-left: 200px;
 }
 
-/*-- Padding Right --*/
+/*-- padding right --*/
 .pr-0 {
   padding-right: 0px;
 }
@@ -2288,7 +2288,7 @@ input.theme-btn {
   }
 }
 
-/* WordPress Core
+/* wordpress core
 ===================*/
 body {
   -ms-word-wrap: break-word;
@@ -2310,7 +2310,7 @@ ul {
   padding-left: 20px;
 }
 
-/* Protected Post Type */
+/* protected post type */
 .post-password-form label {
   width: 100%;
   display: block;
@@ -2341,7 +2341,7 @@ ul {
   color: #292929;
 }
 
-/* Table */
+/* table */
 table {
   margin-bottom: 20px;
   width: 100%;
@@ -2392,7 +2392,7 @@ table td#today a {
   margin-top: 80px;
 }
 
-/* Text meant only for screen readers. */
+/* text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2403,7 +2403,7 @@ table td#today a {
   padding: 0;
   position: absolute !important;
   width: 1px;
-  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+  word-wrap: normal !important; /* many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
@@ -2424,7 +2424,7 @@ table td#today a {
 }
 
 /*
- Caption
+ caption
 ============================*/
 .wp-caption {
   margin-bottom: 1.5em;
@@ -2448,7 +2448,7 @@ table td#today a {
 }
 
 /*
- Galleries
+ galleries
 ============================*/
 .gallery {
   margin-bottom: 10px;
@@ -2514,7 +2514,7 @@ img.emoji {
 }
 
 /*
- Alignments
+ alignments
 ============================*/
 .alignleft {
   display: inline;
@@ -2537,7 +2537,7 @@ img.emoji {
 }
 
 /*
- Block Unit Test Widget
+ block unit test widget
 ============================*/
 .wp-block-search__input {
   border: 1px solid #D9EAFD !important;
@@ -2743,7 +2743,7 @@ nav.wp-calendar-nav a:hover {
   }
 }
 
-/* Search Widget */
+/* search widget */
 .search-form {
   display: flex !important;
 }
@@ -2816,7 +2816,7 @@ nav.wp-calendar-nav a:hover {
 }
 
 /*
- Media
+ media
 ============================*/
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
@@ -2978,7 +2978,7 @@ input[type=radio]:checked {
   color: #ffffff;
 }
 
-/* Recent Comment List Block Widget & Latest Post Widget Block */
+/* recent comment list block widget & latest post widget block */
 .has-avatars.has-dates.has-excerpts.wp-block-latest-comments li.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta,
 .has-dates.has-excerpts.wp-block-latest-comments li.wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
   font-weight: 500;
@@ -6334,7 +6334,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .client-logo-wrapper .client-logo img {
   filter: none;
   max-height: 85px;   /* controls overall logo size */
-  max-width: 140px;   /* prevents wide logos like NIH from stretching */
+  max-width: 140px;   /* prevents wide logos like nih from stretching */
   width: auto;
   height: auto;
   object-fit: contain;
@@ -6381,8 +6381,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #ffffff;
   overflow: hidden;
   margin-bottom: 64px;
-  /* Quote Format Post */
-  /* Sticky Post */
+  /* quote format post */
+  /* sticky post */
 }
 .single-post-item:hover .post-thumbnail img,
 .single-post-item:hover .post-video img {
@@ -7194,8 +7194,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .blog-details-wrapper .single-post-item .post-content {
   margin-bottom: 17px;
-  /* Unit Test Data Compatibility Start */
-  /* Unit Test Data Compatibility End */
+  /* unit test data compatibility start */
+  /* unit test data compatibility end */
 }
 .blog-details-wrapper .single-post-item .post-content .list-item-wrapper .list-item .text {
   font-family: "Urbanist", sans-serif;
@@ -8727,21 +8727,21 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding-left: 18px;
 }
 
-/* Widget */
+/* widget */
 .widget {
   background-color: #ECF4FE;
   padding: 32px;
   margin-bottom: 40px;
   border-radius: 30px;
-  /* Widget Instagram Feed */
-  /* Widget Title */
-  /* Social Widget Block */
-  /* Recent Comment List Block Widget & Latest Post Widget Block */
-  /* Social Widget */
-  /* Select Option  */
-  /* Login Widget */
-  /* Tagcloud Widget */
-  /* Default Widget */
+  /* widget instagram feed */
+  /* widget title */
+  /* social widget block */
+  /* recent comment list block widget & latest post widget block */
+  /* social widget */
+  /* select option  */
+  /* login widget */
+  /* tagcloud widget */
+  /* default widget */
 }
 @media (max-width: 991px) {
   .widget {
@@ -8994,14 +8994,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 .widget ol {
   margin-bottom: 0;
   padding-left: 0;
-  /* Tag Cloud Widget */
+  /* tag cloud widget */
 }
 .widget ul li,
 .widget ol li {
   display: block;
   padding: 7px 0;
   border-bottom: 1px solid #D9EAFD;
-  /* Recent Comment Widget */
+  /* recent comment widget */
 }
 .widget ul li:first-child,
 .widget ol li:first-child {
@@ -9035,7 +9035,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Questrial", sans-serif;
   font-weight: 400;
   transition: all 0.5s ease-out;
-  /* RSS Widget */
+  /* rss widget */
 }
 .widget ul li a:hover,
 .widget ol li a:hover {
@@ -9097,7 +9097,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   float: left;
 }
 
-/* About Info Widget*/
+/* about info widget*/
 .widget-about-info {
   display: flex;
   align-items: flex-start;
@@ -9143,7 +9143,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #CFF480;
 }
 
-/* Latest Post Widget*/
+/* latest post widget*/
 .has-dates.has-author.wp-block-latest-posts .wp-block-latest-posts__post-title {
   display: inline-block;
   width: 100%;
@@ -9802,7 +9802,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 
-/* Block Comment Start */
+/* block comment start */
 .wp-block-comments .wp-block-comment-template {
   padding-left: 0;
 }
@@ -9857,7 +9857,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   transition: all 0.5s ease-out;
 }
 
-/* Block Comment End */
+/* block comment end */
 .latest-comments .comment-respond {
   margin-top: 30px;
 }
@@ -10053,7 +10053,7 @@ ul.children {
   margin-bottom: 0;
 }
 
-/*Comment Input Filed*/
+/*comment input filed*/
 .post-comments-title .sub-title {
   font-family: "Urbanist", sans-serif;
   font-size: 18px;
@@ -14414,7 +14414,7 @@ ul.children {
 }
 .footer.style-3 .footer-widget.widget_nav_menu li a:before {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourcemappingurl=style.css.map */
 
 /* force contact boxes to have equal height */
 .contact-info-area .row {
@@ -14583,14 +14583,14 @@ ul.children {
     height: 600px;   /* remove this */
 }
 
-/* Fix research circle titles */
+/* fix research circle titles */
 .counter-card .number {
     font-size: 28px;
     font-weight: 600;
     line-height: 1.2;
 }
 
-/* Fix research area circle text */
+/* fix research area circle text */
 .counter-card .number {
     font-size: 72px !important;
     font-weight: 600 !important;
@@ -14601,7 +14601,7 @@ ul.children {
     font-size: 120px !important;
 }
 
-/* Center the title */
+/* center the title */
 .brand-slider-area .section-title{
     text-align:center;
 }
@@ -14611,14 +14611,14 @@ ul.children {
     justify-content:center;
 }
 
-/* Make logos bigger */
+/* make logos bigger */
 .client-logo img{
     max-height:90px;
     width:auto;
     object-fit:contain;
 }
 
-/* Give logos more spacing */
+/* give logos more spacing */
 .client-logo-wrapper{
     padding:20px 40px;
 }
@@ -14803,12 +14803,12 @@ font-size:20px;
 }
 
 .pub-header {
-margin-top: 30px; 
+margin-top: 30px;
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 30px;
-width: 100%;             
+width: 100%;
 }
 
 /* title */
@@ -14845,7 +14845,7 @@ text-decoration: underline;
     width: 100%;
 }
 
-/* FIX footer spacing properly */
+/* fix footer spacing properly */
 .footer .footer-top-area {
     margin-bottom: 50px !important;
 }
@@ -14870,7 +14870,7 @@ text-decoration: underline;
     padding-bottom: 40px !important;
 }
 
-/* FIX footer spacing on research + publications pages */
+/* fix footer spacing on research + publications pages */
 
 .production-area {
     padding-bottom: 40px !important;
@@ -14894,7 +14894,7 @@ text-decoration: underline;
     text-align: center;
 }
 
-/* FORCE override template spacing */
+/* force override template spacing */
 .brand-slider-area.style-1 {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
@@ -14946,7 +14946,7 @@ text-decoration: underline;
 }
 
 .video-academic .title {
-    font-size: 48px;   
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.2;
     color: #111;
@@ -14972,7 +14972,7 @@ text-decoration: underline;
 
 .sec-content {
     max-width: 1350px;
-    margin: 0 auto;   
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -15021,7 +15021,7 @@ text-decoration: underline;
     height: 220px; /* controls full card height */
 }
 
-/* LEFT IMAGE */
+/* left image */
 .post-card.style-3.horizontal-card .image {
     width: 180px;
     height: 100%;
@@ -15036,7 +15036,7 @@ text-decoration: underline;
     object-fit: cover;
 }
 
-/* RIGHT CONTENT */
+/* right content */
 .post-card.style-3.horizontal-card .content {
     padding: 20px;
     display: flex;
@@ -15078,7 +15078,7 @@ text-decoration: underline;
 }
 
 .section-header {
-    margin-top: -80px;   /* move UP */
+    margin-top: -80px;   /* move up */
     margin-bottom: 40px;
 }
 
@@ -15181,14 +15181,14 @@ text-decoration: underline;
 }
 
 .post-card.style-3 .post-meta {
-    margin-top: auto; /* LOCKS it to bottom */
+    margin-top: auto; /* locks it to bottom */
 }
 
 .team-member-card .desc1 {
     text-transform: none !important;
 }
 
-/* ===== TEAM IMAGES — SAME SIZE EVERYWHERE ===== */
+/* ===== team images — same size everywhere ===== */
 .team-member-card .image {
     width: 100%;
     height: 580px;        /* you can tweak: 300–340 */
@@ -15236,8 +15236,8 @@ text-decoration: underline;
   padding-bottom: 2px;
 }
 
-/* FOOTER FIX */
-/* BREAK FOOTER OUT OF PAGE CONTAINER */
+/* footer fix */
+/* break footer out of page container */
 .footer {
     width: 100vw !important;
     position: left;
@@ -15245,7 +15245,7 @@ text-decoration: underline;
     margin-left: -50vw;
 }
 
-/* NOW CREATE THE BOX */
+/* now create the box */
 .footer .footer-wrapper {
     width: calc(100% - 120px) !important;
     margin: 0 auto !important;
@@ -15343,7 +15343,7 @@ text-decoration: underline;
     flex-direction: row !important;
   }
 
-  /* LEFT = LOGO */
+  /* left = logo */
   .header-menu-area .col-xl-3,
   .header-menu-area .col-lg-3,
   .header-menu-area .col-md-6,
@@ -15352,7 +15352,7 @@ text-decoration: underline;
     flex: 0 0 auto;
   }
 
-  /* RIGHT = MENU BUTTON */
+  /* right = menu button */
   .header-menu-area .col-xl-9,
   .header-menu-area .col-lg-9,
   .header-menu-area .col-6:last-child {
@@ -15366,7 +15366,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-  /* hide ALL desktop menu links */
+  /* hide all desktop menu links */
   .main-menu,
   .header-menu-area ul,
   .header-menu-area li {
@@ -15408,7 +15408,7 @@ text-decoration: underline;
 
 }
 
-/* MOBILE */
+/* mobile */
 @media (max-width: 768px) {
 
   /* hide desktop menu */
@@ -15470,7 +15470,7 @@ text-decoration: underline;
 }
 
 /* ============================= */
-/* DESKTOP SIDEBAR (clean view) */
+/* desktop sidebar (clean view) */
 /* ============================= */
 @media (min-width: 769px) {
 
@@ -15482,7 +15482,7 @@ text-decoration: underline;
 }
 
 /* ============================= */
-/* MOBILE SIDEBAR (full menu) */
+/* mobile sidebar (full menu) */
 /* ============================= */
 @media (max-width: 768px) {
 
@@ -15592,7 +15592,7 @@ text-decoration: underline;
 
 .mobile-nav-menu > li > a {
   padding: 3px 0;
-  line-height: 0.9; /* VERY important */
+  line-height: 0.9; /* very important */
   font-size: 15px;
 }
 
@@ -15654,7 +15654,7 @@ text-decoration: underline;
     align-items: center !important;
   }
 
-  /* LEFT: logo */
+  /* left: logo */
   .header-menu-area .col-xl-3,
   .header-menu-area .col-lg-3,
   .header-menu-area .col-md-6,
@@ -15663,7 +15663,7 @@ text-decoration: underline;
     width: auto !important;
   }
 
-  /* RIGHT: hamburger */
+  /* right: hamburger */
   .header-menu-area .col-xl-9,
   .header-menu-area .col-lg-9,
   .header-menu-area .col-6:last-child {
@@ -15690,7 +15690,7 @@ text-decoration: underline;
 }
 
 
-/* SIDEBAR FIXES */
+/* sidebar fixes */
 .menu-sidebar-area {
   position: fixed !important;
   top: 0;
@@ -15702,7 +15702,7 @@ text-decoration: underline;
 
   background: #1e1e1e;
 
-  z-index: 9999999 !important; /* VERY HIGH */
+  z-index: 9999999 !important; /* very high */
 
   transform: translateX(100%);
   transition: transform 0.4s ease;
@@ -15756,11 +15756,11 @@ text-decoration: underline;
 
 
 /* ===============================
-   MOBILE FOOTER FIX
+   mobile footer fix
 ================================= */
 @media (max-width: 768px) {
 
-  /* reduce BIG title ("Monitoring...") */
+  /* reduce big title ("monitoring...") */
   .footer .subscribe-form-title .title {
     font-size: 20px !important;
     line-height: 1.3 !important;
@@ -15785,7 +15785,7 @@ text-decoration: underline;
     margin-bottom: 25px;
   }
 
-  /* reduce section titles (Address, Quick links, etc.) */
+  /* reduce section titles (address, quick links, etc.) */
   .footer-widget-title {
     font-size: 18px !important;
     margin-bottom: 10px;
@@ -15865,10 +15865,10 @@ text-decoration: underline;
 
   /* kill the divider spacing */
   .footer-top-area hr {
-    margin: 5px 0 !important; /* or 0 if you want NO gap */
+    margin: 5px 0 !important; /* or 0 if you want no gap */
   }
 
-  /* remove space above Address section */
+  /* remove space above address section */
   .footer .footer-sec > .container {
     margin-top: -50px !important;
     padding-top: 0 !important;
@@ -15878,7 +15878,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-  /* reduce space between address text and Contact us */
+  /* reduce space between address text and contact us */
   .footer-contact li {
     margin-bottom: -16px !important;
   }
@@ -15989,7 +15989,7 @@ text-decoration: underline;
 
 /* reduce overall height */
 .video-popup-area .video-popup-card {
-    height: 560px !important;   
+    height: 560px !important;
     width: 900px !important;
     border-radius: 16px;
     overflow: hidden;
@@ -16021,14 +16021,14 @@ text-decoration: underline;
 }
 
 .video-popup-area .video-popup-card .content {
-    top: -60px !important;   /* move UP */
+    top: -60px !important;   /* move up */
     bottom: auto !important;
 }
 
 @media (max-width: 768px) {
 
   .video-popup-area .video-popup-card {
-      aspect-ratio: 1 / 1;  
+      aspect-ratio: 1 / 1;
       max-width: 90%;
   }
 
@@ -16044,7 +16044,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-  /* ===== CONTACT ===== */
+  /* ===== contact ===== */
   .blog-page .footer-contact li {
     margin-bottom: 4px !important;
   }
@@ -16059,7 +16059,7 @@ text-decoration: underline;
     line-height: 1.25 !important;
   }
 
-  /* ===== QUICK LINKS ===== */
+  /* ===== quick links ===== */
   .blog-page .footer-widget.widget_nav_menu ul li {
     margin-bottom: 2px !important;
   }
@@ -16070,9 +16070,9 @@ text-decoration: underline;
     padding: 1px 0 !important;
   }
 
-  /* ===== SECTION SPACING (THIS IS THE BIG FIX) ===== */
+  /* ===== section spacing (this is the big fix) ===== */
   .blog-page .footer-widget {
-    margin-bottom: -10px !important;  
+    margin-bottom: -10px !important;
   }
 
   /* tighten heading spacing */
@@ -16084,7 +16084,7 @@ text-decoration: underline;
     margin-bottom: 4px !important;
   }
 
-  /* tighten space BEFORE Quick links */
+  /* tighten space before quick links */
   .blog-page .footer-widget.widget_nav_menu {
     margin-top: 0 !important;
   }
@@ -16125,20 +16125,20 @@ text-decoration: underline;
   }
 
 }
-/* ===== DONATE SECTION ===== */
+/* ===== donate section ===== */
 .support-section {
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
-/* Title */
+/* title */
 .donate-title {
   font-size: 44px;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
-/* Paragraphs */
+/* paragraphs */
 .support-section p {
   font-size: 22px;
   line-height: 1.8;
@@ -16146,7 +16146,7 @@ text-decoration: underline;
   margin-bottom: 18px;
 }
 
-/* Control width nicely */
+/* control width nicely */
 .support-section .col-lg-8 {
   max-width: 2650px;
 }
@@ -16157,13 +16157,13 @@ text-decoration: underline;
   }
 }
 
-/* Remove space BELOW Support Us */
+/* remove space below support us */
 .support-section {
   margin-bottom: 20px; /* or 0 if you want tight */
   padding-bottom: 0;
 }
 
-/* Kill space ABOVE next section (blue block) */
+/* kill space above next section (blue block) */
 .contact-form-area,
 .your-next-section-class {
   padding-top: 40px !important; /* reduce from 100+ */
@@ -16198,7 +16198,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-  /* FIX TITLE VISIBILITY */
+  /* fix title visibility */
   .blog-area .section-header {
     text-align: center;
     margin-top: 20px !important;
@@ -16232,7 +16232,7 @@ text-decoration: underline;
 
 .blog-post .post-content-wrapper {
   width: 85%;
-  margin-left: 140px;   
+  margin-left: 140px;
   margin-right: 180px;
 }
 
@@ -16245,17 +16245,17 @@ text-decoration: underline;
   }
 
   .single-post-item {
-    text-align: left;       
+    text-align: left;
     margin-bottom: 40px;
   }
 
-  /* FIX TEXT POSITION */
+  /* fix text position */
   .post-content-wrapper {
     width: 100%;
-    margin-left: 0 !important;   
+    margin-left: 0 !important;
   }
 
-  /* IMAGE FULL WIDTH */
+  /* image full width */
   .post-thumbnail img,
   .post-gallery img {
     width: 100%;
@@ -16263,20 +16263,20 @@ text-decoration: underline;
     border-radius: 10px;
   }
 
-  /* TITLE CLEAN */
+  /* title clean */
   .post-title {
     font-size: 20px;
     line-height: 1.3;
     margin-top: 12px;
   }
 
-  /* TEXT READABLE */
+  /* text readable */
   .post-desc {
     font-size: 14px;
     line-height: 1.6;
   }
 
-  /* META SPACING */
+  /* meta spacing */
   .post-meta {
     font-size: 12px;
     margin-top: 10px;
@@ -16288,7 +16288,7 @@ text-decoration: underline;
 
   /* fix underline under titles */
   h2.title::after {
-    width: 380px !important;   
+    width: 380px !important;
     height: 380px;
     display: block;
   }
@@ -16296,9 +16296,9 @@ text-decoration: underline;
 }
 .grid-img {
   width: 100%;
-  height: 460px;  
-  object-fit: cover;     
-  border-radius: 20px;    
+  height: 460px;
+  object-fit: cover;
+  border-radius: 20px;
   display: block;
 }
 .grid-img:hover {
@@ -16341,7 +16341,7 @@ text-decoration: underline;
 
 
 
-/* MOBILE */
+/* mobile */
 @media (max-width: 768px) {
 
   .top-images {
@@ -16388,7 +16388,7 @@ text-decoration: underline;
 
 @media (max-width: 768px) {
 
-  /* circle titles (Cardiology, Oncology...) */
+  /* circle titles (cardiology, oncology...) */
   .counter-card .number {
     font-size: 50px !important;
     line-height: 1.2;
@@ -16406,16 +16406,16 @@ text-decoration: underline;
 @media (min-width: 1024px) {
 
   .circle-area .counter-card .number {
-    font-size: 55px !important;  
+    font-size: 55px !important;
     line-height: 1.2;
   }
 
 }
 
 .team-member-card .image img {
-  width: 60%;          
+  width: 60%;
   height: auto;
-  margin: 0 auto;      
+  margin: 0 auto;
   display: block;
 }
 
@@ -16440,7 +16440,7 @@ text-decoration: underline;
   padding-top: 0;
 }
 
-/* News page: show diagrams and GIFs without cropping their edges */
+/* news page: show diagrams and gifs without cropping their edges */
 .news-list .single-post-item {
   overflow: visible;
 }

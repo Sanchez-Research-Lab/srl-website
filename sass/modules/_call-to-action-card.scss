@@ -1,6 +1,6 @@
 .cta-area {
 
-  // Style-1
+  // style-1
   &.style-1 {
     padding-top: 60px;
     position: relative;
@@ -132,16 +132,16 @@
       .info-card-inner{
         .btn-wrapper {
           width: unset;
-  
+
           .theme-btn {
             font-size: 24px;
             text-transform: capitalize;
-  
+
             @include xs {
               font-size: 20px;
               margin-left: -15px;
             }
-  
+
             &:hover {
               background-color: $white;
               @include transition;
@@ -288,7 +288,7 @@
     }
   }
 
-  // Style-2
+  // style-2
   &.style-2 {
     padding-top: 140px;
     padding-bottom: 132px;

@@ -31,16 +31,16 @@
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity = $opacity-ie); //IE8
   }
-  
+
 //background image mixin
 @mixin background-image($imgpath,$position:center 0,$repeat: no-repeat) {
   background: {
       image: url($imgpath);
       position: $position;
-      repeat: $repeat;    
+      repeat: $repeat;
   }
 }
-//Background Before Shape image mixin
+//background before shape image mixin
 @mixin shape-image($imgpath,$position:center 0,$repeat: no-repeat) {
   background: {
       image: url($imgpath);
@@ -50,9 +50,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  content: ""; 
+  content: "";
 }
-//Background Shape image mixin
+//background shape image mixin
 @mixin background-shape($imgpath,$position:center center,$repeat: no-repeat) {
   background: {
     image: url($imgpath);
@@ -69,7 +69,7 @@
   background-size: 100%;
 }
 
-//Before Icon mixin
+//before icon mixin
 @mixin before-icon($icon) {
   position: absolute;
   content:$icon;
@@ -78,7 +78,7 @@
   font-family: 'Font Awesome 5 Free';
   transform: translateY(-50%);
 }
-//Before Shape
+//before shape
 @mixin before-shape() {
   position: absolute;
   content:"";
@@ -87,7 +87,7 @@
   transform: translateY(-50%);
 }
 
-//Border Shape mixin
+//border shape mixin
 @mixin border-shape($width:30px,$height:4px) {
 	position: relative;
 	display: inline-block;
@@ -97,21 +97,21 @@
 
 }
 
-//List Item mixin
+//list item mixin
 @mixin center() {
-  position: absolute;  
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
-  right: 0; 
-  left: 0; 
+  right: 0;
+  left: 0;
 }
 
-//List Item mixin
+//list item mixin
 @mixin list-item() {
   display: inline-block;
   width: 100%;
-  position: relative;   
+  position: relative;
 }
 
 @mixin css3-prefix($property, $value) {
@@ -125,7 +125,7 @@
 
 
 
-// Small devices
+// small devices
 @mixin xs {
   @media only screen and (min-width: 0px) and (max-width:576px){
       @content;
@@ -136,34 +136,34 @@
       @content;
   }
 }
-// Medium devices
+// medium devices
 @mixin md {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
       @content;
   }
 }
 
-// Large devices
+// large devices
 @mixin lg {
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     @content;
   }
 }
 
-// Extra large devices
+// extra large devices
 @mixin xl {
   @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     @content;
   }
 }
 
-// Nest Hub Device
+// nest hub device
 @mixin nesthub() {
   @media only screen and (min-width: 992px) and (max-width: 1024px) {
     @content;
   }
 }
-// Nest Hub Max Device
+// nest hub max device
 @mixin nesthubmax() {
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     @content;
@@ -171,13 +171,13 @@
 }
 
 
-// Custom Max Width
+// custom max width
 @mixin rmaxwd($screen) {
   @media (max-width: $screen+'px') {
     @content;
   }
 }
-// Custom devices
+// custom devices
 @mixin rwd($screen) {
   @media (min-width: $screen+'px') {
       @content;

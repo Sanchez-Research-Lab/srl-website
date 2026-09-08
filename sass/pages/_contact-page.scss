@@ -1,10 +1,10 @@
-// Contact Form Area
+// contact form area
 .contact-form-area {
   position: relative;
 
   .shape-overlay-wrapper{
     position: relative;
-    
+
     .shape-overlay{
       background-color: $tertiary-300;
       width: 100%;
@@ -213,8 +213,8 @@
         }
       }
     }
-    
-  } 
+
+  }
   .comment-respond {
     position: relative;
     margin: 140px 72px 0 0;
@@ -250,7 +250,7 @@
         }
       }
     }
-  
+
     .contacts-email,
     .contacts-name,
     .single-input-field,
@@ -258,14 +258,14 @@
       margin-bottom: 16px;
       position: relative;
       border-radius: 12px;
-  
+
       label {
         font-size: 18px;
         color: $black;
         margin-bottom: 8px;
       }
     }
-  
+
     .checkbox-field-wrapper {
       display: flex;
       justify-content: space-between;
@@ -273,11 +273,11 @@
       flex-wrap: wrap;
       margin-bottom: 12px;
       padding: 15px 0;
-  
+
       p {
         margin: 0;
       }
-  
+
       .single-checkbox-field {
         margin-bottom: 0;
         display: inline-flex;
@@ -286,7 +286,7 @@
         font-size: 16px;
         font-weight: 400;
         font-family: $body-font;
-  
+
       }
     }
     .comment-form-cookies-consent {
@@ -340,7 +340,7 @@
     *::placeholder {
       color: $black-200;
     }
-  
+
     .contacts-message{
       height: 152px;
       margin-bottom: 32px;
@@ -402,7 +402,7 @@
       }
     }
   }
-  
+
   .image-wrapper{
     text-align: right;
     height: 100%;
@@ -423,7 +423,7 @@
       padding-left: 0;
     }
     @include lg{
-      padding-left: 0;  
+      padding-left: 0;
     }
     iframe{
       height: 100%;

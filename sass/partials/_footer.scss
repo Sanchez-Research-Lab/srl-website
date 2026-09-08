@@ -26,7 +26,7 @@
     border: 0;
     border-top: 1px solid;
     opacity: .25;
-    margin-top: 30px;  
+    margin-top: 30px;
   }
 
   .footer-sec {
@@ -106,7 +106,7 @@
   //  }
   //}
 
-  //footer Background
+  //footer background
   .footer-bg {
     width: 100%;
     height: 100%;
@@ -156,12 +156,12 @@
     margin-top: -25px;
   }
 
-  // Footer Latest Post
+  // footer latest post
   &.widget_boomdevs-latest-posts-footer {
     margin-top: -5px;
   }
 
-  // Footer Instagram
+  // footer instagram
   &.zoom-instagram-widget {
     @include rmaxwd(767) {
       margin-bottom: 0;
@@ -169,7 +169,7 @@
     }
   }
 
-  // Footer About Info
+  // footer about info
   &.widget_boomdevs_contact_info_widget {
     @include rmaxwd(767) {
       margin-bottom: 18px;
@@ -182,7 +182,7 @@
     }
   }
 
-  // Footer Info Widget
+  // footer info widget
   .footer-widget-info {
     position: relative;
     p {
@@ -245,7 +245,7 @@
     }
   }
 
-  // Footer Menu Widget
+  // footer menu widget
   &.widget_nav_menu {
     ul {
       margin-top: -5px;
@@ -297,7 +297,7 @@
       display: none;
     }
   }
-  // Footer Contact Widget
+  // footer contact widget
   .footer-widget-contact {
     p {
       color: $white;
@@ -376,7 +376,7 @@
         }
       }
     }
-    // Extra Info
+    // extra info
     .extra-info {
       .extra-title {
         font-family: $heading-font;
@@ -389,7 +389,7 @@
     }
   }
 
-  // Footer Latest News
+  // footer latest news
   .widget_latest_post {
     ul {
       li {
@@ -442,7 +442,7 @@
   }
 }
 
-// Footer Bottom Section
+// footer bottom section
 .footer-bottom-menu {
   ul {
     list-style: none;
@@ -640,7 +640,7 @@
     white-space: nowrap;
   }
 
-  // Form Submit Message
+  // form submit message
   .mc4wp-response {
     position: relative;
     top: 15px;
@@ -658,7 +658,7 @@
   }
 }
 
-// Social Widget
+// social widget
 .social-profile {
   display: flex;
   align-items: center;
@@ -683,7 +683,7 @@
   }
 }
 
-// Map Widget
+// map widget
 .map-widget {
   iframe {
     width: 100%;

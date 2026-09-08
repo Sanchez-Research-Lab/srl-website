@@ -1,4 +1,4 @@
-// Archive Post Title
+// archive post title
 .page-header {
   border-left: 4px solid #dfe2e9;
   padding-left: 45px;
@@ -28,7 +28,7 @@
   }
 }
 
-// Standard Blog Post
+// standard blog post
 .single-post-item {
   background-color: $white;
   //border-radius: 12px;
@@ -38,7 +38,7 @@
   //box-shadow: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
 
   &:hover {
-    // Post Image
+    // post image
     .post-thumbnail,
     .post-video {
       img {
@@ -69,7 +69,7 @@
         }
     }
   }
-  /* Quote Format Post */
+  /* quote format post */
   &.format-quote {
     .post-content {
       margin: 0;
@@ -98,7 +98,7 @@
       }
     }
   }
-  /* Sticky Post */
+  /* sticky post */
   &.sticky {
     border: 2px solid $primary-color;
 
@@ -157,7 +157,7 @@
     margin-bottom: 20px;
     width: 100%;
   }
-  // Social Share
+  // social share
   .social-share {
     display: flex;
     gap: 8px;
@@ -196,7 +196,7 @@
       white-space: nowrap;
     }
   }
-  // Post Tags
+  // post tags
   .blog-post-tag {
     display: inline-flex;
 
@@ -244,7 +244,7 @@
     }
   }
 
-  // Post Image
+  // post image
   .post-thumbnail,
   .post-video,
   .post-gallery,
@@ -291,7 +291,7 @@
     }
   }
 
-  // Post Gallery Slick Button
+  // post gallery slick button
   button.post-gallery-btn {
     position: absolute;
     width: 60px;
@@ -331,13 +331,13 @@
     }
   }
 
-  // Post Audio
+  // post audio
   .post-audio {
     iframe {
       width: 100%;
     }
   }
-  // Post Meta
+  // post meta
   .post-meta {
     display: flex;
     align-items: center;

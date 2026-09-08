@@ -1,50 +1,50 @@
 /**
- * Stylesheet:  style.css
- * Theme:       Labotrex - Laboratory & Science Research HTML5 Template
- * Version:     1.0
- * Author:     	BoomDevs
- * 
+ * stylesheet:  style.css
+ * sanchez research lab website
+ * version:     1.0
+ * author:     	boomdevs
+ *
  */
-/* Table of contents
+/* table of contents
 =========================
-// 1.Preloader
-// 2.Scrollup
-// 3.Nav Menu
-// 4.Slider Section
-// 5.Info Card
-// 6.Icon Card
-// 7.About Image Card
-// 8.About Info Card
-// 9.Counter Card
-// 10.Brand Marquee
-// 11.Testimonial Card
-// 12.Accordion Card
-// 13.Client Logo Card
-// 14.Post Card
-// 15.Skill Progress Card
-// 16.Call To Action Card
-// 17.Title Card
-// 18.Breadcrumb
-// 19.Pagination's
-// 20.Project Details Page
-// 21.Sidebar
-// 22.Comment List
-// 23. Image Card
-// 24.Comment Form
-// 25.Team Member
-// 26.Portfolio
-// 27.Video Popup Modal Card
-// 28.Portfolio Slider
-// 29.Flip Image Card
-// About Page
-// Contact Page
-// Service Page
-// Team Page
-// Footer
+// 1.preloader
+// 2.scrollup
+// 3.nav menu
+// 4.slider section
+// 5.info card
+// 6.icon card
+// 7.about image card
+// 8.about info card
+// 9.counter card
+// 10.brand marquee
+// 11.testimonial card
+// 12.accordion card
+// 13.client logo card
+// 14.post card
+// 15.skill progress card
+// 16.call to action card
+// 17.title card
+// 18.breadcrumb
+// 19.pagination's
+// 20.project details page
+// 21.sidebar
+// 22.comment list
+// 23. image card
+// 24.comment form
+// 25.team member
+// 26.portfolio
+// 27.video popup modal card
+// 28.portfolio slider
+// 29.flip image card
+// about page
+// contact page
+// service page
+// team page
+// footer
 
 
 ===========================*/
-/* Theme Default CSS */
+/* theme default css */
 @import "variables";
 @import "mixin";
 @import "partials/theme-default";
@@ -52,13 +52,13 @@
 @import "unittest";
 @import "keyframes";
 
-// 1.Preloader
+// 1.preloader
 @import "modules/preeloader";
 
-// 2.Scrollup
+// 2.scrollup
 @import "partials/scrollup";
 
-// 3.Nav Menu
+// 3.nav menu
 @import "partials/header";
 @import "partials/header-two";
 @import "partials/header-three";
@@ -67,116 +67,116 @@
 @import "partials/title-section";
 
 
-// 4.Slider Section
+// 4.slider section
 @import "modules/slider/slider-style-one";
 @import "modules/slider/slider-style-two";
 @import "modules/slider/slider-style-three";
 
-// 5.Info Card
+// 5.info card
 @import "modules/info-card/info-card";
 @import "modules/info-card/info-card-two";
 @import "modules/info-card/info-card-three";
 
-// 6.Icon Card
+// 6.icon card
 @import "modules/icon-card/icon-card";
 
-// 7.About Image Card
+// 7.about image card
 @import "modules/about-image-card/about-image-card-two";
 @import "modules/about-image-card/about-image-card-one";
 @import "modules/about-image-card/about-image-card-four";
 
-// 8.About Info Card
+// 8.about info card
 @import "modules/about-info-card/about-info-card";
 
-// 9.Counter Card
+// 9.counter card
 @import "modules/counter/counter-card";
 @import "modules/counter/counter-card-two";
 
-// 10.Brand Marquee
+// 10.brand marquee
 @import "modules/brand-marquee/brand-marquee";
 
-// 11.Testimonial Card
+// 11.testimonial card
 @import "modules/testimonial-card/testimonial-card";
 @import "modules/testimonial-card/testimonial-slider-card";
 
-// 12.Accordion Card
+// 12.accordion card
 @import "modules/accordion/accordion";
 
-// 13.Client Logo Card
+// 13.client logo card
 @import "modules/client-logo/client-logo";
 
-// 14.Post Card
+// 14.post card
 @import "modules/post-card/post-card";
 @import "modules/post-card/post-card-one";
 @import "modules/post-card/post-card-two";
 @import "modules/post-card/post-card-three";
 @import "modules/post-card/post-details";
 
-// 15.Skill Progress Card
+// 15.skill progress card
 @import "modules/skill-progress";
 
-// 16.Call To Action Card
+// 16.call to action card
 @import "modules/call-to-action-card";
 
-// 17.Title Card
+// 17.title card
 @import "partials/title-section";
 
-// 18.Breadcrumb
+// 18.breadcrumb
 @import "modules/breadcrumb/breadcrumb";
 
-// 19.Pagination's
+// 19.pagination's
 @import "modules/paginations";
 
-// 20.Project Details Page
+// 20.project details page
 @import "pages/project-details";
 @import "modules/list-item";
 
-// 21.Sidebar
+// 21.sidebar
 @import "partials/sidebar";
 @import "partials/sidebar-two";
 
-// 22.Comment List
+// 22.comment list
 @import "modules/comment-list";
 
-// 23. Image Card
+// 23. image card
 @import "modules/image-card/image-card";
 
-// 24.Comment Form
+// 24.comment form
 @import "modules/comment-form";
 
-// 25.Team Member
+// 25.team member
 @import "modules/team/team-member";
 
-// 26.Portfolio
+// 26.portfolio
 @import "modules/portfolio/portfolio";
 
-// 27.Video Popup Modal Card
+// 27.video popup modal card
 @import "modules/video-popup-card/video-popup-card";
 @import "modules/video-popup-card/video-popup-card-three";
 
-// 28.Portfolio Slider
+// 28.portfolio slider
 @import "modules/project-card/project-card";
 @import "modules/project-card/project-card-two";
 
-// 29.Flip Image Card
+// 29.flip image card
 @import "modules/flip-image-card";
 
-// Pages
+// pages
 @import "pages/pages";
 
-// About Page
+// about page
 @import "pages/about-page";
 
-// Contact Page
+// contact page
 @import "pages/contact-page";
 
-// Service Page
+// service page
 @import "pages/service-page";
 
-// Team Page
+// team page
 @import "pages/team-member";
 
-// Footer
+// footer
 @import "partials/footer";
 @import "partials/footer-two";
 @import "partials/footer-three";

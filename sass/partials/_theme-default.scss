@@ -370,7 +370,7 @@ input.theme-btn {
   border: 0 !important;
 }
 
-// Circle Button Text
+// circle button text
 .circle-btn-text {
   position: absolute;
   z-index: 99;
@@ -401,7 +401,7 @@ input.theme-btn {
   }
 }
 
-// Global Animation
+// global animation
 .animate-move-left-right {
   animation: MoveLeftRight 1.5s linear infinite alternate;
   //@include xs {
@@ -416,7 +416,7 @@ input.theme-btn {
   //}
 }
 
-// Slider Button
+// slider button
 .slider-nav-btn-wrapper {
   display: flex;
   gap: 18px;
@@ -513,7 +513,7 @@ input.theme-btn {
 
 
 
-// Elementor Default Padding
+// elementor default padding
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
   padding: 0 12px !important;
 }

@@ -1,7 +1,7 @@
 
 
 
-// Project Area
+// project area
 .project-area{
     &.style-3{
         padding-top: 60px;
@@ -31,7 +31,7 @@
                 }
                 .submit-btn{
                     flex-shrink: 0;
-                    
+
                     &:hover{
                         background-color: $black;
                         color: $white;
@@ -113,7 +113,7 @@
     }
 }
 
-// Feature Area
+// feature area
 .feature-area{
     &.style-3{
         .section-title{
@@ -147,7 +147,7 @@
     }
 }
 
-// Latest Posts Area
+// latest posts area
 .latest-posts-area{
     &.style-3{
         .post_card_slider{
@@ -165,7 +165,7 @@
 .production-area {
     padding-top: 140px;
     padding-bottom: 130px;
-    
+
     .section-title {
         margin-bottom: 47px;
     }

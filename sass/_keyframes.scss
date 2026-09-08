@@ -17,7 +17,7 @@
   animation-name: MovefadeUp;
 }
 
-// Ripple Animate
+// ripple animate
 @-webkit-keyframes ripple {
   70% {
     -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
@@ -42,7 +42,7 @@
   }
 }
 
-// Pulse Animated
+// pulse animated
 @-webkit-keyframes pulse {
   to {
     box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
@@ -67,7 +67,7 @@
   }
 }
 
-// Animate Line Bar
+// animate line bar
 @-webkit-keyframes animatelinebar {
   0% {
     -webkit-transform: translateX(0px);
@@ -92,7 +92,7 @@
   }
 }
 
-// Slide Up Down
+// slide up down
 
 @-webkit-keyframes slideUpIn {
   0% {
@@ -123,7 +123,7 @@
   }
 }
 
-//  Animated Left Right
+//  animated left right
 @-webkit-keyframes MoveLeftRight {
   0% {
     transform: translateX(0);
@@ -144,7 +144,7 @@
   }
 }
 
-// Animated Top Bottom
+// animated top bottom
 @-webkit-keyframes MoveUpDown {
   0% {
     transform: translateY(0);
@@ -165,7 +165,7 @@
   }
 }
 
-// Animated Left Right
+// animated left right
 @-webkit-keyframes Animated3 {
   0% {
     transform: translateY(0);
@@ -186,7 +186,7 @@
   }
 }
 
-// Animated Left Right
+// animated left right
 @-webkit-keyframes Animated4 {
   0% {
     transform: translateX(0);
@@ -208,7 +208,7 @@
 }
 
 
-//Up To Down
+//up to down
 @keyframes UpToDown {
   49% {
     -webkit-transform: translateY(100%);
@@ -226,7 +226,7 @@
   }
 }
 
-// Marquee
+// marquee
 @keyframes Scroll {
   0% {
     transform: translateX(-50vw);
@@ -240,7 +240,7 @@
 
 }
 
-// Rotate
+// rotate
 @keyframes spin {
   100% {
     transform: rotate(359deg);
@@ -257,7 +257,7 @@
   }
 }
 
-// Icon Bounce
+// icon bounce
 @keyframes icon-bounce {
 
   0%,

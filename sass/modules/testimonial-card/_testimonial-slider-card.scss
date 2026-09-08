@@ -1,5 +1,5 @@
 .slider-area-wrapper {
-  // padding-right: 48px; 
+  // padding-right: 48px;
   &.style-1 {
     margin-right: -9999px;
     @include lg {
@@ -14,7 +14,7 @@
   }
 }
 
-// Testimonial Slider Style-1
+// testimonial slider style-1
 .testimonial-slider-wrapper{
   position: relative;
   .slick-arrow{
@@ -62,7 +62,7 @@
         transform: translate(0, 75px);
         right: 0;
       }
-      
+
       li {
         cursor: pointer;
       }
@@ -80,7 +80,7 @@
 }
 
 
-// Slick dots style
+// slick dots style
 .slick-dots {
   display: flex;
   align-items: center;

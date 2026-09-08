@@ -1,4 +1,4 @@
-// About Us
+// about us
 .about-us-area{
     &.style-6{
         @include md{
@@ -80,7 +80,7 @@
         }
     }
 }
-// Feature Area
+// feature area
 .feature-area{
     &.style-1{
         .info-card{
@@ -95,7 +95,7 @@
     }
 }
 
-// Feature Area
+// feature area
 .feature-area{
     &.style-6{
         @include xl{
@@ -243,7 +243,7 @@
     }
 }
 
-// Testimonial Slider Area
+// testimonial slider area
 .testimonial-slider-area{
     &.style-6{
         background-color: #282B33;

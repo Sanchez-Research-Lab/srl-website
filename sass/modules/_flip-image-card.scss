@@ -64,7 +64,7 @@
             transform: rotateY(0deg);
             transform-style: preserve-3d;
         }
-    
+
         &.flip-back {
             position: absolute;
             top: 0;
@@ -72,7 +72,7 @@
             width: 100%;
             transform: rotateY(180deg);
             transform-style: preserve-3d;
-    
+
             @include xs{
                 width: 300px;
                 left: unset;
@@ -108,7 +108,7 @@
                 line-height: 104px;
                 letter-spacing: -1.425px;
                 color: $white;
-    
+
                 @include xl{
                     font-size: 72px;
                     line-height: 86px;

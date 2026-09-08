@@ -1,4 +1,4 @@
-// Blog Details Page
+// blog details page
 .blog-details-wrapper {
 
   .comment-respond {
@@ -129,7 +129,7 @@
     }
     .post-content {
       margin-bottom: 17px;
-      /* Unit Test Data Compatibility Start */
+      /* unit test data compatibility start */
       .list-item-wrapper{
         .list-item{
           .text{
@@ -169,7 +169,7 @@
           margin-bottom: 0;
         }
       }
-      /* Unit Test Data Compatibility End */
+      /* unit test data compatibility end */
       p {
         margin-bottom: 20px;
 
@@ -184,7 +184,7 @@
         }
       }
     }
-    
+
     &.post-1786{
       .post-meta-info{
         margin-bottom: 20px;
@@ -208,9 +208,9 @@
     margin-bottom: 30px;
   }
 }
-// Blog Details End
+// blog details end
 
-// Author
+// author
 .author-info {
   background-color: #ECF4FE;
   padding: 40px;
@@ -300,7 +300,7 @@
   }
 }
 
-// Next Prev Post
+// next prev post
 .blog-post-nav {
   margin: 40px 0;
   background: #fff;

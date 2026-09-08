@@ -2,7 +2,7 @@
     background-color: $black;
 }
 
-// Service List Card
+// service list card
 .service-list-card-wrapper {
     @include sm {
         padding: 0 12px;
@@ -180,7 +180,7 @@
     }
 }
 
-// Our Team Members
+// our team members
 .our-team-area {
     &.style-2 {
         background-color: #282B33;
@@ -285,7 +285,7 @@
     }
 }
 
-//Video Poppup Area
+//video poppup area
 .video-popup-area {
     &.style-3 {
         .video-popup-image {
@@ -298,7 +298,7 @@
     }
 }
 
-//portfolio area 
+//portfolio area
 .portfolio-area {
     &.style-2 {
         padding-top: 123px;
@@ -330,7 +330,7 @@
     }
 }
 
-// Lastes Gallery
+// lastes gallery
 .latest-gallery-area {
     &.style-2 {
         padding-top: 120px;
@@ -395,7 +395,7 @@
                         @include lg{
                             padding: 25px;
                         }
-                
+
                         .content-inner {
                           padding: 0;
 
@@ -484,7 +484,7 @@
 }
 
 
-// Latest Posts Area
+// latest posts area
 .latest-posts-area {
     &.style-5 {
         margin: 0 53px;

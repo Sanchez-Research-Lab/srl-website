@@ -115,7 +115,7 @@
                         font-size: 22px;
                         transform: rotate(-45deg);
                         @include transition;
-                        
+
                         @include md{
                             font-size: 20px;
                         }

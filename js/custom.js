@@ -1,19 +1,8 @@
 (function ($) {
     "use strict";
-    /*
-   Jquery Mobile Menu
-   ============================*/
-    // $('#main-menu').meanmenu({
-    //     meanMenuContainer: '.mobile-nav-menu',
-    //     meanScreenWidth: "991",
-    //     meanExpand: ['<i class="fal fa-plus"></i>'],
-    // });
-
-    /*
-   Jquery Header Search
-   ============================*/
+    // header search
     $('#search_btn').on('click', function (e) {
-        e.preventDefault();F
+        e.preventDefault();
         $('body').css('overflow', 'hidden');
 
         $('.search-form-wrapper').addClass('active');
@@ -31,9 +20,7 @@
     }
 
 
-    /*
-   Jquery Sidebar Toggle
-   ============================*/
+    // mobile navigation
     $(".mobile-menu-toggle-btn, #offcanvas_btn").on("click", function () {
         $(".menu-sidebar-area").addClass("active");
         $(".body-overlay").addClass("active");
@@ -43,16 +30,11 @@
         $(".body-overlay").removeClass("active");
     });
 
-    /*
-   Jquery Body Overlay
-   ============================*/
     $(".body-overlay").on("click", function () {
         $(".menu-sidebar-area").removeClass("active");
         $(".body-overlay").removeClass("active");
     });
-    /*
-    Stikey Js
-    ============================*/
+    // sticky header
     const body = document.body;
     const html = document.documentElement;
     const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
@@ -74,9 +56,7 @@
         });
     }
 
-    /*
-    Client Logo Slider
-    ============================*/
+    // partner logos
     $(".client-logo-slider-wrapper").slick({
         slidesToShow: 6,
         infinite: true,
@@ -120,10 +100,7 @@
             },
         ],
     });
-
-    /*
-    Portfolio Hover
-    ============================*/
+    // portfolio hover
     $('.portfolio-showscreen').each(function () {
         const item = $(this).find('.portfolio-card');
         const img = $(this).find('.tabimg');
@@ -138,19 +115,11 @@
             }
         });
     });
-
-
-    /*
-    Jquery Empty Post Content Hide
-    ============================*/
+    // jquery empty post content hide
     $('.blog-area .post-content p').filter(function () {
         return /\u00A0/.test($(this).text());
     }).hide();
-
-
-    /*
-    Skill Progress Bar Js
-    ============================*/
+    // skill progress bar js
     $('.skill-progress-card').one('inview', function (event, isInView) {
         $('.progress-inner').each(function () {
             $(this).find('.progress-content').animate({
@@ -168,10 +137,7 @@
             });
         });
     });
-
-    /*
-   Slider
-   ============================*/
+    // slider
     $(".slider-wrapper").slick({
         slidesToShow: 1,
         infinite: true,
@@ -216,11 +182,7 @@
             },
         }, ],
     });
-
-
-    /*
-   Info Card Slider
-   ============================*/
+    // info card slider
     $(".info-card-slider").slick({
         slidesToShow: 4,
         infinite: true,
@@ -251,11 +213,7 @@
             },
         ],
     });
-
-
-    /*
-   Testimonial Slider
-   ============================*/
+    // testimonial slider
     $("#testimonial_style_one").slick({
         slidesToShow: 1,
         infinite: true,
@@ -269,11 +227,7 @@
         speed: 1500,
         rtl: false,
     });
-
-
-    /*
-    Testimonial Slider
-    ============================*/
+    // testimonial slider
     $("#testimonial_style_two").slick({
         slidesToShow: 3,
         infinite: true,
@@ -304,11 +258,7 @@
             },
         ],
     });
-
-
-    /*
-    Project Card Slider
-    ============================*/
+    // project card slider
     $("#project_card_slider").slick({
         slidesToShow: 3,
         infinite: true,
@@ -340,11 +290,7 @@
             },
         ],
     });
-
-
-    /*
-   Feature Slider JS
-   ============================*/
+    // feature slider js
     $(".feature-slider-wrapper").slick({
         slidesToShow: 3,
         infinite: true,
@@ -371,10 +317,7 @@
             },
         ],
     });
-
-    /*
-    Post Card Slider
-    ============================*/
+    // post card slider
     $(".post_card_slider").slick({
         slidesToShow: 2,
         infinite: true,
@@ -409,11 +352,7 @@
             },
         ],
     });
-
-
-    /*
-   Related Portfolio Slider
-   ============================*/
+    // related portfolio slider
     $("#related_portfolio").slick({
         slidesToShow: 3,
         infinite: true,
@@ -449,10 +388,7 @@
     }).on('setPosition', function (event, slick) {
         slick.$slides.css('height', slick.$slides.width() + 'px');
     });
-
-    /*
-   Post Gallery Slider
-   ============================*/
+    // post gallery slider
     $(".post-gallery").slick({
         slidesToShow: 1,
         infinite: false,
@@ -467,9 +403,7 @@
         prevArrow: "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
         nextArrow: "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
     });
-    /*
-   Portfolio Logo Slider
-   ============================*/
+    // portfolio logo slider
     $(".portfolio-slider").slick({
         slidesToShow: 2,
         infinite: true,
@@ -521,7 +455,7 @@
         ],
     });
 
-    // Team Area slider
+    // team area slider
     $(".team-area-slider-wrapper").slick({
         slidesToShow: 4,
         infinite: true,
@@ -567,7 +501,7 @@
     });
 
 
-    // Brand Marquee Wrapper
+    // brand marquee wrapper
     const swiper = new Swiper('.brand-marquee-slider', {
         loop: true,
         speed: 12000,
@@ -599,19 +533,12 @@
             },
         }
     })
-
-
-    /*
-    Counter Js
-    ============================*/
+    // counter js
     $(".counter").counterUp({
         delay: 10,
         time: 1000,
     });
-
-    /*
-   Magnific Popup
-   ============================*/
+    // magnific popup
     $(".video-play").magnificPopup({
         disableOn: 700,
         type: "iframe",
@@ -620,41 +547,23 @@
         preloader: false,
         fixedContentPos: false,
     });
-
-    /*
-    Jquery Wow Js
-    ============================*/
+    // jquery wow js
     new WOW().init();
-    // wow = new WOW(
-    //     {
-    //     boxClass:     'wow',      // default
-    //     animateClass: 'animated', // default
-    //     offset:       0,          // default
-    //     mobile:       true,       // default
-    //     live:         true        // default
-    //   })
-    //   wow.init();
-
-    /*
-   Jquery Nice Select Js
-   ============================*/
+    // jquery nice select js
     $('select.select_option, select.wpcf7-select').niceSelect();
-
-    /*
-   Jquery Tilt Js
-   ============================*/
+    // jquery tilt js
     $('.tilt-animate').tilt({
         maxTilt: 12,
         perspective: 1500,
     })
 
 
-    // Accordion Init Height
+    // accordion init height
     const accordionEl = $(".accordion-box-wrapper");
     const accordionHeight = accordionEl.innerHeight();
     accordionEl.css("height", accordionHeight);
 
-    // Portfolio Hover
+    // portfolio hover
     $('.portfolio-card-main-wrapper').each(function () {
         const item = $(this).find('.portfolio-card, .icon-card-inner');
         const img = $(this).find('.tabimg');
@@ -669,10 +578,7 @@
             }
         });
     });
-
-    /*
-    Scroll To Top Js
-    ============================*/
+    // scroll to top js
     $(function () {
         $("#scrollTop").hide();
         var position = $(window).scrollTop();
@@ -701,14 +607,9 @@
             return false;
         });
     });
-
-    /*
-    Window Load
-    ============================*/
+    // window load
     $(window).on("load", function () {
-        /*
-        Preeloader
-        ============================*/
+    // preeloader
         $("#preloader").fadeOut();
         $("#preloader-status").delay(0).fadeOut("slow");
         $("body").delay(200).css({

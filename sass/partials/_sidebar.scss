@@ -11,7 +11,7 @@
   padding-left: 18px;
 }
 
-/* Widget */
+/* widget */
 .widget {
   background-color: $tertiary-300;
   padding: 32px;
@@ -35,7 +35,7 @@
     margin-bottom: 0;
   }
 
-  /* Widget Instagram Feed */
+  /* widget instagram feed */
   .widget-instagram-feed {
     width: 315px;
 
@@ -50,7 +50,7 @@
       height: 96px;
     }
   }
-  /* Widget Title */
+  /* widget title */
   .wp-block-heading,
   .widget-title,
   .wp-block-search__label {
@@ -78,7 +78,7 @@
     //}
   }
 
-  /* Social Widget Block */
+  /* social widget block */
   .wp-block-social-links {
     .wp-social-link {
       padding: 0;
@@ -94,7 +94,7 @@
       }
     }
   }
-  /* Recent Comment List Block Widget & Latest Post Widget Block */
+  /* recent comment list block widget & latest post widget block */
   .has-avatars.has-dates.has-excerpts.wp-block-latest-comments,
   .has-dates.has-excerpts.wp-block-latest-comments {
     li {
@@ -158,7 +158,7 @@
       }
     }
   }
-  /* Social Widget */
+  /* social widget */
   .social-profile {
     justify-content: flex-start;
 
@@ -199,7 +199,7 @@
       }
     }
   }
-  /* Select Option  */
+  /* select option  */
   select {
     max-width: 100%;
     height: 62px;
@@ -211,7 +211,7 @@
     margin-bottom: 0;
     background-color: $white;
   }
-  /* Login Widget */
+  /* login widget */
   .has-login-form {
     .login-username,
     .login-password {
@@ -266,7 +266,7 @@
   }
 
 
-  /* Tagcloud Widget */
+  /* tagcloud widget */
   .tagcloud,
   .wp-block-tag-cloud {
     display: flex;
@@ -299,7 +299,7 @@
     }
   }
 
-  /* Default Widget */
+  /* default widget */
   //ol {
   //  padding-left: 0;
   //}
@@ -320,7 +320,7 @@
         padding-bottom: 0;
         border-bottom: 0;
       }
-      /* Recent Comment Widget */
+      /* recent comment widget */
       &.recentcomments {
         .comment-author-link {
           a {
@@ -353,7 +353,7 @@
           @include transition;
         }
 
-        /* RSS Widget */
+        /* rss widget */
         &.rsswidget {
           padding-left: 0;
           font-weight: 500;
@@ -370,7 +370,7 @@
         padding-top: 10px;
       }
     }
-    /* Tag Cloud Widget */
+    /* tag cloud widget */
     &.wp-tag-cloud {
       li {
         display: inline-block;
@@ -403,7 +403,7 @@
       }
     }
   }
-  // Category Widget
+  // category widget
   &.widget_categories,
   &.widget_archive
   {
@@ -426,7 +426,7 @@
   }
 }
 
-/* About Info Widget*/
+/* about info widget*/
 .widget-about-info {
   display: flex;
   align-items: flex-start;
@@ -476,7 +476,7 @@
     }
   }
 }
-/* Latest Post Widget*/
+/* latest post widget*/
 .has-dates.has-author.wp-block-latest-posts {
   .wp-block-latest-posts__post-title {
     display: inline-block;
@@ -676,7 +676,7 @@
   }
 }
 
-// Instagram Widget
+// instagram widget
 .widget-instagram-feed {
   display: grid;
   flex-wrap: wrap;
@@ -717,7 +717,7 @@
     }
   }
 }
-// Widget Promotion
+// widget promotion
 .widget_promotion {
   padding-top: 50px;
   padding-bottom: 50px;
