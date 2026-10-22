@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../css/animate.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <style>
-        .fellowship-photos { width: min(100%, 560px); margin: 0 auto 36px; }
+        .fellowship-photos { width: 100%; margin: 0 auto 36px; }
         .fellowship-photos img { display: block; width: 100%; height: auto; }
 
         .news-list .single-post-item,
@@ -61,7 +61,7 @@
 
         .news-list .post-thumbnail a,
         .news-list .post-gallery a {
-            width: auto !important;
+            width: 100% !important;
             display: flex !important;
             justify-content: center !important;
             cursor: default !important;
@@ -72,9 +72,9 @@
         .news-list .post-gallery img,
         .news-list .single-post-item:hover .post-thumbnail img,
         .news-list .single-post-item:hover .post-gallery img {
-            width: auto !important;
-            max-width: min(100%, 560px) !important;
-            max-height: 470px !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            max-height: none !important;
             height: auto !important;
             object-fit: contain !important;
             border-radius: 0 !important;
@@ -83,7 +83,7 @@
         }
 
         .news-list .post-content-wrapper {
-            width: min(100%, 760px) !important;
+            width: 100% !important;
             margin-left: auto !important;
             margin-right: auto !important;
             padding-right: 0 !important;
@@ -112,8 +112,26 @@
             .news-list .post-thumbnail img,
             .news-list .post-gallery img {
                 max-width: 100% !important;
-                max-height: 340px !important;
+                max-height: none !important;
             }
+        }
+
+        /* Keep news media readable without filling the entire screen. */
+        .news-list .post-thumbnail img,
+        .news-list .post-gallery img,
+        .news-list .single-post-item:hover .post-thumbnail img,
+        .news-list .single-post-item:hover .post-gallery img,
+        .news-list .fellowship-photos img {
+            width: auto !important;
+            max-width: min(100%, 850px) !important;
+            max-height: 65vh !important;
+            height: auto !important;
+            object-fit: contain !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .news-list .post-content-wrapper {
+            max-width: 850px;
         }
     </style>
 
@@ -329,6 +347,21 @@
       <div class="col-lg-10 col-md-10 col-12 blog-post">
 
 
+        <article id="bmes-2026" class="single-post-item format-image">
+          <div class="post-thumbnail">
+            <img src="../images/news/bmes-2026-presentation.jpeg" alt="Sanchez Research Lab at BMES 2026: Gia-Bao Ha and Lucas Takanori presenting research on finger blood flow imaging with a wearable electrical impedance ring" />
+          </div>
+          <div class="post-content-wrapper">
+            <h3 class="post-title">SRL Presents at BMES2026</h3>
+            <p class="post-desc">We're excited to present at BMES2026 this Thursday, October 22nd! We hope to see you there!</p>
+            <div class="post-meta">
+              <span>SRL</span>
+              <span class="icon"><i class="fa-solid fa-circle"></i></span>
+              <span>Fall 2026</span>
+            </div>
+          </div>
+        </article>
+
         <article id="jake-nsf-fellowship" class="single-post-item format-image">
           <figure class="fellowship-photos">
             <img src="../images/news/fellowship1.avif" alt="Jake McCoy, UIC electrical and computer engineering PhD student and NSF Graduate Research Fellow" />
@@ -340,7 +373,7 @@
             <div class="post-meta">
               <span>SRL</span>
               <span class="icon"><i class="fa-solid fa-circle"></i></span>
-              <time datetime="2026-08-24">August 24, 2026</time>
+              <span>Fall 2026</span>
             </div>
           </div>
         </article>
@@ -814,6 +847,7 @@
 <script src="../js/wow.min.js"></script>
 <script src="../js/tilt.jquery.min.js"></script>
 <script src="../js/custom.js"></script>
+<script src="../js/news-pagination.js"></script>
 </body>
 
 <script>

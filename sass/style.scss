@@ -181,3 +181,2254 @@
 @import "partials/footer-two";
 @import "partials/footer-three";
 
+
+/* force contact boxes to have equal height */
+.contact-info-area .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.header-contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.header-contact-info a:hover {
+    opacity: 0.8;
+}
+.footer-widget-contact li:last-child {
+    margin-top: 18px;
+}
+
+.footer-widget-contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-widget-contact li:last-child {
+    margin-top: -50px;
+}
+.contact-info-area .row {
+    display: flex;
+}
+
+.contact-info-area .col-lg-4 {
+    display: flex;
+}
+
+.icon-card {
+    flex: 1;
+}
+
+.header-contact-info {
+    text-align: left !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.header-contact-info p {
+    text-align: left !important;
+    margin-left: 0 !important;
+}
+
+.header-contact-info a {
+    text-decoration: none !important;
+}
+
+.search-btn-wrapper {
+    position: relative;
+    z-index: 9999;
+}
+
+.search-btn {
+    cursor: pointer;
+}
+
+/* fix sidebar alignment */
+.menu-sidebar-single-widget:first-child{
+    display: flex !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+/* sidebar logo alignment */
+.menu-sidebar-logo{
+    text-align:left !important;
+    margin-left:-50px;
+}
+
+/* lab title block */
+.menu-sidebar-single-widget:first-child .header-contact-info{
+    text-align:left !important;
+}
+
+/* remove large spacing between lines */
+.menu-sidebar-single-widget:first-child .header-contact-info p{
+    margin: -2px 0 !important;
+    line-height: 0.5 !important;
+}
+
+.lab-title span{
+    display:block;
+    line-height:1.9;
+    margin:0;
+}
+
+/* move university line slightly up */
+.lab-title .uni{
+    margin-top:-3px;
+    margin-bottom:8px;
+}
+.body-overlay {
+    pointer-events: none !important;
+}
+.footer {
+    position: relative;
+    z-index: 9999;
+}
+
+.menu-sidebar-logo img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: -25px;
+}
+.menu-sidebar-logo {
+    margin-left: -15px;
+}
+
+.logo img {
+    width: 190px;
+    height: auto;
+}
+
+.main-menu {
+    margin-left: 60px;
+}
+.footer-area .container {
+    max-width: 100%;
+}
+
+.footer-area .row {
+    justify-content: flex-start !important;
+}
+
+.footer-widget {
+    text-align: left;
+}
+.footer-area .col-xl-4,
+.footer-area .col-lg-4,
+.footer-area .col-md-6 {
+    flex: 0 0 auto;
+}
+
+.subscribe-form-title {
+    padding-left: 40px; /* move text to the right */
+}
+.widget-menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.widget-menu-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.brand-marquee-area .swiper-slide {
+    margin-right: 80px;
+}
+
+.about-thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.about-thumb img {
+    height: 600px;   /* remove this */
+}
+
+/* fix research circle titles */
+.counter-card .number {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* fix research area circle text */
+.counter-card .number {
+    font-size: 72px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+}
+
+.counter-card .number span {
+    font-size: 120px !important;
+}
+
+/* center the title */
+.brand-slider-area .section-title{
+    text-align:center;
+}
+
+.brand-slider-area .sec-content{
+    display:flex;
+    justify-content:center;
+}
+
+/* make logos bigger */
+.client-logo img{
+    max-height:90px;
+    width:auto;
+    object-fit:contain;
+}
+
+/* give logos more spacing */
+.client-logo-wrapper{
+    padding:20px 40px;
+}
+/* center the funding title */
+.brand-slider-area .sec-content{
+    width:100%;
+    text-align:center;
+}
+
+/* ensure the h2 itself is centered */
+.brand-slider-area .sec-content .title{
+    text-align:center;
+    margin:0 auto;
+}
+#testimonial_style_two .slick-item{
+    display:flex;
+}
+
+#testimonial_style_two .testimonial-card{
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.subscribe-form-title .title{
+    font-size: 60px !important;
+}
+.subscribe-form-title .title{
+    font-size: clamp(36px, 4vw, 60px);
+}
+
+/* reduce height of dark footer area */
+.footer-wrapper{
+    padding-top:30px !important;
+    padding-bottom:10px !important;
+}
+
+/* reduce space above slogan
+.footer-top-area{
+    padding-top:10px !important;
+    padding-bottom:5px !important;
+} */
+
+/* reduce space between slogan and footer columns */
+.subscribe-footer-widget{
+    margin-bottom:10px !important;
+}
+
+/* reduce space under columns */
+.footer-sec{
+    padding-bottom:10px !important;
+}
+
+/* reduce bottom copyright space */
+.footer-bottom-area{
+    padding-top:-10px;
+    padding-bottom:1px;
+}
+/* reduce space above the links section */
+.footer-sec{
+    padding-top: 20px !important;
+}
+
+/* tighten the line spacing */
+.footer .footer-top-area hr{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* remove extra margin below slogan */
+.subscribe-footer-widget{
+    margin-bottom: 0 !important;
+}
+
+/* reduce spacing above columns */
+.footer-widget{
+    margin-top: 0 !important;
+}
+
+/* keep news cards inside the frame when zooming out */
+.testimonial-slider-area .slider-area-wrapper {
+    overflow: hidden;
+}
+
+/* prevent cards from expanding outside container */
+.testimonial-slider-wrapper {
+    width: 100%;
+}
+
+/* ensure each slide stays within the frame */
+.testimonial-slider-wrapper .slick-item {
+    box-sizing: border-box;
+}
+
+.footer-wrapper .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer .subscribe-form-title .title{
+    font-size: 90px !important;
+    font-weight: 700;
+}
+.footer .subscribe-form-title .title{
+    white-space: nowrap;
+}
+
+.footer-widget-title {
+  font-family: "Urbanist", sans-serif;
+  font-size: 32px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.footer-widget-title{
+    white-space: nowrap;
+}
+.footer-contact a{
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover{
+    color: #CFF480 !important;
+}
+
+.footer-contact span a{
+    display: inline-block;
+    margin-top: 13px;
+}
+
+/* add space above "in the media" section */
+.testimonial-slider-area {
+    margin-top: 80px;
+}
+
+/* force equal text height so links align */
+.testimonial-card.style-2 .description {
+    min-height: 90px;
+}
+
+/* keep read article aligned */
+.testimonial-card.style-2 a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* research cards equal height */
+.info-card.style-1 {
+    height: 100%;
+}
+
+.info-card.style-1 .info-card-inner {
+    height: 100%;
+    display: flex;
+}
+
+.info-card.style-1 .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.publications-page h2{
+margin-top:40px;
+margin-bottom:30px;
+font-weight:700;
+}
+
+.publications-page h3{
+margin-top:40px;
+font-weight:600;
+}
+
+.publications-page p{
+margin-bottom:15px;
+line-height:1.6;
+font-size:20px;
+}
+
+.pub-header {
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30px;
+width: 100%;
+}
+
+/* title */
+.pub-header h2 {
+margin: 0;
+font-size: 42px;
+font-weight: 700;
+}
+
+/* google scholar */
+.scholar-link {
+font-size: 26px;
+color: #7ECAEB;
+text-decoration: none;
+font-weight: 500;
+white-space: nowrap;
+}
+
+.scholar-link:hover {
+text-decoration: underline;
+}
+
+.pub-list li {
+    margin-bottom: 10px;   /* space between each paper */
+    line-height: 1.8;      /* better readability inside each line */
+}
+
+.footer-bottom-menu-wrapper {
+    justify-content: center !important;
+}
+
+.copyright-text {
+    text-align: center;
+    width: 100%;
+}
+
+/* fix footer spacing properly */
+.footer .footer-top-area {
+    margin-bottom: 50px !important;
+}
+
+.footer .footer-top-area .subscribe-footer-widget {
+    margin-bottom: 0 !important;
+}
+
+.footer .subscribe-form-title {
+    margin-top: 0px !important;
+}
+
+.footer .footer-sec {
+    padding-top: 30px !important;
+}
+
+/* normalize spacing before footer */
+.testimonial-slider-area,
+.brand-slider-area,
+.contact-form-area {
+    margin-bottom: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+/* fix footer spacing on research + publications pages */
+
+.production-area {
+    padding-bottom: 40px !important;
+}
+
+.brand-slider-area {
+    padding-top: 10px !important;
+}
+
+.testimonial-slider-area {
+    padding-bottom: -100px !important;
+}
+
+.footer-bottom-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-menu-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+/* force override template spacing */
+.brand-slider-area.style-1 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.testimonial-slider-area.style-2 {
+    margin-bottom: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.production-area {
+    padding-bottom: 40px !important;
+}
+
+.video-academic {
+    max-width: 900px;
+    margin: 40px auto;   /* less top/bottom space */
+    text-align: center;
+}
+
+.video-academic h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.video-academic p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.video-academic video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.section-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7a7a7a;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.video-academic .title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.video-academic .desc {
+    font-size: 16px;
+    color: #6b6b6b;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.center-section {
+    text-align: center;
+}
+
+.center-section .desc {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sec-content {
+    max-width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec-content .desc {
+    margin: 15px auto 0;
+    max-width: 650px;
+}
+.production-area {
+    padding-top: 40px !important;
+}
+
+.latest-posts-area .sec-content {
+    margin-left: 2px;
+}
+
+/* fix header layout */
+.testimonial-slider-area .section-title .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* move everything left */
+}
+
+/* push arrows to the right */
+.testimonial-slider-area .section-title .sec-desc {
+    margin-left: auto;
+}
+
+/* make sure title stays left */
+.testimonial-slider-area .section-title .sec-content {
+    text-align: left;
+    margin-left: 2px;
+}
+
+.testimonial-slider-area .section-title .title {
+    text-align: left;
+}
+
+.project-area.style-3 {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+}
+
+/* horizontal layout */
+.post-card.style-3.horizontal-card {
+    display: flex;
+    height: 220px; /* controls full card height */
+}
+
+/* left image */
+.post-card.style-3.horizontal-card .image {
+    width: 180px;
+    height: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.post-card.style-3.horizontal-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* right content */
+.post-card.style-3.horizontal-card .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* text control */
+.post-card.style-3.horizontal-card .post-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* bottom alignment */
+.post-card.style-3.horizontal-card .post-meta {
+    margin-top: auto;
+}
+
+.brand-marquee-area.style-1 {
+    margin-top: 60px; /* move it lower */
+}
+
+.blog-details-area .container {
+    max-width: 2300px !important;
+}
+
+.blog-details-area .post-thumbnail img {
+    width: 100%;
+    height: 500px; /* increase from default */
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.blog-details-area .post-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-top: -80px;   /* move up */
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.main-title::after {
+    content: "";
+    display: block;
+    width: 1600px;          /* line length */
+    height: 1px;          /* thickness */
+    background: #ccc;     /* color */
+    margin-top: 12px;
+}
+
+.section-title .title {
+    white-space: normal; /* or just remove the rule */
+}
+
+.video-area .desc {
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.video-area .title {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-area .title::after {
+    content: "";
+    display: block;
+    width: 1400px;
+    height: 1px;
+    background: #ccc;
+    margin: 12px auto 0;  /* centers the line */
+}
+
+.team-member-card .image {
+    position: relative;
+}
+
+.team-member-card .social-profile {
+    position: absolute;
+    bottom: -150px;   /* distance from bottom */
+    left: 10px;     /* distance from left */
+    top: auto;      /* remove top positioning */
+    right: auto;
+}
+
+/* force slick slides to behave like equal-height columns */
+.post_card_slider .slick-track {
+    display: flex !important;
+}
+
+.post_card_slider .slick-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.post_card_slider .slick-slide > div {
+    display: flex;
+    width: 100%;
+}
+
+/* now your card can stretch */
+.post-card.style-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 250px; /* adjust if needed */
+}
+
+.post-card.style-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 250px;
+}
+
+.post-card.style-3 .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.post-card.style-3 .post-content {
+    flex-grow: 1; /* pushes meta down */
+}
+
+.post-card.style-3 .post-meta {
+    margin-top: auto; /* locks it to bottom */
+}
+
+.team-member-card .desc1 {
+    text-transform: none !important;
+}
+
+/* ===== team images — same size everywhere ===== */
+.team-member-card .image {
+    width: 100%;
+    height: 580px;        /* you can tweak: 300–340 */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* force remove all gray backgrounds in team cards */
+.team-member-card,
+.team-member-card.style-1,
+.team-member-card .image-card-wrapper,
+.team-member-card .image,
+.team-member-card .image::before,
+.team-member-card .image-card-wrapper::before {
+  background: transparent !important;
+}
+
+/* make sure image itself is pure white */
+.team-member-card img {
+  background-color: #ffffff !important;
+}
+
+.team-member-card {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.team-member-card .title a {
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.team-member-card .title {
+    min-height: 30px;
+}
+
+.team-member-card .desc {
+    min-height: 29px;
+}
+
+.team-details-area {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 2px;
+}
+
+/* footer fix */
+/* break footer out of page container */
+.footer {
+    width: 100vw !important;
+    position: left;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+/* now create the box */
+.footer .footer-wrapper {
+    width: calc(100% - 120px) !important;
+    margin: 0 auto !important;
+    border-radius: 30px;
+    margin-bottom: 10px !important;
+
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.alumni-item img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.alumni-item img.alumni-photo-gia-bao,
+.alumni-item img.alumni-photo-raquel {
+    object-position: center 10%;
+}
+
+.alumni-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.video-area video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bioelectrical-media-row {
+  width: min(1400px, calc(100vw - 80px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+.bioelectrical-media-item {
+  flex: 0 1 650px;
+  display: flex;
+  justify-content: center;
+}
+
+.bioelectrical-media {
+  width: 100%;
+  max-width: 650px;
+  aspect-ratio: 1010 / 876;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (min-width: 1400px) {
+  .bioelectrical-media-row {
+    transform: translateX(-58%);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .bioelectrical-media-row {
+    width: auto;
+    left: auto;
+    transform: none;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .bioelectrical-media-item {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .header-menu-area .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row !important;
+  }
+
+  /* left = logo */
+  .header-menu-area .col-xl-3,
+  .header-menu-area .col-lg-3,
+  .header-menu-area .col-md-6,
+  .header-menu-area .col-6:first-child {
+    width: auto !important;
+    flex: 0 0 auto;
+  }
+
+  /* right = menu button */
+  .header-menu-area .col-xl-9,
+  .header-menu-area .col-lg-9,
+  .header-menu-area .col-6:last-child {
+    width: auto !important;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* hide all desktop menu links */
+  .main-menu,
+  .header-menu-area ul,
+  .header-menu-area li {
+    display: none !important;
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu-bar {
+    display: block !important;
+  }
+
+  .menu-bar {
+    display: block !important;
+  }
+
+}
+.menu-sidebar-area ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-sidebar-area ul li {
+  display: block;
+}
+
+.menu-sidebar-area ul li a {
+  font-size: 18px;
+  display: block;
+  padding: 8px 0;
+}
+@media (max-width: 768px) {
+
+  .menu {
+    display: none !important;
+  }
+
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+  /* hide desktop menu */
+  .main-menu,
+  .menu {
+    display: none !important;
+  }
+
+  /* show hamburger */
+  .mobile-menu-bar {
+    display: block !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .mobile-menu-bar {
+    padding-right: 10px; /* adjust this */
+  }
+
+}
+@media (max-width: 768px) {
+
+  .mobile-menu-bar {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px; /* control position */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* remove container padding */
+  .header-menu-area .container {
+    max-width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* make row full width */
+  .header-menu-area .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* force columns to behave correctly */
+  .header-menu-area .col-xl-3,
+  .header-menu-area .col-lg-3,
+  .header-menu-area .col-md-6,
+  .header-menu-area .col-xl-9,
+  .header-menu-area .col-lg-9,
+  .header-menu-area .col-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+}
+
+/* ============================= */
+/* desktop sidebar (clean view) */
+/* ============================= */
+@media (min-width: 769px) {
+
+  /* hide menu links */
+  .menu-sidebar-area .mobile-nav-menu {
+    display: none !important;
+  }
+
+}
+
+/* ============================= */
+/* mobile sidebar (full menu) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  /* show menu links */
+  .menu-sidebar-area .mobile-nav-menu {
+    display: block !important;
+  }
+
+}
+
+.mobile-nav-menu {
+  margin-top: 35px; /* controls space under logo */
+  margin-left: -20px;
+  margin-bottom: -25px;
+}
+
+.mobile-nav-menu a {
+  line-height: 1.1;   /* tighter, cleaner */
+}
+
+.mobile-nav-menu ul ul li {
+  margin: 4px 0;
+}
+
+.submenu {
+  display: none;
+  padding-left: 15px;
+}
+
+.has-dropdown.active .submenu {
+  display: block;
+}
+
+.has-dropdown > a::after {
+  content: "▾";
+  float: right;
+  font-size: 14px;
+}
+
+.mobile-nav-menu {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 0 0;
+}
+
+.mobile-nav-menu > li {
+  list-style: none;
+  margin: 8px 0;
+  position: relative;
+}
+
+.mobile-nav-menu > li > a {
+  display: block;
+  font-size: 16px;
+  padding: 6px 0;
+  color: #8fd3ff;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+
+
+.mobile-nav-menu .submenu li {
+  margin: 4px 0;
+  list-style: none;
+}
+
+.mobile-nav-menu .submenu li a {
+  display: block;
+  font-size: 18px;
+  line-height: 0.5;
+  opacity: 0.9;
+  color: #8fd3ff;
+  text-decoration: none;
+}
+
+.mobile-nav-menu .submenu {
+  display: none;
+}
+
+.mobile-nav-menu .has-dropdown.active > .submenu {
+  display: block;
+}
+
+.mobile-nav-menu .has-dropdown > .dropdown-toggle {
+  position: relative;
+  padding-right: 20px;
+}
+
+.mobile-nav-menu .has-dropdown > .dropdown-toggle::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.mobile-nav-menu .has-dropdown.active > .dropdown-toggle::after {
+  content: "▴";
+}
+
+.mobile-nav-menu > li {
+  margin: 1px 0; /* was bigger before */
+}
+
+
+.mobile-nav-menu > li > a {
+  padding: 3px 0;
+  line-height: 0.9; /* very important */
+  font-size: 15px;
+}
+
+.menu-sidebar-logo {
+  margin-bottom: 25px; /* try 20–35 */
+}
+
+@media (max-width: 768px) {
+
+  /* remove left padding from header container */
+  .header-menu-area .container {
+    padding-left: 5px !important;   /* try 0–10px */
+    padding-right: 10px !important;
+  }
+
+  /* remove column padding */
+  .header-menu-area .col-xl-3,
+  .header-menu-area .col-lg-3,
+  .header-menu-area .col-md-6,
+  .header-menu-area .col-6 {
+    padding-left: 0 !important;
+  }
+
+  /* push logo tighter */
+  .logo {
+    margin-left: -45px; /* tweak: -5 to -15 */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .pub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .pub-header h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    max-width: 70%;
+  }
+
+  .pub-header .scholar-link {
+    font-size: 15px;
+    white-space: nowrap;
+    margin-top: 4px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* force header row layout */
+  .header-menu-area .row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  /* left: logo */
+  .header-menu-area .col-xl-3,
+  .header-menu-area .col-lg-3,
+  .header-menu-area .col-md-6,
+  .header-menu-area .col-6:first-child {
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+
+  /* right: hamburger */
+  .header-menu-area .col-xl-9,
+  .header-menu-area .col-lg-9,
+  .header-menu-area .col-6:last-child {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  /* push hamburger fully right */
+  .mobile-menu-bar {
+    margin-left: auto !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header-menu-area {
+    position: relative;
+    z-index: 9999;
+  }
+
+}
+
+
+/* sidebar fixes */
+.menu-sidebar-area {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+
+  background: #1e1e1e;
+
+  z-index: 9999999 !important; /* very high */
+
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+
+  pointer-events: auto;
+}
+
+.menu-sidebar-area.active {
+  transform: translateX(0);
+}
+
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 9999998;
+
+  transition: 0.3s;
+}
+
+.body-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-sidebar-area {
+  all: unset;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 380px;
+  height: 100vh;
+  background: #1e1e1e;
+  z-index: 9999999;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+
+.menu-sidebar-area.active {
+  transform: translateX(0);
+}
+
+
+/* ===============================
+   mobile footer fix
+================================= */
+@media (max-width: 768px) {
+
+  /* reduce big title ("monitoring...") */
+  .footer .subscribe-form-title .title {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    text-align: left;
+  }
+
+  /* stack everything vertically */
+  .footer .row {
+    flex-direction: column;
+  }
+
+  /* full width columns */
+  .footer .col-lg-4,
+  .footer .col-md-6,
+  .footer .col-sm-12 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* spacing between sections */
+  .footer-widget {
+    margin-bottom: 25px;
+  }
+
+  /* reduce section titles (address, quick links, etc.) */
+  .footer-widget-title {
+    font-size: 18px !important;
+    margin-bottom: 10px;
+    margin-top: -30;
+  }
+
+  /* reduce text size */
+  .footer-widget,
+  .footer-widget span,
+  .footer-widget a,
+  .footer-widget li {
+    font-size: 14px !important;
+    line-height: 1.3 !important;
+    margin-top: 5px !important;
+  }
+
+  /* fix address text wrapping */
+  .footer-contact span {
+    display: block;
+    word-break: break-word;
+  }
+
+  /* center everything for clean mobile look */
+.footer {
+  text-align: left;
+}
+
+  .footer-contact li {
+    justify-content: left;
+    text-align: left;
+  }
+
+  /* reduce padding */
+  .footer-wrapper {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* fix bottom copyright */
+  .footer-bottom-wrapper {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer .subscribe-form-title {
+    text-align: left !important;
+    padding-left: 10px; /* control how much it moves */
+  }
+
+  .footer .subscribe-form-title .title {
+    margin-left: 0 !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .footer-contact {
+    margin-bottom: -100px !important;
+  }
+
+  .footer-widget.widget_nav_menu {
+    margin-top: 0 !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* remove space under slogan */
+  .footer-top-area {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* kill the divider spacing */
+  .footer-top-area hr {
+    margin: 5px 0 !important; /* or 0 if you want no gap */
+  }
+
+  /* remove space above address section */
+  .footer .footer-sec > .container {
+    margin-top: -50px !important;
+    padding-top: 0 !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* reduce space between address text and contact us */
+  .footer-contact li {
+    margin-bottom: -16px !important;
+  }
+
+  /* specifically tighten last address line */
+  .footer-contact li:last-child {
+    margin-top: -5px !important;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .footer .subscribe-form-title {
+    text-align: left !important;
+    padding-left: 0 !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .footer-widget.widget_nav_menu ul li a {
+  display: block;
+  line-height: 1.1 !important;
+  padding: 2px 0 !important;
+  margin: 0 !important;
+}
+
+.footer-widget.widget_nav_menu ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+}
+
+/* desktop dropdown fix */
+.main-menu .dropdown {
+  position: relative;
+}
+
+.main-menu .dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  z-index: 9999;
+}
+
+.director-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* controls space between them */
+    margin-top: 10px;
+}
+
+.director-links a {
+    font-family: 'Urbanist', sans-serif; /* same font as site */
+    font-size: 20px;
+    font-weight: 500;
+    color: #6EC1E4; /* your light blue */
+    text-decoration: none;
+}
+
+.director-links a:hover {
+    text-decoration: underline;
+}
+
+.main-menu ul li .submenu {
+    display: none;
+    position: absolute;
+}
+
+.main-menu ul li:hover .submenu {
+    display: block;
+}
+
+.post-gallery {
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    margin-bottom: 20px;
+}
+
+.post-gallery img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px; /* rounded edges */
+    display: block;
+}
+
+
+.post-thumbnail {
+    display: flex;
+    justify-content: center; /* center image */
+    margin-bottom: 20px;
+}
+
+.post-thumbnail img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px; /* rounded edges */
+    display: block;
+}
+
+/* reduce overall height */
+.video-popup-area .video-popup-card {
+    height: 560px !important;
+    width: 900px !important;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* force image to fit new height */
+.video-popup-area .video-popup-card .image {
+    height: 100% !important;
+    background-size: cover;
+    background-position: center !important;
+}
+
+/* reduce text size so it fits nicely */
+.video-popup-area .content .title {
+    font-size: 28px !important;
+    line-height: 1.3;
+    max-width: 70%;
+}
+
+/* move text a bit up */
+.video-popup-area .content {
+    padding: 20px 30px !important;
+}
+
+/* smaller play button */
+.video-popup-area .video-popup-btn {
+    transform: scale(0.8);
+}
+
+.video-popup-area .video-popup-card .content {
+    top: -60px !important;   /* move up */
+    bottom: auto !important;
+}
+
+@media (max-width: 768px) {
+
+  .video-popup-area .video-popup-card {
+      aspect-ratio: 1 / 1;
+      max-width: 90%;
+  }
+
+  .video-popup-area .content .title {
+      font-size: 8px;
+  }
+
+  .video-popup-area .video-popup-btn {
+      transform: scale(0.6);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* ===== contact ===== */
+  .blog-page .footer-contact li {
+    margin-bottom: 4px !important;
+  }
+
+  .blog-page .footer-contact ul li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 8px;
+  }
+
+  .blog-page .footer-contact .contact-text {
+    line-height: 1.25 !important;
+  }
+
+  /* ===== quick links ===== */
+  .blog-page .footer-widget.widget_nav_menu ul li {
+    margin-bottom: 2px !important;
+  }
+
+  .blog-page .footer-widget.widget_nav_menu ul li a {
+    display: block;
+    line-height: 1.2 !important;
+    padding: 1px 0 !important;
+  }
+
+  /* ===== section spacing (this is the big fix) ===== */
+  .blog-page .footer-widget {
+    margin-bottom: -10px !important;
+  }
+
+  /* tighten heading spacing */
+  .blog-page .footer-widget-title {
+    margin-bottom: 6px !important;
+  }
+
+  .blog-page .footer-widget:first-child {
+    margin-bottom: 4px !important;
+  }
+
+  /* tighten space before quick links */
+  .blog-page .footer-widget.widget_nav_menu {
+    margin-top: 0 !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .blog-page .footer-top-area {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .blog-page .footer-top-area hr {
+    margin: 0 !important;
+  }
+
+  .blog-page .footer .footer-sec > .container {
+    margin-top: -100px !important;
+    padding-top: 0 !important;
+  }
+
+  .blog-page .widget-menu-wrapper {
+    margin: 0 !important;
+  }
+
+  .blog-page .widget-menu-wrapper > div {
+    padding: 0 !important;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .blog-page .footer-widget:last-child {
+    margin-top: 20px !important; /* increase if needed */
+  }
+
+}
+/* ===== donate section ===== */
+.support-section {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* title */
+.donate-title {
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+/* paragraphs */
+.support-section p {
+  font-size: 22px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+/* control width nicely */
+.support-section .col-lg-8 {
+  max-width: 2650px;
+}
+
+@media (min-width: 992px) {
+  .support-section .row {
+    justify-content: flex-start;
+  }
+}
+
+/* remove space below support us */
+.support-section {
+  margin-bottom: 20px; /* or 0 if you want tight */
+  padding-bottom: 0;
+}
+
+/* kill space above next section (blue block) */
+.contact-form-area,
+.your-next-section-class {
+  padding-top: 40px !important; /* reduce from 100+ */
+}
+
+@media (max-width: 768px) {
+  .alumni-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .blog-post .single-post-item {
+    flex-direction: column;
+  }
+
+  .blog-post .post-thumbnail,
+  .blog-post .post-gallery {
+    width: 100%;
+  }
+
+  .blog-post .post-content-wrapper {
+    width: 100%;
+  }
+
+  .blog-post img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* fix title visibility */
+  .blog-area .section-header {
+    text-align: center;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .blog-area .main-title {
+    font-size: 24px !important;
+    line-height: 1.3;
+    display: block;
+  }
+
+}
+
+@media (max-width: 768px) {
+  h2.main-title::after {
+    width: 350px;
+  }
+}
+
+
+/* center the whole post content */
+.blog-post .post-content-wrapper {
+  width: 75%;              /* 👈 wider than before */
+  margin: 0 auto;          /* 👈 center it */
+  text-align: left;        /* keep text readable */
+}
+
+.blog-post .post-content-wrapper {
+  width: 85%;
+  margin-left: 140px;
+  margin-right: 180px;
+}
+
+@media (max-width: 768px) {
+
+  /* center everything cleanly */
+  .blog-post {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .single-post-item {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  /* fix text position */
+  .post-content-wrapper {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  /* image full width */
+  .post-thumbnail img,
+  .post-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* title clean */
+  .post-title {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 12px;
+  }
+
+  /* text readable */
+  .post-desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* meta spacing */
+  .post-meta {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* fix underline under titles */
+  h2.title::after {
+    width: 380px !important;
+    height: 380px;
+    display: block;
+  }
+
+}
+.grid-img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+.grid-img:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+
+/* container */
+.top-images {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 3 vertical images */
+.top-images img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 4 / 6;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* bottom image */
+.bottom-image {
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+}
+
+.bottom-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 7 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+/* mobile */
+@media (max-width: 768px) {
+
+  .top-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 90%;
+  }
+
+  .top-images img {
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .bottom-image {
+    max-width: 90%;
+    margin: 20px auto 0 auto;
+  }
+
+  .bottom-image img {
+    width: 100%;
+  }
+
+}
+
+.team-area .main-content {
+  margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+  .team-area .main-content {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+
+  .team-area .sec-content {
+    text-align: left !important;
+  }
+  .team-area .sec-content .title {
+    font-size: 38px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* circle titles (cardiology, oncology...) */
+  .counter-card .number {
+    font-size: 50px !important;
+    line-height: 1.2;
+  }
+
+  /* description text */
+  .counter-card .title {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    padding: 0 15px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .circle-area .counter-card .number {
+    font-size: 55px !important;
+    line-height: 1.2;
+  }
+
+}
+
+.team-member-card .image img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.team-area .sec-content .title {
+  margin-right: 170px;
+}
+
+.team-member-card .image {
+  width: 80%;
+  height: 560px;        /* controls size of all images */
+  overflow: hidden;
+}
+
+.team-member-card .image img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;    /* fills nicely, slight crop if needed */
+}
+
+.team-member-card .content-wrapper {
+  margin-top: -130px;   /* reduce space */
+  padding-top: 0;
+}
+
+/* news page: show diagrams and gifs without cropping their edges */
+.news-list .single-post-item {
+  overflow: visible;
+}
+
+.news-list .single-post-item:hover .post-thumbnail img,
+.news-list .single-post-item:hover .post-video img,
+.news-list .single-post-item:hover .post-gallery img {
+  transform: none !important;
+}
+
+.news-list .post-thumbnail,
+.news-list .post-gallery {
+  overflow: visible;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.news-list .post-thumbnail a,
+.news-list .post-gallery a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.news-list .post-thumbnail img,
+.news-list .post-gallery img {
+  width: 100%;
+  max-width: 620px;
+  max-height: 520px;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  display: block;
+  transform: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 768px) {
+  .news-list .post-thumbnail img,
+  .news-list .post-gallery img {
+    max-width: 100%;
+    max-height: 360px;
+    height: auto !important;
+  }
+}
+
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+/* Keep the navigation on one row; use the sidebar at narrower/zoomed widths. */
+.header-menu-area .main-menu > ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header-menu-area .main-menu > ul > li {
+  flex-shrink: 0;
+}
+.header-menu-area .main-menu > ul > li > a {
+  white-space: nowrap;
+}
+@media (max-width: 1399.98px) {
+  .header-menu-area .menu {
+    display: none !important;
+  }
+  .header-menu-area .search-btn-with-btn {
+    display: none;
+  }
+  .header-menu-area .mobile-menu-bar {
+    display: block !important;
+  }
+  .header-menu-area .mobile-menu-bar a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #CFF480;
+  }
+  .header-menu-area .logo,
+  .header-menu-area.sticky_menu .logo {
+    height: 80px;
+  }
+}
+
+/* Uniform frames for the homepage photo gallery at every viewport size. */
+.image-grid .grid-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Scale desktop navigation with wide viewports, including browser zoom-out. */
+@media (min-width: 1400px) {
+  .header-menu-area .main-menu > ul > li > a {
+    font-size: clamp(18px, 1.2vw, 28px);
+    padding-left: clamp(16px, 1.2vw, 28px);
+    padding-right: clamp(16px, 1.2vw, 28px);
+  }
+  .header-menu-area .search-btn-with-btn .search-btn-wrapper .search-btn {
+    width: clamp(56px, 3.8vw, 88px);
+    height: clamp(56px, 3.8vw, 88px);
+    font-size: clamp(22px, 1.5vw, 34px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .header-menu-area > .container {
+    width: 100%;
+    max-width: 94%;
+  }
+}
+
+/* Bound the wide SRL artwork instead of using its intrinsic pixel dimensions. */
+.header-menu-area .logo {
+  width: 100%;
+  min-width: 0;
+}
+.header-menu-area .logo a {
+  max-width: 100%;
+}
+.header-menu-area .logo img {
+  display: block;
+  width: clamp(110px, 10vw, 180px);
+  max-width: 100%;
+  height: auto;
+  max-height: 56px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Equal research cards across both rows, with bottom-aligned links. */
+.research-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  row-gap: 24px;
+}
+.research-card-grid > .col-sm-6 {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+}
+.research-card-grid .info-card,
+.research-card-grid .info-card-inner,
+.research-card-grid .content-wrapper,
+.research-card-grid .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+.research-card-grid .view-more {
+  margin-top: auto;
+  padding-top: 24px;
+}
+@media (max-width: 575.98px) {
+  .research-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Rounded gallery photos with a gentle hover enlargement. */
+.image-grid .grid-img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .image-grid .grid-img:hover {
+    transform: scale(1.02);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .image-grid .grid-img {
+    transition: none;
+  }
+  .image-grid .grid-img:hover {
+    transform: none;
+  }
+}
+
+/* Restore the original research circle palette on both flip faces. */
+.flip-image-card .image {
+  background-image: none !important;
+  background-color: #FFF089;
+}
+.flip-image-card .image .overlay {
+  background-color: transparent;
+  opacity: 0;
+}
+.flip-image-card .image .inner .number {
+  color: #000000;
+}
+
+.news-list article[hidden] { display: none !important; }
+.news-list article { scroll-margin-top: 120px; }
+.news-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 36px 0 80px;
+}
+.news-pagination .news-page-count {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.news-pagination a {
+  padding: 8px 18px;
+  border-radius: 24px;
+  background: #eaf3ff;
+  color: #292929;
+}
+.news-pagination a[aria-current="page"],
+.news-pagination a:hover { background: #CFF480; }
