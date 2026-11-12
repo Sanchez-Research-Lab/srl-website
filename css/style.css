@@ -17088,22 +17088,48 @@ text-decoration: underline;
   border-radius: 12px;
 }
 
+.home-hemodynamic-media {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 5fr);
+  align-items: start;
+  gap: 40px;
+  scroll-margin-top: 100px;
+}
+
+.home-hemodynamic-item,
+.home-finger-video {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .video-area .home-fluid-video {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   border-radius: 12px;
 }
 
+.home-finger-video video {
+  width: 100%;
+  max-width: none;
+  border-radius: 12px;
+}
+
 @media (max-width: 991px) {
-  .home-clinical-media {
+  .home-clinical-media,
+  .home-hemodynamic-media {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 }
 
 .bioelectrical-media-row {
-  width: 80%;
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -17134,25 +17160,11 @@ text-decoration: underline;
   max-width: 100%;
 }
 
-.bioelectrical-demo {
-  width: 80%;
-  max-width: 800px;
-  margin: 40px auto 0;
-}
-
-.bioelectrical-demo video {
-  border-radius: 12px;
-}
-
 @media (max-width: 768px) {
 
   .bioelectrical-media-row {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .bioelectrical-demo {
-    margin-top: 24px;
   }
 
   .header-menu-area .row {
