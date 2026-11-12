@@ -1051,55 +1051,112 @@ text-decoration: underline;
   display: block;
 }
 
-.bioelectrical-media-row {
-  width: min(1400px, calc(100vw - 80px));
-  max-width: none;
+.home-research-gallery {
+  width: 80%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+}
+
+.home-clinical-media {
+  width: 80%;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr);
   align-items: center;
-  justify-content: center;
-  gap: 48px;
+  gap: 40px;
+  scroll-margin-top: 100px;
+}
+
+.home-clinical-media > div {
+  width: 100%;
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home-clinical-media .top-images,
+.home-clinical-media .bottom-image {
+  max-width: 640px;
+}
+
+.home-clinical-media .top-images img {
+  max-width: 192px;
+  min-width: 0;
+}
+
+.home-clinical-media video {
+  max-width: 304px;
+  border-radius: 12px;
+}
+
+.video-area .home-fluid-video {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+@media (max-width: 991px) {
+  .home-clinical-media {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.bioelectrical-media-row {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: 32px;
+  scroll-margin-top: 100px;
 }
 
 .bioelectrical-media-item {
-  flex: 0 1 650px;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.bioelectrical-media {
+.bioelectrical-media-row .bioelectrical-media {
   width: 100%;
-  max-width: 650px;
-  aspect-ratio: 1010 / 876;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   border-radius: 12px;
   display: block;
 }
 
-@media (min-width: 1400px) {
-  .bioelectrical-media-row {
-    transform: translateX(-58%);
-  }
+.bioelectrical-media-row img.bioelectrical-media {
+  width: auto;
+  max-width: 100%;
+}
+
+.bioelectrical-demo {
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.bioelectrical-demo video {
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
 
   .bioelectrical-media-row {
-    width: auto;
-    left: auto;
-    transform: none;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  .bioelectrical-media-item {
-    width: 100%;
-    flex-basis: auto;
+  .bioelectrical-demo {
+    margin-top: 24px;
   }
 
   .header-menu-area .row {
