@@ -21,7 +21,8 @@
 
 
     // mobile navigation
-    $(".mobile-menu-toggle-btn, #offcanvas_btn").on("click", function () {
+    $(".mobile-menu-toggle-btn, #offcanvas_btn").on("click", function (e) {
+        e.preventDefault();
         $(".menu-sidebar-area").addClass("active");
         $(".body-overlay").addClass("active");
     });
