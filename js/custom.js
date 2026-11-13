@@ -30,6 +30,10 @@
         $(".body-overlay").removeClass("active");
     });
 
+    $('.menu-sidebar-area a[href="/contact/#contact-form"]').on("click", function () {
+        $(".menu-sidebar-area, .body-overlay").removeClass("active");
+    });
+
     $(".body-overlay").on("click", function () {
         $(".menu-sidebar-area").removeClass("active");
         $(".body-overlay").removeClass("active");
