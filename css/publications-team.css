@@ -15,12 +15,6 @@
   padding: 72px 0 24px;
 }
 
-.publication-intro {
-  margin-bottom: 48px;
-  padding-top: 24px;
-  border-top: 1px solid #c0c0c0;
-}
-
 .team-role {
   margin: 0 0 12px;
   font-size: 13px;
@@ -201,10 +195,6 @@
   .publication-grid {
     grid-template-columns: 1fr;
     gap: 40px;
-  }
-
-  .publication-intro {
-    margin-bottom: 32px;
   }
 
   .publication-scholar {
