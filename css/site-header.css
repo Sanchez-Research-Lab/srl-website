@@ -1,0 +1,23 @@
+/* Shared header alignment across the website. */
+.header-menu-area > .container > .row {
+  position: relative;
+  align-items: center;
+}
+
+.header-menu-area .main-menu {
+  margin-left: 0;
+}
+
+.header-menu-area .main-menu > ul {
+  justify-content: center;
+}
+
+@media (min-width: 1400px) {
+  .header-menu-area .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, -50%);
+  }
+}

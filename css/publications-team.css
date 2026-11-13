@@ -1,0 +1,237 @@
+/* Selected publications and the combined Team page. */
+.publications-view .page-breadcrumb-area,
+.team-view .page-breadcrumb-area {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media (min-width: 992px) {
+  .team-view .page-breadcrumb-area {
+    padding-top: 144px;
+  }
+}
+
+.selected-publications {
+  padding: 72px 0 24px;
+}
+
+.publication-intro {
+  margin-bottom: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #c0c0c0;
+}
+
+.team-role {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.publication-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px 48px;
+}
+
+.publication-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.publication-artwork {
+  display: flex;
+  align-items: center;
+  aspect-ratio: 1.6;
+  background: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.publication-artwork img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.publication-artwork:hover {
+  opacity: 0.8;
+}
+
+.publication-card figcaption {
+  padding-top: 20px;
+  margin-top: 16px;
+  border-top: 1px solid #dce1df;
+}
+
+.publication-card figcaption a {
+  display: inline-block;
+  color: #245a75;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.publication-card figcaption a:hover,
+.publication-card figcaption a:focus-visible {
+  color: #163b4e;
+  text-decoration-thickness: 2px;
+}
+
+.publication-scholar {
+  margin-top: 72px;
+  padding: 36px 40px;
+  border-radius: 20px;
+  background: #edf3fc;
+}
+
+.publication-scholar p {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.publication-scholar a,
+.team-cv-link {
+  color: #242624;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.selected-publications a:focus-visible,
+.team-cv-link:focus-visible {
+  outline: 2px solid #344e32;
+  outline-offset: 6px;
+}
+
+.team-view .team-area {
+  padding: 72px 0 96px;
+}
+
+.team-view .team-area .section-title .main-content {
+  display: block;
+  margin-left: 0;
+}
+
+.team-view .team-area .section-title .sec-content {
+  width: 100%;
+  align-items: center;
+}
+
+.team-view .team-area .sec-content .title {
+  margin-right: 0;
+  text-align: center;
+}
+
+.team-director-row {
+  margin-bottom: 56px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dce1df;
+  scroll-margin-top: 120px;
+}
+
+.team-view .team-member-card .image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+}
+
+.team-view .team-member-card .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-view .team-member-card .image img.team-portrait-elaine {
+  object-position: center 75%;
+}
+
+.team-view .team-member-card .image img.team-portrait-yelizaveta {
+  transform: scale(1.8);
+  transform-origin: 50% 25%;
+}
+
+.team-view .team-member-card .content-wrapper {
+  margin-top: 24px;
+}
+
+.director-biography {
+  padding-left: 40px;
+}
+
+.director-biography h2 {
+  margin: 0 0 20px;
+  font-size: clamp(28px, 3vw, 36px);
+  line-height: 1.2;
+}
+
+.director-biography > p:not(.team-role) {
+  max-width: 780px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.team-cv-link {
+  display: inline-block;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .publications-view .page-breadcrumb-area,
+  .team-view .page-breadcrumb-area {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .selected-publications,
+  .team-view .team-area {
+    padding-top: 48px;
+  }
+
+  .publication-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .publication-intro {
+    margin-bottom: 32px;
+  }
+
+  .publication-scholar {
+    margin-top: 48px;
+    padding: 24px;
+  }
+
+  .publication-scholar p {
+    font-size: 17px;
+  }
+
+  .publication-card figcaption a {
+    font-size: 17px;
+  }
+
+  .director-biography {
+    padding-left: 12px;
+  }
+
+  .team-director-row {
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-artwork {
+    transition: none;
+  }
+}

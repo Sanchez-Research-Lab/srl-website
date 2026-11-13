@@ -1,0 +1,51 @@
+/* Consistent alignment for page titles and main section headings. */
+.site-centered-headings .page-title,
+.site-centered-headings .breadcrumb-list {
+  color: #292929;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .site-centered-headings .page-breadcrumb-area {
+    padding-top: 144px;
+  }
+}
+
+.site-centered-headings .section-title > .main-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  gap: 24px;
+}
+
+.site-centered-headings .section-title .sec-content {
+  width: 100%;
+  align-items: center;
+}
+
+.site-centered-headings .section-title .title {
+  margin-right: 0;
+  color: #292929;
+  text-align: center;
+}
+
+.site-centered-headings .section-title > .title {
+  width: 100%;
+}
+
+.site-centered-headings .section-title .sec-desc {
+  text-align: center;
+}
+
+.site-centered-headings .section-title .btn-wrapper,
+.site-centered-headings .section-title .slider-nav-btn-wrapper {
+  justify-content: center;
+}
+
+.site-centered-headings .news-list .section-header,
+.site-centered-headings .donate-title,
+.site-centered-headings .post-comments-title {
+  color: #292929;
+  text-align: center;
+}
